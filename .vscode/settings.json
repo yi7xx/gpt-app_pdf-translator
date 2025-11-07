@@ -1,0 +1,11 @@
+{
+  "prettier.configPath": ".prettierrc",
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "scss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.experimental.configFile": "src/styles/globals.css"
+}

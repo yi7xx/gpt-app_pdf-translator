@@ -1,0 +1,138 @@
+@import 'tailwindcss';
+
+@layer components {
+  .gpt-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @apply gap-2 rounded-full px-4 py-2 text-[14px] leading-5 tracking-[-0.18px];
+  }
+
+  .gpt-btn:disabled {
+    cursor: not-allowed;
+  }
+
+  .gpt-btn-small {
+    @apply px-4 py-[6px] text-[13px] leading-[18px] tracking-[-0.08px];
+  }
+
+  .gpt-btn-block {
+    display: flex;
+    width: 100%;
+  }
+
+  .gpt-btn-icon-only {
+    justify-content: center;
+    align-items: center;
+    @apply rounded-lg px-3 py-2;
+  }
+
+  .gpt-btn-loading {
+    cursor: not-allowed;
+  }
+
+  .gpt-btn-icon-right {
+    flex-direction: row-reverse;
+  }
+
+  .gpt-btn-default {
+    background-color: var(--color-interactive-bg-primary-default);
+    color: var(--color-interactive-label-primary-default);
+    &:hover {
+      background-color: var(--color-interactive-bg-primary-hover);
+      color: var(--color-interactive-label-primary-hover);
+    }
+    &:active {
+      background-color: var(--color-interactive-bg-primary-press);
+      color: var(--color-interactive-label-primary-press);
+    }
+    &:disabled {
+      background-color: var(--color-interactive-bg-primary-inactive);
+      color: var(--color-interactive-label-primary-inactive);
+      opacity: 0.4;
+    }
+  }
+
+  .gpt-btn-secondary {
+    background-color: var(--color-interactive-bg-secondary-default);
+    color: var(--color-interactive-label-secondary-default);
+    border: 1px solid var(--color-interactive-border-secondary-default);
+    &:hover {
+      background-color: var(--color-interactive-bg-secondary-hover);
+      color: var(--color-interactive-label-secondary-hover);
+      border: 1px solid var(--color-interactive-border-secondary-hover);
+    }
+    &:active {
+      background-color: var(--color-interactive-bg-secondary-press);
+      color: var(--color-interactive-label-secondary-press);
+      border: 1px solid var(--color-interactive-border-secondary-press);
+      opacity: 0.8;
+    }
+    &:disabled {
+      background-color: var(--color-interactive-bg-secondary-inactive);
+      color: var(--color-interactive-label-secondary-inactive);
+      border: 1px solid var(--color-interactive-border-secondary-inactive);
+      opacity: 0.8;
+    }
+  }
+
+  .gpt-btn-destructive {
+    background-color: var(--color-interactive-bg-danger-primary-default);
+    color: var(--color-interactive-label-danger-primary-default);
+    &:hover {
+      background-color: var(--color-interactive-bg-danger-primary-hover);
+      color: var(--color-interactive-label-danger-primary-hover);
+    }
+    &:active {
+      background-color: var(--color-interactive-bg-danger-primary-press);
+      color: var(--color-interactive-label-danger-primary-press);
+    }
+    &:disabled {
+      background-color: var(--color-interactive-bg-danger-primary-inactive);
+      color: var(--color-interactive-label-danger-primary-inactive);
+      opacity: 0.4;
+    }
+  }
+
+  .gpt-btn-sec-destructive {
+    background-color: var(--color-interactive-bg-danger-secondary-default);
+    color: var(--color-interactive-label-danger-secondary-default);
+    border: 1px solid var(--color-interactive-border-danger-secondary-default);
+    &:hover {
+      background-color: var(--color-interactive-bg-danger-secondary-hover);
+      color: var(--color-interactive-label-danger-secondary-hover);
+      border: 1px solid var(--color-interactive-border-danger-secondary-hover);
+    }
+    &:active {
+      background-color: var(--color-interactive-bg-danger-secondary-press);
+      color: var(--color-interactive-label-danger-secondary-press);
+      border: 1px solid var(--color-interactive-border-danger-secondary-press);
+    }
+    &:disabled {
+      background-color: var(--color-interactive-bg-danger-secondary-inactive);
+      color: var(--color-interactive-label-danger-secondary-inactive);
+      border: 1px solid
+        var(--color-interactive-border-danger-secondary-inactive);
+      opacity: 0.4;
+    }
+  }
+
+  .gpt-btn-text {
+    background-color: var(--color-interactive-bg-secondary-default);
+    color: var(--color-interactive-icon-tertiary-default);
+    &:hover {
+      background-color: var(--color-interactive-bg-secondary-hover);
+      color: var(--color-interactive-icon-tertiary-hover);
+    }
+    &:active {
+      background-color: var(--color-interactive-bg-secondary-press);
+      color: var(--color-interactive-icon-tertiary-press);
+    }
+    &:disabled {
+      background-color: var(--color-interactive-bg-secondary-inactive);
+      color: var(--color-interactive-icon-tertiary-inactive);
+      opacity: 0.4;
+    }
+  }
+}

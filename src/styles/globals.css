@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+@import './var.css';
+@import './theme.css';
+@import './tailwindBase.css';
+@config '../../tailwind.config.ts';
+
+/* ============================================
+    基础样式重置
+    ============================================ */
+@layer base {
+  *,
+  ::backdrop,
+  :after,
+  :before {
+    border: 0 solid;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::file-selector-button {
+    border: 0 solid;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :host,
+  html {
+    --font-family:
+      ui-sans-serif, -apple-system, system-ui, Segoe UI, Helvetica,
+      Apple Color Emoji, Arial, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+    font-family: var(--font-family);
+    font-variation-settings: normal;
+    line-height: 1.5;
+    tab-size: 4;
+  }
+}
