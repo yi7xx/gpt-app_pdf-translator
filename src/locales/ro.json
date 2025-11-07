@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Chestionar despre Formula Taylor",
+    "showHint": "Arată Indiciu",
+    "hideHint": "Ascunde Indiciu",
+    "previous": "Anterior",
+    "next": "Următor",
+    "complete": "Finalizare",
+    "submit": "Trimite",
+    "completeTitle": "Chestionarul este complet!",
+    "score": "Scor",
+    "accuracy": "Precizie",
+    "timeSpent": "Timp Petrecut",
+    "retake": "Reia Chestionarul",
+    "hint": "Indiciu"
+  }
+}

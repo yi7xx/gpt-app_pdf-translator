@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "ટેલર ફોર્મ્યુલા ક્વિઝ",
+    "showHint": "સૂચન બતાવો",
+    "hideHint": "સૂચન છુપાવો",
+    "previous": "પાછળ",
+    "next": "આગળ",
+    "complete": "પૂર્ણ કરો",
+    "submit": "સબમિટ કરો",
+    "completeTitle": "ક્વિઝ પૂર્ણ!",
+    "score": "સ્કોર",
+    "accuracy": "સચોટતા",
+    "timeSpent": "સમય પસાર",
+    "retake": "ક્વિઝ ફરી લો",
+    "hint": "સૂચન"
+  }
+}

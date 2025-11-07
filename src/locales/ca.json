@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Quiz de la Fórmula de Taylor",
+    "showHint": "Mostrar pista",
+    "hideHint": "Amagar pista",
+    "previous": "Anterior",
+    "next": "Següent",
+    "complete": "Completar",
+    "submit": "Enviar",
+    "completeTitle": "Quiz complet!",
+    "score": "Puntuació",
+    "accuracy": "Precisió",
+    "timeSpent": "Temps emprat",
+    "retake": "Repetir el quiz",
+    "hint": "Pista"
+  }
+}

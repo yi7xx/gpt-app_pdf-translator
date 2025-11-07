@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "ቴይሎር ፎርሙላ ቁጥር ፈተና",
+    "showHint": "ምርጫ አሳይ",
+    "hideHint": "ምርጫ አይሳይ",
+    "previous": "ወደ ወቅታዊ",
+    "next": "ወደ ቀጣይ",
+    "complete": "ይዘጋጁ",
+    "submit": "ይላኩ",
+    "completeTitle": "ፈተና ተጠናቋል!",
+    "score": "ውጤት",
+    "accuracy": "ትክክለኛነት",
+    "timeSpent": "የተወሰነ ጊዜ",
+    "retake": "ድጋፍ ይወዳድሩ",
+    "hint": "ምርጫ"
+  }
+}

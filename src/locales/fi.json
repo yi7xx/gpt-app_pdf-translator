@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Taylorin kaavan koe",
+    "showHint": "Näytä vihje",
+    "hideHint": "Piilota vihje",
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "complete": "Valmis",
+    "submit": "Lähetä",
+    "completeTitle": "Koe valmis!",
+    "score": "Pisteet",
+    "accuracy": "Tarkkuus",
+    "timeSpent": "Käytetty aika",
+    "retake": "Uudelleen koe",
+    "hint": "Vihje"
+  }
+}

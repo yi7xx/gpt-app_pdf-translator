@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Taylor Formula Kvíz",
+    "showHint": "Javaslat megjelenítése",
+    "hideHint": "Javaslat elrejtése",
+    "previous": "Előző",
+    "next": "Következő",
+    "complete": "Befejezés",
+    "submit": "Beküldés",
+    "completeTitle": "A kvíz befejeződött!",
+    "score": "Pontszám",
+    "accuracy": "Pontosság",
+    "timeSpent": "Eltöltött idő",
+    "retake": "Kvíz újra",
+    "hint": "Javaslat"
+  }
+}

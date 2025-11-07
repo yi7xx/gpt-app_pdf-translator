@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Taylorova formula - kvíz",
+    "showHint": "Zobraziť nápovedu",
+    "hideHint": "Skryť nápovedu",
+    "previous": "Predchádzajúci",
+    "next": "Ďalší",
+    "complete": "Dokončiť",
+    "submit": "Odoslať",
+    "completeTitle": "Kvíz dokončený!",
+    "score": "Skóre",
+    "accuracy": "Presnosť",
+    "timeSpent": "Čas strávený",
+    "retake": "Opakovať kvíz",
+    "hint": "Nápoveda"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Teigiamoji formulė - testas",
+    "showHint": "Rodyti užuominą",
+    "hideHint": "Slėpti užuominą",
+    "previous": "Ankstesnis",
+    "next": "Kitas",
+    "complete": "Baigti",
+    "submit": "Pateikti",
+    "completeTitle": "Testas baigtas!",
+    "score": "Rezultatas",
+    "accuracy": "Tikslumas",
+    "timeSpent": "Praleistas laikas",
+    "retake": "Pakartoti testą",
+    "hint": "Užuomina"
+  }
+}

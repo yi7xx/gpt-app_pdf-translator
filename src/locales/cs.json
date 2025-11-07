@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Kvíz o Taylorově vzorci",
+    "showHint": "Zobrazit nápovědu",
+    "hideHint": "Skrýt nápovědu",
+    "previous": "Předchozí",
+    "next": "Další",
+    "complete": "Dokončit",
+    "submit": "Odeslat",
+    "completeTitle": "Kvíz dokončen!",
+    "score": "Skóre",
+    "accuracy": "Přesnost",
+    "timeSpent": "Strávený čas",
+    "retake": "Opakovat kvíz",
+    "hint": "Nápověda"
+  }
+}

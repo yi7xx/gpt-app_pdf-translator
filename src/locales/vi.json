@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Bài kiểm tra Công thức Taylor",
+    "showHint": "Hiện gợi ý",
+    "hideHint": "Ẩn gợi ý",
+    "previous": "Trước",
+    "next": "Tiếp theo",
+    "complete": "Hoàn thành",
+    "submit": "Gửi",
+    "completeTitle": "Bài kiểm tra đã hoàn thành!",
+    "score": "Điểm số",
+    "accuracy": "Độ chính xác",
+    "timeSpent": "Thời gian đã sử dụng",
+    "retake": "Làm lại bài kiểm tra",
+    "hint": "Gợi ý"
+  }
+}

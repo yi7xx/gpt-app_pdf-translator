@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Taylorova formula kviz",
+    "showHint": "Prikaži savjet",
+    "hideHint": "Sakrij savjet",
+    "previous": "Prethodno",
+    "next": "Sledeće",
+    "complete": "Završi",
+    "submit": "Pošalji",
+    "completeTitle": "Kviz je završen!",
+    "score": "Rezultat",
+    "accuracy": "Tačnost",
+    "timeSpent": "Provedeno vreme",
+    "retake": "Ponovo uradi kviz",
+    "hint": "Savjet"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Quiz sur la formule de Taylor",
+    "showHint": "Afficher l'indice",
+    "hideHint": "Masquer l'indice",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "complete": "Terminer",
+    "submit": "Soumettre",
+    "completeTitle": "Quiz terminé !",
+    "score": "Score",
+    "accuracy": "Précision",
+    "timeSpent": "Temps passé",
+    "retake": "Repasser le quiz",
+    "hint": "Indice"
+  }
+}

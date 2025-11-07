@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Taylor Formülü Sınavı",
+    "showHint": "İpucu Göster",
+    "hideHint": "İpucu Gizle",
+    "previous": "Önceki",
+    "next": "Sonraki",
+    "complete": "Tamamla",
+    "submit": "Gönder",
+    "completeTitle": "Sınav Tamamlandı!",
+    "score": "Puan",
+    "accuracy": "Doğruluk",
+    "timeSpent": "Geçen Süre",
+    "retake": "Sınavı Tekrar Al",
+    "hint": "İpucu"
+  }
+}

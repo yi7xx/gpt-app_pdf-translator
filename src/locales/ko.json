@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "테일러 공식 퀴즈",
+    "showHint": "힌트 보기",
+    "hideHint": "힌트 숨기기",
+    "previous": "이전",
+    "next": "다음",
+    "complete": "완료",
+    "submit": "제출",
+    "completeTitle": "퀴즈 완료!",
+    "score": "점수",
+    "accuracy": "정확도",
+    "timeSpent": "소요 시간",
+    "retake": "퀴즈 다시 풀기",
+    "hint": "힌트"
+  }
+}

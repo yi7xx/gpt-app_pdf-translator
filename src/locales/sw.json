@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Kujifunza kuhusu Msingi wa Taylor",
+    "showHint": "Onyesha Kidokezo",
+    "hideHint": "Ficha Kidokezo",
+    "previous": "Kabla",
+    "next": "Ifuatayo",
+    "complete": "Kamilisha",
+    "submit": "Wasilisha",
+    "completeTitle": "Kujifunza Kumekamilika!",
+    "score": "Alama",
+    "accuracy": "Usahihi",
+    "timeSpent": "Muda uliotumika",
+    "retake": "Chukua Tena Kujifunza",
+    "hint": "Kidokezo"
+  }
+}

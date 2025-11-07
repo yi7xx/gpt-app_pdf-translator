@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Taylor-formel Quiz",
+    "showHint": "Vis hint",
+    "hideHint": "Skjul hint",
+    "previous": "Forrige",
+    "next": "Neste",
+    "complete": "Fullfør",
+    "submit": "Send inn",
+    "completeTitle": "Quiz fullført!",
+    "score": "Poengsum",
+    "accuracy": "Nøyaktighet",
+    "timeSpent": "Tid brukt",
+    "retake": "Ta quizen på nytt",
+    "hint": "Hint"
+  }
+}

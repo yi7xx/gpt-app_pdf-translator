@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "テイラー公式クイズ",
+    "showHint": "ヒントを表示",
+    "hideHint": "ヒントを隠す",
+    "previous": "前へ",
+    "next": "次へ",
+    "complete": "完了",
+    "submit": "提出",
+    "completeTitle": "クイズ完了！",
+    "score": "スコア",
+    "accuracy": "正確さ",
+    "timeSpent": "費やした時間",
+    "retake": "クイズを再受験",
+    "hint": "ヒント"
+  }
+}

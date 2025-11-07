@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "泰勒公式测验",
+    "showHint": "显示提示",
+    "hideHint": "隐藏提示",
+    "previous": "上一个",
+    "next": "下一个",
+    "complete": "完成",
+    "submit": "提交",
+    "completeTitle": "测验完成！",
+    "score": "分数",
+    "accuracy": "准确率",
+    "timeSpent": "花费时间",
+    "retake": "重做测验",
+    "hint": "提示"
+  }
+}

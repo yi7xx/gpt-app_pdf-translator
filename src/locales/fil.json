@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Taylor Formula Quiz",
+    "showHint": "Ipakita ang Pahiwatig",
+    "hideHint": "Itago ang Pahiwatig",
+    "previous": "Nakaraang",
+    "next": "Susunod",
+    "complete": "Kumpleto",
+    "submit": "Isumite",
+    "completeTitle": "Kumpleto na ang Quiz!",
+    "score": "Iskor",
+    "accuracy": "Katumpakan",
+    "timeSpent": "Oras na Ginugol",
+    "retake": "Ulitin ang Quiz",
+    "hint": "Pahiwatig"
+  }
+}

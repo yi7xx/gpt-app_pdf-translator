@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Teilora formulas tests",
+    "showHint": "Rādīt padomu",
+    "hideHint": "Slēpt padomu",
+    "previous": "Iepriekšējais",
+    "next": "Nākamais",
+    "complete": "Pabeigt",
+    "submit": "Iesniegt",
+    "completeTitle": "Tests pabeigts!",
+    "score": "Rezultāts",
+    "accuracy": "Precizitāte",
+    "timeSpent": "Pavadītais laiks",
+    "retake": "Atkārtot testu",
+    "hint": "Padoms"
+  }
+}

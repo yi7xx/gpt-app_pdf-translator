@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "Kuiz Formula Taylor",
+    "showHint": "Tunjukkan Petunjuk",
+    "hideHint": "Sembunyikan Petunjuk",
+    "previous": "Sebelumnya",
+    "next": "Seterusnya",
+    "complete": "Lengkap",
+    "submit": "Hantar",
+    "completeTitle": "Kuiz Lengkap!",
+    "score": "Skor",
+    "accuracy": "Ketepatan",
+    "timeSpent": "Masa Dihabiskan",
+    "retake": "Ambil Semula Kuiz",
+    "hint": "Petunjuk"
+  }
+}

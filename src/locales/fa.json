@@ -1,0 +1,17 @@
+{
+  "quiz": {
+    "title": "آزمون فرمول تیلور",
+    "showHint": "نمایش نکته",
+    "hideHint": "پنهان کردن نکته",
+    "previous": "قبلی",
+    "next": "بعدی",
+    "complete": "تکمیل",
+    "submit": "ارسال",
+    "completeTitle": "آزمون کامل شد!",
+    "score": "امتیاز",
+    "accuracy": "دقت",
+    "timeSpent": "زمان صرف شده",
+    "retake": "تکرار آزمون",
+    "hint": "نکته"
+  }
+}
