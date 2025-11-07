@@ -20,9 +20,18 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@sider/icons": ["./src/icons/index.ts"]
+      "@sider/icons": ["./src/packages/icons/index.ts"],
+      "@sider/hooks": ["./src/packages/hooks/index.ts"],
+      "@sider/hooks/*": ["./src/packages/hooks/*"],
+      "@sider/utils/*": ["./src/packages/utils/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "src/types/svgr.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

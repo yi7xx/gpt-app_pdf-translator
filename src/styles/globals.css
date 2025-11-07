@@ -38,4 +38,25 @@
     line-height: 1.5;
     tab-size: 4;
   }
+
+  /* CustomScroll的滚动条 */
+  .rcs-outer-container {
+    height: 100%;
+  }
+  .rcs-inner-container {
+    height: 100%;
+  }
+  .rcs-inner-container > div {
+    height: 100%;
+  }
+
+  div.rcs-custom-scroll .rcs-inner-handle {
+    background-color: var(--color-grey-line2-normal);
+  }
+  div.rcs-custom-scroll .rcs-inner-handle:hover {
+    background-color: var(--color-grey-line2-hover);
+  }
+  div.rcs-custom-scroll .rcs-custom-scrollbar {
+    width: 4px;
+  }
 }

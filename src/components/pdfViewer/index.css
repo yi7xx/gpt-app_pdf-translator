@@ -1,0 +1,1141 @@
+#library-pdf-container {
+  --page-margin: 0 auto;
+}
+
+#library-pdf-container
+  .rcs-custom-scroll.pdf-container-document
+  .rcs-inner-container
+  > div {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 12px;
+}
+
+.pdf-container-document {
+  --color-brand-primary-normal: #6128ff;
+  --color-brand-primary-hover: #6a3fff;
+  --color-brand-primary-click: #561bef;
+  --color-brand-primary-bg3: rgba(122, 89, 255, 0.4);
+  --color-brand-primary-bg2: rgba(122, 89, 255, 0.32);
+  --color-brand-primary-disable: rgba(122, 89, 255, 0.24);
+  --color-brand-primary-focus: rgba(122, 89, 255, 0.16);
+  --color-brand-primary-bg: rgba(122, 89, 255, 0.08);
+  --color-brand-secondary-normal: #7450ff;
+  --color-brand-secondary-hover: #3a00b3;
+  --color-brand-secondary-click: #20006c;
+  --color-text-primary-1: rgba(0, 0, 0, 0.96);
+  --color-text-primary-2: rgba(6, 8, 31, 0.88);
+  --color-text-primary-3: rgba(10, 13, 51, 0.6);
+  --color-text-primary-4: rgba(10, 13, 51, 0.45);
+  --color-text-primary-5: rgba(10, 13, 51, 0.18);
+  --color-text-secondary-1: #fff;
+  --color-text-secondary-2: rgba(220, 223, 249, 0.92);
+  --color-text-secondary-3: rgba(214, 218, 255, 0.56);
+  --color-text-secondary-4: rgba(214, 218, 255, 0.4);
+  --color-text-secondary-5: rgba(214, 218, 255, 0.16);
+  --color-text-black-1: rgba(0, 0, 0, 0.96);
+  --color-text-black-2: rgba(6, 8, 31, 0.88);
+  --color-text-black-3: rgba(10, 13, 51, 0.6);
+  --color-text-black-4: rgba(10, 13, 51, 0.45);
+  --color-text-black-5: rgba(10, 13, 51, 0.18);
+  --color-text-white-1: #fff;
+  --color-text-white-2: rgba(220, 223, 249, 0.92);
+  --color-text-white-3: rgba(214, 218, 255, 0.56);
+  --color-text-white-4: rgba(214, 218, 255, 0.4);
+  --color-text-white-5: rgba(214, 218, 255, 0.16);
+  --color-grey-layer1-normal: #f6f6f8;
+  --color-grey-layer1-semitrans: rgba(237, 237, 241, 0.84);
+  --color-grey-layer1-white: #fff;
+  --color-grey-layer1-semitrans2: hsla(0, 0%, 100%, 0.84);
+  --color-grey-layer2-normal: #fff;
+  --color-grey-layer2-semitrans: hsla(0, 0%, 100%, 0.84);
+  --color-grey-layer2-dark: #f6f6f8;
+  --color-grey-layer3-normal: #fff;
+  --color-grey-layer3-reserve: #0c0d19;
+  --color-grey-fill1-normal: hsla(0, 0%, 100%, 0);
+  --color-grey-fill1-hover1: rgba(114, 118, 139, 0.04);
+  --color-grey-fill1-hover: rgba(114, 118, 139, 0.08);
+  --color-grey-fill1-click: rgba(114, 118, 139, 0.16);
+  --color-grey-fill1-hover2: rgba(122, 89, 255, 0.08);
+  --color-grey-fill1-click2: rgba(122, 89, 255, 0.16);
+  --color-grey-fill2-normal: rgba(114, 118, 139, 0.06);
+  --color-grey-fill2-hover: rgba(114, 118, 139, 0.12);
+  --color-grey-fill2-click: rgba(114, 118, 139, 0.16);
+  --color-advanced-fill-normal: #0c0d19;
+  --color-advanced-fil-hover: #262734;
+  --color-advanced-fill-hover: #262734;
+  --color-advanced-fil-click: #000;
+  --color-advanced-fill-click: #000;
+  --color-glass-fill1-normal: rgba(114, 118, 139, 0.16);
+  --color-glass-fill1-hover: rgba(114, 118, 139, 0.32);
+  --color-glass-fill2-normal: rgba(114, 118, 139, 0.48);
+  --color-glass-fill2-hover: rgba(114, 118, 139, 0.8);
+  --color-grey-line1-normal: rgba(114, 118, 139, 0.08);
+  --color-grey-line1-hover: rgba(114, 118, 139, 0.24);
+  --color-grey-line1-click: rgba(114, 118, 139, 0.32);
+  --color-grey-line2-normal: rgba(114, 118, 139, 0.16);
+  --color-grey-line2-hover: rgba(114, 118, 139, 0.32);
+  --color-grey-line2-click: rgba(114, 118, 139, 0.4);
+  --color-grey-overlav1: rgba(12, 13, 25, 0.2);
+  --color-grey-overlay1: rgba(12, 13, 25, 0.2);
+  --color-grey-overlav2: rgba(12, 13, 25, 0.06);
+  --color-grey-overlay2: rgba(12, 13, 25, 0.06);
+  --color-success-normal: #20b082;
+  --color-success-hover: #32bb8c;
+  --color-success-click: #00a578;
+  --color-success-disabled: #8cd5b4;
+  --color-success-bg3: rgba(0, 136, 98, 0.32);
+  --color-success-bg2: rgba(0, 136, 98, 0.24);
+  --color-success-focus: rgba(0, 136, 98, 0.16);
+  --color-success-bg: rgba(0, 136, 98, 0.08);
+  --color-success-secondary: #00825e;
+  --color-warning-normal: #eb7e26;
+  --color-warning-hover: #f38b40;
+  --color-warning-click: #e47100;
+  --color-warning-disabled: #ffb688;
+  --color-warning-bg3: rgba(235, 126, 38, 0.32);
+  --color-warning-bg2: rgba(235, 126, 38, 0.24);
+  --color-warning-focus: rgba(235, 126, 38, 0.16);
+  --color-warning-bg: rgba(235, 126, 38, 0.08);
+  --color-warning-secondary: #b55800;
+  --color-error-normal: #e55649;
+  --color-error-hover: #ed6557;
+  --color-error-click: #e55749;
+  --color-error-disabled: #ffb4ab;
+  --color-error-bg3: rgba(215, 65, 52, 0.32);
+  --color-error-bg2: rgba(215, 65, 52, 0.24);
+  --color-error-focus: rgba(215, 65, 52, 0.16);
+  --color-error-bg: rgba(215, 65, 52, 0.08);
+  --color-error-secondary: #d23a2e;
+  --color-error-secondary-hover: #790004;
+  --color-assistive-blue-normal: #3182ff;
+  --color-warning-blue-hover: #4d8eff;
+  --color-warning-blue-click: #1477f7;
+  --color-assistive-blue-disable: #adc6ff;
+  --color-assistive-blue-bg3: rgba(0, 114, 242, 0.32);
+  --color-assistive-blue-bg2: rgba(0, 114, 242, 0.24);
+  --color-assistive-blue-focus: rgba(0, 114, 242, 0.16);
+  --color-assistive-blue-bg: rgba(0, 114, 242, 0.08);
+  --color-assistive-yellow-normal: #ffcb29;
+  --color-assistive-yellow-hover: #ffd976;
+  --color-assistive-yellow-click: #f4bf00;
+  --color-assistive-yellow-disable: #fff2db;
+  --color-assistive-yellow-bg3: rgba(255, 203, 41, 0.4);
+  --color-assistive-yellow-bg2: rgba(255, 203, 41, 0.32);
+  --color-assistive-yellow-focus: rgba(255, 203, 41, 0.28);
+  --color-assistive-yellow-bg: rgba(255, 203, 41, 0.2);
+  --color-assistive-yellow-text: #e7b500;
+  --color-assistive-magenta: #ff41b1;
+  --color-assistive-magenta-bg: #fff0f4;
+  --color-focus-primary-1: rgba(122, 89, 255, 0.12);
+  --color-focus-error-1: rgba(215, 65, 52, 0.12);
+  --color-focus-gray-1: rgba(114, 118, 139, 0.06);
+}
+
+.pdfViewer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  --page-margin: 0 auto;
+}
+
+.pdfPage[data-loaded='false']:after,
+.pdfTransPage[data-loaded='false']:after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  color: var(--color-primary);
+  transform: translate(-50%, -50%);
+  background-image: var(--loading-icon);
+  background-size: contain;
+  animation: rotate 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pdfPage[data-trans-loading='true'],
+.pdfTransPage[data-trans-loading='true'] {
+  background-color: var(--color-grey-layer2-normal);
+}
+
+.pdfPage[data-trans-loading='true']:after,
+.pdfTransPage[data-trans-loading='true']:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    103deg,
+    hsla(0, 0%, 100%, 0),
+    rgba(114, 118, 139, 0.12) 48.09%,
+    hsla(0, 0%, 100%, 0) 99.85%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-loading 2s ease infinite;
+  animation-delay: 0s;
+  animation-play-state: paused;
+}
+
+.pdfPage canvas,
+.pdfTransPage canvas {
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pdfPage canvas[hidden],
+.pdfTransPage canvas[hidden] {
+  display: none;
+}
+
+.pdfPage canvas[zooming],
+.pdfTransPage canvas[zooming] {
+  width: 100%;
+  height: 100%;
+}
+
+.pdfPage {
+  --scale-round-x: 1px;
+  --scale-round-y: 1px;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  background-color: var(--color-grey-layer2-normal);
+  overflow: hidden;
+  margin: var(--page-margin);
+}
+
+.pdfPage .canvasWrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.pdfPage .canvasWrapper svg {
+  transform: none;
+}
+
+.pdfPage .canvasWrapper svg.highlight {
+  --blend-mode: multiply;
+  position: absolute;
+  mix-blend-mode: var(--blend-mode);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.pdfPage .canvasWrapper svg.highlight:not(.free) {
+  fill-rule: evenodd;
+}
+
+.pdfPage .canvasWrapper svg.highlight.hovered,
+.pdfPage .canvasWrapper svg.highlight.selected {
+  fill: var(--hover-color);
+}
+
+.pdfPage .canvasWrapper svg.highlightOutline {
+  position: absolute;
+  mix-blend-mode: normal;
+  fill-rule: evenodd;
+  fill: none;
+}
+
+.pdfPage .textLayer {
+  position: absolute;
+  inset: 0;
+  text-align: initial;
+  overflow: clip;
+  opacity: 1;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  caret-color: CanvasText;
+  z-index: 0;
+}
+
+.pdfPage .textLayer :is(span, br) {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0 0;
+}
+
+.pdfPage .textLayer br::selection {
+  background: transparent;
+}
+
+.pdfPage .textLayer .markedContent span:not(.markedContent),
+.pdfPage .textLayer > :not(.markedContent) {
+  z-index: 1;
+}
+
+.pdfPage .textLayer span.markedContent {
+  top: 0;
+  height: 0;
+}
+
+.pdfPage .textLayer span[role='img'] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.pdfPage .textLayer ::-moz-selection {
+  background: var(--color-assistive-blue-focus);
+}
+
+.pdfPage .textLayer ::selection {
+  background: var(--color-assistive-blue-focus);
+}
+
+.pdfPage .textLayer br::-moz-selection {
+  background: transparent;
+}
+
+.pdfPage .textLayer br::-moz-selection,
+.pdfPage .textLayer br::selection {
+  background: transparent;
+}
+
+.pdfPage .textLayer .highlight {
+  --highlight-base-color: var(--color-assistive-yellow-bg2);
+  --highlight-bg-color: rgba(180, 0, 170, 0.25);
+  --highlight-selected-bg-color: var(--color-brand-primary-bg2);
+  --highlight-backdrop-filter: none;
+  margin: -1px;
+  padding: 1px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  -webkit-backdrop-filter: var(--highlight-filter);
+  backdrop-filter: var(--highlight-filter);
+}
+
+.pdfPage .textLayer .highlight.appended {
+  position: static;
+}
+
+.pdfPage .textLayer .highlight.selected {
+  background-color: var(--highlight-selected-bg-color);
+  -webkit-backdrop-filter: var(--highlight-selected-backdrop-filter);
+  backdrop-filter: var(--highlight-selected-backdrop-filter);
+}
+
+.pdfPage .textLayer .highlight:not(.highlight-exit) {
+  animation: highlightFadeIn 0.3s ease forwards;
+  animation-iteration-count: 2;
+}
+
+.pdfPage .textLayer .highlight.highlight-exit {
+  animation: highlightFadeOut 0.3s ease forwards;
+}
+
+@keyframes highlightFadeIn {
+  0% {
+    background-color: var(--highlight-base-color);
+    opacity: 0.3;
+  }
+
+  50% {
+    background-color: var(--highlight-selected-bg-color);
+    opacity: 0.8;
+  }
+
+  to {
+    background-color: var(--highlight-selected-bg-color);
+    opacity: 1;
+  }
+}
+
+@keyframes highlightFadeOut {
+  0% {
+    background-color: var(--highlight-selected-bg-color);
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+.pdfPage .textLayer .endOfContent {
+  display: block;
+  position: absolute;
+  inset: 100% 0 0;
+  z-index: 0;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pdfPage .textLayer.selecting .endOfContent {
+  top: 0;
+}
+
+.pdfPage .textLayer.selecting ~ .annotationLayer section {
+  pointer-events: none;
+}
+
+.pdfPage .annotationLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform-origin: 0 0;
+  --link-outline: none;
+  --hcm-highlight-filter: none;
+}
+
+.pdfPage .annotationLayer .annotationContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.pdfPage .annotationLayer section {
+  position: absolute;
+  z-index: 98;
+  text-align: initial;
+  pointer-events: auto;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+}
+
+.pdfPage
+  .annotationLayer
+  section
+  :has(div.annotationContent)
+  canvas.annotationContent {
+  display: none;
+}
+
+.pdfPage .annotationLayer section svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.pdfPage
+  .annotationLayer
+  :is(.linkAnnotation, .buttonWidgetAnnotation.pushButton)
+  > a {
+  position: absolute;
+  font-size: 1em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pdfPage
+  .annotationLayer
+  :is(.linkAnnotation, .buttonWidgetAnnotation.pushButton):not(.hasBorder)
+  > a:hover {
+  background: var(--color-assistive-blue-focus);
+}
+
+.pdfPage .annotationLayer .annotationTextContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.pdfPage .annotationLayer .popupAnnotation {
+  display: none;
+}
+
+.pdfPage .annotationLayer .highlightAnnotation.highlightArea:hover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: var(--hcm-highlight-filter);
+  backdrop-filter: var(--hcm-highlight-filter);
+  content: '';
+  pointer-events: none;
+}
+
+.pdfPage .annotationLayer .highlightAnnotation.popupTriggerArea {
+  cursor: pointer;
+}
+
+.pdfPage .annotationLayer .popupTriggerArea {
+  cursor: text;
+}
+
+.pdfPage .annotationEditorLayer {
+  background: transparent;
+  position: absolute;
+  inset: 0;
+  font-size: calc(100px * var(--scale-factor));
+  transform-origin: 0 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.pdfPage .annotationEditorLayer.disabled {
+  pointer-events: none;
+}
+
+.pdfPage .annotationEditorLayer .highlightEditor {
+  position: absolute;
+  background: transparent;
+  cursor: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+  outline: none;
+  transform-origin: 0 0;
+  cursor: pointer;
+}
+
+.pdfPage .annotationEditorLayer .highlightEditor .internal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+}
+
+.pdfSpread {
+  --page-margin: 0;
+  width: -moz-max-content;
+  width: max-content;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pdfSpread .pdfPage,
+.pdfSpread .pdfTransPage {
+  flex-shrink: 0;
+}
+
+.pdfTransPage {
+  --scale-round-x: 1px;
+  --scale-round-y: 1px;
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 8px;
+  color: var(--color-text-primary-2);
+  background-color: var(--color-grey-layer2-normal);
+  margin: var(--page-margin);
+}
+
+.pdfTransPage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.pdfTransPage .transEditorLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  text-align: initial;
+  overflow: clip;
+  opacity: 1;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  z-index: 0;
+  pointer-events: none;
+  transform-origin: 0 0;
+}
+
+.pdfTransPage .transEditorLayer ::-moz-selection {
+  background: var(--color-assistive-blue-focus);
+}
+
+.pdfTransPage .transEditorLayer ::selection {
+  background: var(--color-assistive-blue-focus);
+}
+
+.pdfTransPage .transEditorLayer br::-moz-selection {
+  background: transparent;
+}
+
+.pdfTransPage .transEditorLayer br::-moz-selection,
+.pdfTransPage .transEditorLayer br::selection {
+  background: transparent;
+}
+
+.pdfTransPage .transEditorLayer .pdfTransEditorItem {
+  --line-height: 1.2;
+  position: absolute;
+  z-index: 98;
+  text-align: initial;
+  pointer-events: auto;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: calc(var(--line-height) * 100%);
+  border-radius: 8px;
+}
+
+.pdfTransPage .transEditorLayer .editorItemOverflow {
+  overflow: hidden;
+  z-index: 99;
+}
+
+.pdfTransPage .transEditorLayer .editorItemOverflow:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(1em * var(--line-height));
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) -6.9%, #fff 60.63%);
+}
+
+.pdfTransPage .transEditorLayer .editorItemOverflow.active,
+.pdfTransPage .transEditorLayer .editorItemOverflow:hover {
+  z-index: 100;
+  overflow: visible;
+}
+
+.pdfTransPage .transEditorLayer .editorItemOverflow.active:after,
+.pdfTransPage .transEditorLayer .editorItemOverflow:hover:after {
+  display: none;
+}
+
+.pdfTransPage
+  .transEditorLayer
+  .editorItemOverflow.active
+  .pdfTransEditorItemText,
+.pdfTransPage
+  .transEditorLayer
+  .editorItemOverflow:hover
+  .pdfTransEditorItemText {
+  display: inline-block;
+}
+
+.pdfTransPage
+  .transEditorLayer
+  .editorItemOverflow.active
+  .pdfTransEditorItemText:after,
+.pdfTransPage
+  .transEditorLayer
+  .editorItemOverflow:hover
+  .pdfTransEditorItemText:after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 8px;
+  background: var(--color-grey-layer2-normal);
+  z-index: -1;
+  box-shadow:
+    0 2px 8px 0 rgba(12, 13, 25, 0.02),
+    0 4px 16px 0 rgba(12, 13, 25, 0.02),
+    0 8px 32px 0 rgba(12, 13, 25, 0.02);
+}
+
+.pdfTransPage .transEditorLayer .pdfTransEditorItemText {
+  position: relative;
+  text-align: left;
+}
+
+.pdfTransPage .pdfTranslating {
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdfTransPage .pdfTranslating .pdfTranslateStatusBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 16px;
+  border-radius: 10px;
+  color: var(--color-text-primary-1);
+  background: var(--color-grey-overlav2);
+}
+
+.pdfTransPage .pdfTranslating .pdfTranslateIcon {
+  font-size: 24px;
+}
+
+.pdfTransPage .pdfTranslating .translateText {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.pdfTransPage .pdfTranslateError {
+  position: absolute;
+  inset: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdfTransPage .pdfTranslateError .pdfTranslateStatusBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  padding: 16px;
+  border-radius: 10px;
+  color: var(--color-text-primary-1);
+  background: var(--color-grey-overlav2);
+}
+
+.pdfTransPage .pdfTranslateError .pdfTranslateIcon {
+  font-size: 24px;
+}
+
+.pdfTransPage .pdfTranslateError .translateText {
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.pdfTransPage .pdfTranslateError .pdfTranslateIcon {
+  color: var(--color-error-normal);
+}
+
+.pdfTransPage .pdfTranslateError .translatingErrorButton {
+  padding: 4px 12px;
+  border-radius: 6px;
+  background-color: var(--color-grey-fill2-normal);
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-brand-secondary-normal, #7450ff);
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+  font-size: 12px;
+  line-height: 18px;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.pdfTransPage .pdfTranslateError .translatingErrorButton:hover {
+  background-color: var(--color-grey-fill2-hover);
+}
+
+.pdfEnableTranslate .annotationEditorLayer,
+.pdfEnableTranslate .canvasWrapper svg {
+  display: none;
+}
+
+.orcBtn {
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: -6px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--color-grey-line1-normal);
+  font-size: 20px;
+  color: var(--color-text-primary-1);
+  background: var(--color-grey-layer3-normal);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px hsla(0, 0%, 100%, 0.12),
+    0 4px 16px -8px rgba(12, 13, 25, 0.16),
+    0 8px 32px 0 rgba(12, 13, 25, 0.12),
+    0 16px 64px 16px rgba(12, 13, 25, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orcBtn[hidden] {
+  display: none;
+}
+
+.orcBtn.ocrLoading,
+.orcBtn:not(.ocrLoading, .ocrSuccess):hover {
+  color: var(--color-brand-primary-normal);
+}
+
+.orcBtn.ocrSuccess:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  background-image: var(--success-right-icon);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.pdfTransCompare {
+  margin: 0 auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.pdf-thumbnail-list-item[data-thumbnail-rendered='false'] :first-child {
+  position: relative;
+}
+
+.pdf-thumbnail-list-item[data-thumbnail-rendered='false'] :first-child:after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary);
+  transform: translate(-50%, -50%);
+  background-image: var(--loading-icon);
+  background-size: contain;
+  animation: rotate 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.animate-spin-icon {
+  animation: spin 1s linear infinite;
+}
+
+[data-main-rotation='90'] {
+  transform: rotate(90deg) translateY(-100%);
+}
+
+[data-main-rotation='180'] {
+  transform: rotate(180deg) translate(-100%, -100%);
+}
+
+[data-main-rotation='270'] {
+  transform: rotate(270deg) translateX(-100%);
+}
+
+[data-editor-rotation='90'] {
+  transform: rotate(90deg);
+}
+
+[data-editor-rotation='180'] {
+  transform: rotate(180deg);
+}
+
+[data-editor-rotation='270'] {
+  transform: rotate(270deg);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 0;
+  }
+
+  to {
+    background-position: -100% 0;
+  }
+}
+
+#hiddenCopyElement,
+.hiddenCanvasElement {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.tippy-box[data-theme~='custom'] {
+  border-radius: 6px;
+  color: var(--color-text-white-1);
+  background-color: var(--color-grey-layer3-reserve);
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: 50% 100%;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow:before {
+  border-top-color: var(--color-grey-layer3-reserve);
+}
+
+.tippy-box[data-theme~='custom'][data-animation='customFade'][data-state='hidden'] {
+  opacity: 0;
+  transform: translateY(-8px) scale(0.8);
+}
+
+.tippy-box[data-theme~='custom'][data-animation='customFade'][data-state='visible'] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@page {
+  margin: 0;
+}
+
+#printContainer {
+  display: none;
+}
+
+#printContainer.pdfPrintLayouting {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: -1;
+  display: block;
+  visibility: hidden;
+}
+
+#printContainer .pdfTransPagePrintLayout {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  --scale-round-x: 1px;
+  --scale-round-y: 1px;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+  border-radius: 8px;
+  color: var(--color-text-primary-2);
+  background-color: var(--color-grey-layer2-normal);
+}
+
+#printContainer .pdfTransPagePrintLayout canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+#printContainer .pdfTransPagePrintLayout .transEditorLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  text-align: initial;
+  overflow: clip;
+  opacity: 1;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  z-index: 0;
+  pointer-events: none;
+  transform-origin: 0 0;
+}
+
+#printContainer .pdfTransPagePrintLayout .transEditorLayer .pdfTransEditorItem {
+  --line-height: 1.2;
+  position: absolute;
+  z-index: 98;
+  text-align: initial;
+  pointer-events: auto;
+  box-sizing: border-box;
+  transform-origin: 0 0;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: calc(var(--line-height) * 100%);
+  border-radius: 8px;
+}
+
+#printContainer
+  .pdfTransPagePrintLayout
+  .transEditorLayer
+  .pdfTransEditorItem.editorItemOverflow {
+  overflow: hidden;
+  z-index: 99;
+}
+
+#printContainer
+  .pdfTransPagePrintLayout
+  .transEditorLayer
+  .pdfTransEditorItemText {
+  position: relative;
+  text-align: left;
+}
+
+@media print {
+  html body {
+    overflow: visible !important;
+  }
+
+  body {
+    background: transparent none;
+  }
+
+  body[data-pdfjsprinting] > :not(#printContainer) {
+    display: none !important;
+  }
+
+  #printContainer {
+    display: block;
+  }
+
+  #printContainer .pdfTransPagePrint {
+    --scale-round-x: 1px;
+    --scale-round-y: 1px;
+    page-break-after: always;
+    page-break-inside: avoid;
+    position: relative;
+    border-radius: 8px;
+    color: var(--color-text-primary-2);
+    background-color: var(--color-grey-layer2-normal);
+  }
+
+  #printContainer .pdfTransPagePrint canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  #printContainer .pdfTransPagePrint .transEditorLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    text-align: initial;
+    overflow: clip;
+    opacity: 1;
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    forced-color-adjust: none;
+    z-index: 0;
+    pointer-events: none;
+    transform-origin: 0 0;
+  }
+
+  #printContainer .pdfTransPagePrint .transEditorLayer .pdfTransEditorItem {
+    --line-height: 1.2;
+    position: absolute;
+    z-index: 98;
+    text-align: initial;
+    pointer-events: auto;
+    box-sizing: border-box;
+    transform-origin: 0 0;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: calc(var(--line-height) * 100%);
+    border-radius: 8px;
+  }
+
+  #printContainer
+    .pdfTransPagePrint
+    .transEditorLayer
+    .pdfTransEditorItem.editorItemOverflow {
+    overflow: hidden;
+    z-index: 99;
+  }
+
+  #printContainer .pdfTransPagePrint .transEditorLayer .pdfTransEditorItemText {
+    position: relative;
+    text-align: left;
+  }
+}
+
+.animate-fade-and-hide {
+  animation: fadeAndHide 3s forwards;
+}
+
+@keyframes fadeAndHide {
+  0%,
+  80% {
+    opacity: 1;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.animate-show {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

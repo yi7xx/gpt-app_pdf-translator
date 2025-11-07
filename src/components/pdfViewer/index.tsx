@@ -1,0 +1,20 @@
+export { default as PDFDocument, type PDFForwardRef } from './Main'
+export { BubbleMenu } from './components/BubbleMenu'
+export { SiderBar } from './components/SiderBar'
+export { ToolBar } from './components/ToolBar'
+export { useDocumentContext } from './context/DocumentContext'
+export * from './events'
+export type { VisibleElements } from './libs/pdfjs-internal'
+export type { TextToHighlight } from './modules/AnnotationEditorUIManager'
+export type { PDFRenderingQueueView } from './modules/PDFRenderingQueue'
+export type { Paragraph } from './modules/PDFTransViewerUIManager'
+export { SpreadMode } from './modules/PDFViewer'
+export type { PDFViewer } from './modules/PDFViewer'
+export type { Highlight, HighlightSerialized } from './modules/highlight'
+export * from './services/TranslationService'
+export {
+  TranslationServiceManager,
+  type TranslateResult,
+} from './services/TranslationServiceManager'
+export type { ConcurrencyController } from './utils/concurrencyController'
+export { ScaleMode } from './utils/ui'
