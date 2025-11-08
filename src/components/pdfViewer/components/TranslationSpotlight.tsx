@@ -10,8 +10,7 @@ import {
 import { useEventListener, useKeyPress, usePrevious } from 'ahooks'
 import { Popover, Tooltip, message } from 'antd'
 import { throttle } from 'lodash-es'
-import { motion } from 'motion/react'
-import { useTranslations } from 'next-intl'
+import { Easing, motion } from 'motion/react'
 import {
   memo,
   useCallback,
@@ -22,6 +21,7 @@ import {
   type CSSProperties,
   type FC,
 } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import {
   PDFTransViewerEvents,
@@ -54,7 +54,7 @@ const getTransition = (shouldAnimate: boolean) => {
   const noAnimation = { duration: 0 }
 
   return {
-    opacity: { duration: 0.15, ease: 'easeInOut' },
+    opacity: { duration: 0.15, ease: 'easeInOut' as Easing },
     ...['x', 'y', 'width', 'height'].reduce(
       (acc, key) => {
         acc[key] = shouldAnimate ? noAnimation : defaultTransition
@@ -134,7 +134,7 @@ const RenderTransPages: FC<{
   onCancel: () => void
   onEnableChange: (hover: boolean) => void
 }> = ({ box, editorItem, enabledTools = true, onEnableChange, onCancel }) => {
-  const t = useTranslations('ui.pdfViewer.tools')
+  const { t } = useTranslation('pdfViewer.tools')
   const { translationService, pdfViewer, eventBus } = useDocumentContext()
   const toolsRef = useRef<HTMLDivElement>(null)
   const [open, setOpen] = useState(false)

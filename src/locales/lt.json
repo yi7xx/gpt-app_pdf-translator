@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Teigiamoji formulė - testas",
-    "showHint": "Rodyti užuominą",
-    "hideHint": "Slėpti užuominą",
-    "previous": "Ankstesnis",
-    "next": "Kitas",
-    "complete": "Baigti",
-    "submit": "Pateikti",
-    "completeTitle": "Testas baigtas!",
-    "score": "Rezultatas",
-    "accuracy": "Tikslumas",
-    "timeSpent": "Praleistas laikas",
-    "retake": "Pakartoti testą",
-    "hint": "Užuomina"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Slėpti šoninę juostą",
+      "thumbnail": "Miniatiūra",
+      "highlight": "Paryškinti",
+      "highlight-empty": "Dar nėra paryškinimų",
+      "zoom-in": "Priartinti",
+      "zoom-out": "Atitolinti",
+      "fit-width": "Pritaikyti pagal plotį",
+      "fit-height": "Pritaikyti pagal aukštį",
+      "pre-page": "Ankstesnis puslapis",
+      "next-page": "Kitas puslapis",
+      "translate": "Versti",
+      "full-text": "Versti visą tekstą",
+      "close-trans": "Uždaryti vertimą",
+      "original": "Originalas",
+      "compare": "Palyginti",
+      "model": "Modelis",
+      "free": "Nemokama",
+      "basic": "Pagrindinė",
+      "advanced": "Išplėstinė",
+      "source-language": "Šaltinio kalba",
+      "translated-to": "Išversta į",
+      "confirm": "Patvirtinti",
+      "cost-basic": "Kaina <count></count> pagrindinė",
+      "cost-advanced": "Kaina <count></count> išplėstinė",
+      "cost-tooltip": "Sąmata pagrįsta naudojamu modeliu ir dokumento turiniu; tikslumui prašome remtis faktiniu suvartojimu.",
+      "copy": "Kopijuoti",
+      "copy-success": "Kopijavimas sėkmingas",
+      "edit": "Redaguoti",
+      "notAllowTranslate": "Originali svetainė šiuo metu nepalaiko vertimo.",
+      "translate-service": "Vertimo paslauga"
+    },
+    "error": {
+      "load-failed": "Įkrovimas nepavyko",
+      "retry": "Bandyti dar kartą",
+      "trans-failed": "Vertimas nepavyko",
+      "fetch-data-error": "Duomenų gavimas nepavyko"
+    },
+    "ocr": {
+      "tooltip": "Tiksliai išverskite dabartinio puslapio turinį, puikiai atitinkantį originalų tekstą, įskaitant formules."
+    },
+    "download": {
+      "retry": "Bandyti dar kartą",
+      "not-support": "Dabartinis režimas nepalaiko išverstų PDF spausdinimo",
+      "trans-info": "Dabartiniame faile yra neišversto turinio ({count} puslapiai). Ar norite išversti viską ir atsisiųsti? Vertimas atims atitinkamus taškus.",
+      "direct": "Tiesioginis atsisiuntimas",
+      "trans": "Versti ir atsisiųsti",
+      "trans-progress": "Vertimas vyksta {current}/{total}",
+      "trans-progress-info": "Uždarius plaukiojantį langą vertimas nebus nutrauktas.",
+      "trans-success": "Vertimas baigtas",
+      "trans-failed": "Oi! Vertimo klaida"
+    },
+    "common": {
+      "translating": "Verčiama..."
+    }
   }
 }

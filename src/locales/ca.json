@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Quiz de la Fórmula de Taylor",
-    "showHint": "Mostrar pista",
-    "hideHint": "Amagar pista",
-    "previous": "Anterior",
-    "next": "Següent",
-    "complete": "Completar",
-    "submit": "Enviar",
-    "completeTitle": "Quiz complet!",
-    "score": "Puntuació",
-    "accuracy": "Precisió",
-    "timeSpent": "Temps emprat",
-    "retake": "Repetir el quiz",
-    "hint": "Pista"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Amaga la barra lateral",
+      "thumbnail": "Miniatura",
+      "highlight": "Ressalta",
+      "highlight-empty": "Encara no hi ha cap ressaltat",
+      "zoom-in": "Augmenta el zoom",
+      "zoom-out": "Redueix el zoom",
+      "fit-width": "Ajusta a l'amplada",
+      "fit-height": "Ajusta a l'alçada",
+      "pre-page": "Pàgina anterior",
+      "next-page": "Pàgina següent",
+      "translate": "Traduir",
+      "full-text": "Traduir text complet",
+      "close-trans": "Tanca la traducció",
+      "original": "Original",
+      "compare": "Comparar",
+      "model": "Model",
+      "free": "Gratuït",
+      "basic": "Bàsic",
+      "advanced": "Avançat",
+      "source-language": "Idioma d'origen",
+      "translated-to": "Traduït a",
+      "confirm": "Confirma",
+      "cost-basic": "Cost <count></count> bàsic",
+      "cost-advanced": "Cost <count></count> avançat",
+      "cost-tooltip": "L'estimació es basa en el model utilitzat i el contingut del document; si us plau, consulta el consum real per a més precisió.",
+      "copy": "Copia",
+      "copy-success": "Còpia realitzada amb èxit",
+      "edit": "Edita",
+      "notAllowTranslate": "La pàgina web original no admet actualment la traducció.",
+      "translate-service": "Servei de traducció"
+    },
+    "error": {
+      "load-failed": "Càrrega fallida",
+      "retry": "Reintenta",
+      "trans-failed": "Traducció fallida",
+      "fetch-data-error": "Recuperació de dades fallida"
+    },
+    "ocr": {
+      "tooltip": "Traduir el contingut de la pàgina actual amb precisió, coincidint perfectament amb el text original, incloses les fórmules."
+    },
+    "download": {
+      "retry": "Reintenta",
+      "not-support": "El mode actual no admet la impressió de PDFs traduïts",
+      "trans-info": "El fitxer actual conté contingut no traduït ({count} pàgines). Voleu traduir-ho tot i descarregar? La traducció restarà els punts corresponents.",
+      "direct": "Descarrega directa",
+      "trans": "Traduir i descarregar",
+      "trans-progress": "Traducció en curs {current}/{total}",
+      "trans-progress-info": "Tancar la finestra flotant no interromprà la traducció.",
+      "trans-success": "Traducció completada",
+      "trans-failed": "Ups! Error de traducció"
+    },
+    "common": {
+      "translating": "Traduïnt..."
+    }
   }
 }

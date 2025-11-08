@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylorin kaavan koe",
-    "showHint": "Näytä vihje",
-    "hideHint": "Piilota vihje",
-    "previous": "Edellinen",
-    "next": "Seuraava",
-    "complete": "Valmis",
-    "submit": "Lähetä",
-    "completeTitle": "Koe valmis!",
-    "score": "Pisteet",
-    "accuracy": "Tarkkuus",
-    "timeSpent": "Käytetty aika",
-    "retake": "Uudelleen koe",
-    "hint": "Vihje"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Piilota sivupalkki",
+      "thumbnail": "Pikkukuva",
+      "highlight": "Korosta",
+      "highlight-empty": "Ei korostuksia vielä",
+      "zoom-in": "Lähennä",
+      "zoom-out": "Loitonna",
+      "fit-width": "Sovita leveyteen",
+      "fit-height": "Sovita korkeuteen",
+      "pre-page": "Edellinen sivu",
+      "next-page": "Seuraava sivu",
+      "translate": "Käännä",
+      "full-text": "Käännä koko teksti",
+      "close-trans": "Sulje käännös",
+      "original": "Alkuperäinen",
+      "compare": "Vertaa",
+      "model": "Malli",
+      "free": "Ilmainen",
+      "basic": "Perus",
+      "advanced": "Edistynyt",
+      "source-language": "Lähdekieli",
+      "translated-to": "Käännetty kielelle",
+      "confirm": "Vahvista",
+      "cost-basic": "Kustannus <count></count> perus",
+      "cost-advanced": "Kustannus <count></count> edistynyt",
+      "cost-tooltip": "Arvio perustuu käytettyyn malliin ja asiakirjan sisältöön; tarkkuuden vuoksi viittaa todelliseen kulutukseen.",
+      "copy": "Kopioi",
+      "copy-success": "Kopiointi onnistui",
+      "edit": "Muokkaa",
+      "notAllowTranslate": "Alkuperäinen verkkosivu ei tällä hetkellä tue käännöstä.",
+      "translate-service": "Käännöspalvelu"
+    },
+    "error": {
+      "load-failed": "Lataus epäonnistui",
+      "retry": "Yritä uudelleen",
+      "trans-failed": "Käännös epäonnistui",
+      "fetch-data-error": "Datan haku epäonnistui"
+    },
+    "ocr": {
+      "tooltip": "Käännä nykyisen sivun sisältö tarkasti, täydellisesti alkuperäistä tekstiä vastaavasti, mukaan lukien kaavat."
+    },
+    "download": {
+      "retry": "Yritä uudelleen",
+      "not-support": "Nykyinen tila ei tue käännettyjen PDF-tiedostojen tulostamista",
+      "trans-info": "Nykyisessä tiedostossa on kääntämätöntä sisältöä（{count} sivua）. Haluatko kääntää kaiken ja ladata? Käännös vähentää vastaavia pisteitä.",
+      "direct": "Lataa suoraan",
+      "trans": "Käännä ja lataa",
+      "trans-progress": "Käännös käynnissä {current}/{total}",
+      "trans-progress-info": "Kelluvan ikkunan sulkeminen ei keskeytä käännöstä.",
+      "trans-success": "Käännös valmis",
+      "trans-failed": "Hups! Käännösvirhe"
+    },
+    "common": {
+      "translating": "Käännetään..."
+    }
   }
 }

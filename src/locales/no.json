@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor-formel Quiz",
-    "showHint": "Vis hint",
-    "hideHint": "Skjul hint",
-    "previous": "Forrige",
-    "next": "Neste",
-    "complete": "Fullfør",
-    "submit": "Send inn",
-    "completeTitle": "Quiz fullført!",
-    "score": "Poengsum",
-    "accuracy": "Nøyaktighet",
-    "timeSpent": "Tid brukt",
-    "retake": "Ta quizen på nytt",
-    "hint": "Hint"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Skjul sidepanel",
+      "thumbnail": "Miniatyrbilde",
+      "highlight": "Uthev",
+      "highlight-empty": "Ingen utheving ennå",
+      "zoom-in": "Zoom inn",
+      "zoom-out": "Zoom ut",
+      "fit-width": "Tilpass til bredde",
+      "fit-height": "Tilpass til høyde",
+      "pre-page": "Forrige side",
+      "next-page": "Neste side",
+      "translate": "Oversett",
+      "full-text": "Oversett hele teksten",
+      "close-trans": "Lukk oversettelse",
+      "original": "Original",
+      "compare": "Sammenlign",
+      "model": "Modell",
+      "free": "Gratis",
+      "basic": "Grunnleggende",
+      "advanced": "Avansert",
+      "source-language": "Kildespråk",
+      "translated-to": "Oversatt til",
+      "confirm": "Bekreft",
+      "cost-basic": "Kostnad <count></count> grunnleggende",
+      "cost-advanced": "Kostnad <count></count> avansert",
+      "cost-tooltip": "Estimater er basert på modellen som brukes og innholdet i dokumentet; vennligst se på det faktiske forbruket for nøyaktighet.",
+      "copy": "Kopier",
+      "copy-success": "Kopiering vellykket",
+      "edit": "Rediger",
+      "notAllowTranslate": "Den originale nettsiden støtter for øyeblikket ikke oversettelse.",
+      "translate-service": "Oversettelsestjeneste"
+    },
+    "error": {
+      "load-failed": "Lasting mislyktes",
+      "retry": "Prøv igjen",
+      "trans-failed": "Oversettelse mislyktes",
+      "fetch-data-error": "Datahenting mislyktes"
+    },
+    "ocr": {
+      "tooltip": "Oversett innholdet på den nåværende siden nøyaktig, perfekt samsvarende med originalteksten, inkludert formler."
+    },
+    "download": {
+      "retry": "Prøv igjen",
+      "not-support": "Den nåværende modusen støtter ikke utskrift av oversatte PDF-er",
+      "trans-info": "Den nåværende filen inneholder uoversatt innhold（{count} sider）. Ønsker du å oversette alt og laste ned? Oversettelse vil trekke tilsvarende poeng.",
+      "direct": "Direkte nedlasting",
+      "trans": "Oversett og last ned",
+      "trans-progress": "Oversettelse pågår {current}/{total}",
+      "trans-progress-info": "Å lukke det flytende vinduet vil ikke avbryte oversettelsen.",
+      "trans-success": "Oversettelse fullført",
+      "trans-failed": "Oops! Oversettelsesfeil"
+    },
+    "common": {
+      "translating": "Oversetter..."
+    }
   }
 }

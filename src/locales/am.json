@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "ቴይሎር ፎርሙላ ቁጥር ፈተና",
-    "showHint": "ምርጫ አሳይ",
-    "hideHint": "ምርጫ አይሳይ",
-    "previous": "ወደ ወቅታዊ",
-    "next": "ወደ ቀጣይ",
-    "complete": "ይዘጋጁ",
-    "submit": "ይላኩ",
-    "completeTitle": "ፈተና ተጠናቋል!",
-    "score": "ውጤት",
-    "accuracy": "ትክክለኛነት",
-    "timeSpent": "የተወሰነ ጊዜ",
-    "retake": "ድጋፍ ይወዳድሩ",
-    "hint": "ምርጫ"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "አገናኝ አሰውራ",
+      "thumbnail": "ስእል አንሳ",
+      "highlight": "አስቀምጥ",
+      "highlight-empty": "እስካሁን አልተመረጠም",
+      "zoom-in": "አታትም",
+      "zoom-out": "አሳንስ",
+      "fit-width": "ለውፍረት አስተካክል",
+      "fit-height": "ለቁመት አስተካክል",
+      "pre-page": "የቀድሞ ገጽ",
+      "next-page": "የሚቀጥለው ገጽ",
+      "translate": "ተርጉም",
+      "full-text": "ሙሉ ጽሑፍ ተርጉም",
+      "close-trans": "ትርጉም ዝጋ",
+      "original": "ኦሪጂናል",
+      "compare": "አነጻግር",
+      "model": "ሞዴል",
+      "free": "ነጻ",
+      "basic": "መሰረታዊ",
+      "advanced": "ዝርዝር",
+      "source-language": "የምንጭ ቋንቋ",
+      "translated-to": "ወደተተረጎመው",
+      "confirm": "አረጋግጥ",
+      "cost-basic": "ዋጋ <count></count> መሰረታዊ",
+      "cost-advanced": "ዋጋ <count></count> ዝርዝር",
+      "cost-tooltip": "ግምት በተጠቃሚው ሞዴል እና የሰነዱ ይዘት ላይ የተመሠረተ ነው፤ እቅፍ እንዲሆን እባኮትን የተመረጠውን እንደነበረ ይመልከቱ።",
+      "copy": "ቅዳ",
+      "copy-success": "ቅዳ ተሳክቷል",
+      "edit": "አርትዕ",
+      "notAllowTranslate": "ኦሪጂናል ድረ-ገጽ ትርጉም አሁን አይደግፍም።",
+      "translate-service": "የትርጉም አገልግሎት"
+    },
+    "error": {
+      "load-failed": "ጭነት አልተሳካም",
+      "retry": "እንደገና ሞክር",
+      "trans-failed": "ትርጉም አልተሳካም",
+      "fetch-data-error": "ውሂብ መግለጫ አልተሳካም"
+    },
+    "ocr": {
+      "tooltip": "የአሁኑን ገጽ ይዘት ትክክለኛ በማድረግ በኦሪጂናሉ ጽሑፍ በተመሳሳይ ሁኔታ ተርጉም፣ ከመለስ ጋር ጨምሮ።"
+    },
+    "download": {
+      "retry": "እንደገና ሞክር",
+      "not-support": "አሁኑ ሁነታ የተተረጎመ ፒዲኤፍ ማተም አይደግፍም",
+      "trans-info": "አሁኑ ፋይል ያልተተረጎመ ይዘት ይዟል（{count} ገጾች）። ሁሉንም ትርጉም እና አውርድ ይፈልጋሉ? ትርጉም ተመነ ነጥቦችን ያስወግዳል።",
+      "direct": "ቀጥታ አውርድ",
+      "trans": "ተርጉም እና አውርድ",
+      "trans-progress": "ትርጉም በሂደት ላይ {current}/{total}",
+      "trans-progress-info": "እንቅስቃሴ መዝጊያ መስኮት ትርጉምን አያቋርጥም።",
+      "trans-success": "ትርጉም ተጠናቋል",
+      "trans-failed": "አይ! የትርጉም ስህተት"
+    },
+    "common": {
+      "translating": "ትርጉም በሂደት ላይ..."
+    }
   }
 }

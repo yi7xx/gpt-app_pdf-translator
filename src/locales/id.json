@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Kuis Rumus Taylor",
-    "showHint": "Tampilkan Petunjuk",
-    "hideHint": "Sembunyikan Petunjuk",
-    "previous": "Sebelumnya",
-    "next": "Selanjutnya",
-    "complete": "Selesaikan",
-    "submit": "Kirim",
-    "completeTitle": "Kuis Selesai!",
-    "score": "Skor",
-    "accuracy": "Akurasi",
-    "timeSpent": "Waktu yang Dihabiskan",
-    "retake": "Ulang Kuis",
-    "hint": "Petunjuk"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Sembunyikan Sidebar",
+      "thumbnail": "Gambar Kecil",
+      "highlight": "Sorot",
+      "highlight-empty": "Belum Ada Sorotan",
+      "zoom-in": "Perbesar",
+      "zoom-out": "Perkecil",
+      "fit-width": "Sesuaikan dengan Lebar",
+      "fit-height": "Sesuaikan dengan Tinggi",
+      "pre-page": "Halaman Sebelumnya",
+      "next-page": "Halaman Berikutnya",
+      "translate": "Terjemahkan",
+      "full-text": "Terjemahkan Teks Penuh",
+      "close-trans": "Tutup Terjemahan",
+      "original": "Asli",
+      "compare": "Bandingkan",
+      "model": "Model",
+      "free": "Gratis",
+      "basic": "Dasar",
+      "advanced": "Lanjutan",
+      "source-language": "Bahasa sumber",
+      "translated-to": "Diterjemahkan ke",
+      "confirm": "Konfirmasi",
+      "cost-basic": "Biaya <count></count> dasar",
+      "cost-advanced": "Biaya <count></count> lanjutan",
+      "cost-tooltip": "Perkiraan didasarkan pada model yang digunakan dan konten dokumen; silakan merujuk pada konsumsi aktual untuk akurasi.",
+      "copy": "Salin",
+      "copy-success": "Berhasil disalin",
+      "edit": "Edit",
+      "notAllowTranslate": "Halaman web asli saat ini tidak mendukung terjemahan.",
+      "translate-service": "Layanan Terjemahan"
+    },
+    "error": {
+      "load-failed": "Gagal Memuat",
+      "retry": "Coba Lagi",
+      "trans-failed": "Terjemahan gagal",
+      "fetch-data-error": "Pengambilan Data Gagal"
+    },
+    "ocr": {
+      "tooltip": "Terjemahkan konten halaman saat ini dengan akurat, sesuai dengan teks asli, termasuk rumus."
+    },
+    "download": {
+      "retry": "Coba Lagi",
+      "not-support": "Mode saat ini tidak mendukung pencetakan PDF yang diterjemahkan",
+      "trans-info": "File saat ini mengandung konten yang belum diterjemahkan（{count} halaman）. Apakah Anda ingin menerjemahkan semuanya dan mengunduh? Terjemahan akan mengurangi poin yang sesuai.",
+      "direct": "Unduh Langsung",
+      "trans": "Terjemahkan dan Unduh",
+      "trans-progress": "Terjemahan sedang berlangsung {current}/{total}",
+      "trans-progress-info": "Menutup jendela mengambang tidak akan menghentikan terjemahan.",
+      "trans-success": "Terjemahan selesai",
+      "trans-failed": "Ups! Kesalahan terjemahan"
+    },
+    "common": {
+      "translating": "Sedang menerjemahkan..."
+    }
   }
 }

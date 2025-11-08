@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "テイラー公式クイズ",
-    "showHint": "ヒントを表示",
-    "hideHint": "ヒントを隠す",
-    "previous": "前へ",
-    "next": "次へ",
-    "complete": "完了",
-    "submit": "提出",
-    "completeTitle": "クイズ完了！",
-    "score": "スコア",
-    "accuracy": "正確さ",
-    "timeSpent": "費やした時間",
-    "retake": "クイズを再受験",
-    "hint": "ヒント"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "サイドバーを非表示",
+      "thumbnail": "サムネイル",
+      "highlight": "ハイライト",
+      "highlight-empty": "まだハイライトがありません",
+      "zoom-in": "ズームイン",
+      "zoom-out": "ズームアウト",
+      "fit-width": "幅に合わせる",
+      "fit-height": "高さに合わせる",
+      "pre-page": "前のページ",
+      "next-page": "次のページ",
+      "translate": "翻訳",
+      "full-text": "全文を翻訳",
+      "close-trans": "翻訳を閉じる",
+      "original": "オリジナル",
+      "compare": "比較",
+      "model": "モデル",
+      "free": "無料",
+      "basic": "基本",
+      "advanced": "高度",
+      "source-language": "ソース言語",
+      "translated-to": "翻訳先",
+      "confirm": "確認",
+      "cost-basic": "コスト <count></count> 基本",
+      "cost-advanced": "コスト <count></count> 高度",
+      "cost-tooltip": "見積もりは使用されたモデルとドキュメントの内容に基づいています。正確な消費量については実際の使用量を参照してください。",
+      "copy": "コピー",
+      "copy-success": "コピー成功",
+      "edit": "編集",
+      "notAllowTranslate": "元のウェブページは現在翻訳をサポートしていません。",
+      "translate-service": "翻訳サービス"
+    },
+    "error": {
+      "load-failed": "読み込み失敗",
+      "retry": "再試行",
+      "trans-failed": "翻訳失敗",
+      "fetch-data-error": "データ取得失敗"
+    },
+    "ocr": {
+      "tooltip": "現在のページの内容を正確に翻訳し、数式を含むオリジナルテキストに完全に一致させます。"
+    },
+    "download": {
+      "retry": "再試行",
+      "not-support": "現在のモードでは翻訳されたPDFの印刷をサポートしていません",
+      "trans-info": "現在のファイルには未翻訳のコンテンツが含まれています（{count}ページ）。すべて翻訳してダウンロードしますか？翻訳には対応するポイントが差し引かれます。",
+      "direct": "直接ダウンロード",
+      "trans": "翻訳してダウンロード",
+      "trans-progress": "翻訳中 {current}/{total}",
+      "trans-progress-info": "フローティングウィンドウを閉じても翻訳は中断されません。",
+      "trans-success": "翻訳完了",
+      "trans-failed": "おっと！翻訳エラー"
+    },
+    "common": {
+      "translating": "翻訳中..."
+    }
   }
 }

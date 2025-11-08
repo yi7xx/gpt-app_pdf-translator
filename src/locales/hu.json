@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor Formula Kvíz",
-    "showHint": "Javaslat megjelenítése",
-    "hideHint": "Javaslat elrejtése",
-    "previous": "Előző",
-    "next": "Következő",
-    "complete": "Befejezés",
-    "submit": "Beküldés",
-    "completeTitle": "A kvíz befejeződött!",
-    "score": "Pontszám",
-    "accuracy": "Pontosság",
-    "timeSpent": "Eltöltött idő",
-    "retake": "Kvíz újra",
-    "hint": "Javaslat"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Oldalsáv elrejtése",
+      "thumbnail": "Bélyegkép",
+      "highlight": "Kiemelés",
+      "highlight-empty": "Még nincs kiemelés",
+      "zoom-in": "Nagyítás",
+      "zoom-out": "Kicsinyítés",
+      "fit-width": "Szélességhez igazítás",
+      "fit-height": "Magassághoz igazítás",
+      "pre-page": "Előző oldal",
+      "next-page": "Következő oldal",
+      "translate": "Fordítás",
+      "full-text": "Teljes szöveg fordítása",
+      "close-trans": "Fordítás bezárása",
+      "original": "Eredeti",
+      "compare": "Összehasonlítás",
+      "model": "Modell",
+      "free": "Ingyenes",
+      "basic": "Alap",
+      "advanced": "Haladó",
+      "source-language": "Forrásnyelv",
+      "translated-to": "Fordítva erre",
+      "confirm": "Megerősítés",
+      "cost-basic": "Költség <count></count> alap",
+      "cost-advanced": "Költség <count></count> haladó",
+      "cost-tooltip": "A becslés az alkalmazott modellen és a dokumentum tartalmán alapul; a pontosság érdekében kérjük, vegye figyelembe a tényleges fogyasztást.",
+      "copy": "Másolás",
+      "copy-success": "Másolás sikeres",
+      "edit": "Szerkesztés",
+      "notAllowTranslate": "Az eredeti weboldal jelenleg nem támogatja a fordítást.",
+      "translate-service": "Fordítási szolgáltatás"
+    },
+    "error": {
+      "load-failed": "Betöltés sikertelen",
+      "retry": "Újrapróbálkozás",
+      "trans-failed": "Fordítás sikertelen",
+      "fetch-data-error": "Adatlekérés sikertelen"
+    },
+    "ocr": {
+      "tooltip": "Fordítsa le az aktuális oldal tartalmát pontosan, tökéletesen illeszkedve az eredeti szöveghez, beleértve a képleteket is."
+    },
+    "download": {
+      "retry": "Újrapróbálkozás",
+      "not-support": "A jelenlegi mód nem támogatja a fordított PDF-ek nyomtatását",
+      "trans-info": "A jelenlegi fájl nem fordított tartalmat tartalmaz ({count} oldal). Szeretné az egészet lefordítani és letölteni? A fordítás a megfelelő pontokat levonja.",
+      "direct": "Közvetlen letöltés",
+      "trans": "Fordítás és letöltés",
+      "trans-progress": "Fordítás folyamatban {current}/{total}",
+      "trans-progress-info": "A lebegő ablak bezárása nem szakítja meg a fordítást.",
+      "trans-success": "Fordítás befejezve",
+      "trans-failed": "Hoppá! Fordítási hiba"
+    },
+    "common": {
+      "translating": "Fordítás..."
+    }
   }
 }

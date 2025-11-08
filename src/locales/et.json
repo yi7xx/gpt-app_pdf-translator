@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor'i valemi test",
-    "showHint": "Näita vihjet",
-    "hideHint": "Peida vihje",
-    "previous": "Eelmine",
-    "next": "Järgmine",
-    "complete": "Lõpeta",
-    "submit": "Esita",
-    "completeTitle": "Test on lõpetatud!",
-    "score": "Skoor",
-    "accuracy": "Täpsus",
-    "timeSpent": "Kulutatud aeg",
-    "retake": "Korda testi",
-    "hint": "Vihje"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Peida külgriba",
+      "thumbnail": "Pisipilt",
+      "highlight": "Esiletõst",
+      "highlight-empty": "Veel pole esiletõsteid",
+      "zoom-in": "Suurenda",
+      "zoom-out": "Vähenda",
+      "fit-width": "Sobita laiusega",
+      "fit-height": "Sobita kõrgusega",
+      "pre-page": "Eelmine lehekülg",
+      "next-page": "Järgmine lehekülg",
+      "translate": "Tõlgi",
+      "full-text": "Tõlgi kogu tekst",
+      "close-trans": "Sulge tõlge",
+      "original": "Originaal",
+      "compare": "Võrdle",
+      "model": "Mudel",
+      "free": "Tasuta",
+      "basic": "Põhiline",
+      "advanced": "Edasijõudnud",
+      "source-language": "Lähtekeel",
+      "translated-to": "Tõlgitud keelde",
+      "confirm": "Kinnita",
+      "cost-basic": "Maksumus <count></count> põhiline",
+      "cost-advanced": "Maksumus <count></count> edasijõudnud",
+      "cost-tooltip": "Hinnang põhineb kasutatud mudelil ja dokumendi sisul; täpsuse tagamiseks vaadake tegelikku tarbimist.",
+      "copy": "Kopeeri",
+      "copy-success": "Kopeerimine õnnestus",
+      "edit": "Muuda",
+      "notAllowTranslate": "Originaal veebileht ei toeta praegu tõlkimist.",
+      "translate-service": "Tõlketeenus"
+    },
+    "error": {
+      "load-failed": "Laadimine ebaõnnestus",
+      "retry": "Proovi uuesti",
+      "trans-failed": "Tõlkimine ebaõnnestus",
+      "fetch-data-error": "Andmete hankimine ebaõnnestus"
+    },
+    "ocr": {
+      "tooltip": "Tõlgi praeguse lehe sisu täpselt, sobitudes ideaalselt algtekstiga, sealhulgas valemid."
+    },
+    "download": {
+      "retry": "Proovi uuesti",
+      "not-support": "Praegune režiim ei toeta tõlgitud PDF-ide printimist",
+      "trans-info": "Praegune fail sisaldab tõlkimata sisu（{count} lehekülge）. Kas soovite kõik tõlkida ja alla laadida? Tõlkimine vähendab vastavaid punkte.",
+      "direct": "Laadi otse alla",
+      "trans": "Tõlgi ja laadi alla",
+      "trans-progress": "Tõlkimine käimas {current}/{total}",
+      "trans-progress-info": "Hõljuva akna sulgemine ei katkesta tõlkimist.",
+      "trans-success": "Tõlkimine lõpetatud",
+      "trans-failed": "Ups! Tõlke viga"
+    },
+    "common": {
+      "translating": "Tõlkimine..."
+    }
   }
 }

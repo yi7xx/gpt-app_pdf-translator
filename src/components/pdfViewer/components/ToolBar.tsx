@@ -12,8 +12,8 @@ import {
 import { useEventListener, useMemoizedFn } from 'ahooks'
 import { Popover, Tooltip } from 'antd'
 import { debounce } from 'lodash-es'
-import { useTranslations } from 'next-intl'
 import { memo, useMemo, useRef, useState, type FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { PDF_ACTION_TOOL_STORAGE_KEY } from '../constants'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent, UIEvents } from '../events'
@@ -24,7 +24,7 @@ import TranslatorMenu from './TranslatorMenu'
 
 const ActionTool = memo(function ActionTool() {
   const { eventBus } = useDocumentContext()
-  const t = useTranslations('ui.pdfViewer.tools')
+  const { t } = useTranslation('pdfViewer.tools')
   const [actionTool, setActionTool] = useLocalStorageState(
     PDF_ACTION_TOOL_STORAGE_KEY,
     { defaultValue: 'thumbnail', listenStorageChange: true },
@@ -172,7 +172,7 @@ export const ToolBar: FC<ToolBarProps> = ({
   extraNode,
   onOpenChange,
 }) => {
-  const t = useTranslations('ui.pdfViewer.tools')
+  const { t } = useTranslation('pdfViewer.tools')
   const toolbarRef = useRef<HTMLDivElement>(null)
   const controlsRef = useRef<HTMLDivElement>(null)
   const [showInMore, setShowInMore] = useState(false)

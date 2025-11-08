@@ -1,8 +1,9 @@
+import useI18n from '@/hooks/useI18n'
 import { CloseOutlineM, Loading } from '@sider/icons'
 import { Button, ConfigProvider, Modal, message, notification } from 'antd'
-import { useTranslations } from 'next-intl'
 import { useRef, useState } from 'react'
 import ReactDOM from 'react-dom'
+import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent, UIEvents } from '../events'
 import { usePDFEvent } from '../hooks/usePDFEvent'
@@ -13,7 +14,8 @@ import {
 
 export const PrintService = () => {
   const { pdfViewer, pdfDocument, docFileName, eventBus } = useDocumentContext()
-  const t = useTranslations('ui.pdfViewer.download')
+  const { t } = useTranslation('pdfViewer.download')
+  const { t: tTool } = useI18n()
   const printContainerRef = useRef<HTMLDivElement>(null)
   const [open, setOpen] = useState(false)
   const printServiceRef = useRef<PDFPrintService | null>(null)
@@ -55,9 +57,9 @@ export const PrintService = () => {
       key: key,
       message: (
         <span className="text-color-text-primary-1 font-medium-16">
-          {t.rich('trans-progress', {
+          {tTool('pdfViewer.download.trans-progress', {
             current: completed,
-            total,
+            total: total,
           })}
         </span>
       ),
@@ -101,7 +103,7 @@ export const PrintService = () => {
         description: (
           <div className="-mt-[4px] text-right">
             <span
-              className="cursor-pointer text-color-brand-secondary-normal transition-colors font-medium-12 hover:text-color-brand-secondary-hover"
+              className="text-color-brand-secondary-normal font-medium-12 hover:text-color-brand-secondary-hover cursor-pointer transition-colors"
               onClick={() => {
                 api.destroy()
                 printService.rebuild(mode)
@@ -187,7 +189,7 @@ export const PrintService = () => {
         footer={null}
         closable={false}
         title={null}
-        destroyOnClose
+        destroyOnHidden
         styles={{
           content: {
             padding: 0,
@@ -196,30 +198,30 @@ export const PrintService = () => {
         }}
       >
         <div className="relative flex flex-col gap-[24px] p-[24px]">
-          <div className="absolute right-[8px] top-[8px]">
+          <div className="absolute top-[8px] right-[8px]">
             <span
               onClick={() => setOpen(false)}
-              className="size-[20px] cursor-pointer rounded-[50%] bg-color-glass-fill1-normal text-color-text-white-1 backdrop-blur-[8px] transition-colors flex-center hover:bg-color-glass-fill1-hover"
+              className="bg-color-glass-fill1-normal text-color-text-white-1 flex-center hover:bg-color-glass-fill1-hover size-[20px] cursor-pointer rounded-[50%] backdrop-blur-[8px] transition-colors"
             >
               <CloseOutlineM size={12} />
             </span>
           </div>
           <div className="text-color-text-primary-2 font-normal-14">
-            {t.rich('trans-info', {
+            {tTool('pdfViewer.download.trans-info', {
               count: pdfViewer?.pagesCount || 0,
             })}
           </div>
-          <div className="gap-[8px] f-i-center">
+          <div className="f-i-center gap-[8px]">
             <button
               onClick={() => printPDF('direct')}
-              className="h-[32px] flex-1 rounded-[8px] bg-color-grey-fill2-normal text-color-text-primary-1 transition-colors font-normal-14 flex-center hover:bg-color-grey-fill2-hover"
+              className="bg-color-grey-fill2-normal text-color-text-primary-1 font-normal-14 flex-center hover:bg-color-grey-fill2-hover h-[32px] flex-1 rounded-[8px] transition-colors"
             >
               {t('direct')}
             </button>
             <Button
               onClick={() => printPDF('translate')}
               type="primary"
-              className="flex-1 font-normal-14"
+              className="font-normal-14 flex-1"
             >
               {t('trans')}
             </Button>

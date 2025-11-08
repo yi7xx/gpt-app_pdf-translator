@@ -1,10 +1,10 @@
 import { ExclamationMarkCircleFilledError, Loading } from '@sider/icons'
 import { useAsyncEffect, useMemoizedFn } from 'ahooks'
 import { debounce } from 'lodash-es'
-import { useTranslations } from 'next-intl'
 import { type PDFDocumentLoadingTask, type PDFDocumentProxy } from 'pdfjs-dist'
 import { memo, useEffect, useMemo, useRef, useState, type FC } from 'react'
 import { CustomScroll } from 'react-custom-scroll'
+import { useTranslation } from 'react-i18next'
 import TranslationSpotlight from './components/TranslationSpotlight'
 import { SCROLL_CONTAINER_ID, VERTICAL_PADDING } from './constants'
 import { useDocumentContext } from './context/DocumentContext'
@@ -72,7 +72,7 @@ const Document: FC<DocumentProps> = (props) => {
     onSpreadModeChanged,
     onTriggerTranslateService,
   } = props
-  const t = useTranslations('ui.pdfViewer')
+  const { t } = useTranslation('pdfViewer')
   const {
     pdfViewer,
     pdfDocument,

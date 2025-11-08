@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor-Formel-Quiz",
-    "showHint": "Hinweis anzeigen",
-    "hideHint": "Hinweis ausblenden",
-    "previous": "Vorherige",
-    "next": "Nächste",
-    "complete": "Abschließen",
-    "submit": "Einreichen",
-    "completeTitle": "Quiz abgeschlossen!",
-    "score": "Punktzahl",
-    "accuracy": "Genauigkeit",
-    "timeSpent": "Verbrachte Zeit",
-    "retake": "Quiz wiederholen",
-    "hint": "Hinweis"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Seitenleiste ausblenden",
+      "thumbnail": "Miniaturansicht",
+      "highlight": "Hervorheben",
+      "highlight-empty": "Noch keine Hervorhebung",
+      "zoom-in": "Vergrößern",
+      "zoom-out": "Verkleinern",
+      "fit-width": "An Breite anpassen",
+      "fit-height": "An Höhe anpassen",
+      "pre-page": "Vorherige Seite",
+      "next-page": "Nächste Seite",
+      "translate": "Übersetzen",
+      "full-text": "Volltext übersetzen",
+      "close-trans": "Übersetzung schließen",
+      "original": "Original",
+      "compare": "Vergleichen",
+      "model": "Modell",
+      "free": "Kostenlos",
+      "basic": "Basis",
+      "advanced": "Erweitert",
+      "source-language": "Ausgangssprache",
+      "translated-to": "Übersetzt in",
+      "confirm": "Bestätigen",
+      "cost-basic": "Kosten <count></count> Basis",
+      "cost-advanced": "Kosten <count></count> Erweitert",
+      "cost-tooltip": "Die Schätzung basiert auf dem verwendeten Modell und dem Inhalt des Dokuments; bitte beziehen Sie sich für Genauigkeit auf den tatsächlichen Verbrauch.",
+      "copy": "Kopieren",
+      "copy-success": "Kopieren erfolgreich",
+      "edit": "Bearbeiten",
+      "notAllowTranslate": "Die ursprüngliche Webseite unterstützt derzeit keine Übersetzung.",
+      "translate-service": "Übersetzungsdienst"
+    },
+    "error": {
+      "load-failed": "Laden fehlgeschlagen",
+      "retry": "Erneut versuchen",
+      "trans-failed": "Übersetzung fehlgeschlagen",
+      "fetch-data-error": "Datenabruf fehlgeschlagen"
+    },
+    "ocr": {
+      "tooltip": "Übersetzen Sie den Inhalt der aktuellen Seite genau, perfekt passend zum Originaltext, einschließlich Formeln."
+    },
+    "download": {
+      "retry": "Erneut versuchen",
+      "not-support": "Der aktuelle Modus unterstützt das Drucken von übersetzten PDFs nicht",
+      "trans-info": "Die aktuelle Datei enthält unübersetzte Inhalte（{count} Seiten）. Möchten Sie alles übersetzen und herunterladen? Die Übersetzung wird entsprechende Punkte abziehen.",
+      "direct": "Direkt herunterladen",
+      "trans": "Übersetzen und herunterladen",
+      "trans-progress": "Übersetzung läuft {current}/{total}",
+      "trans-progress-info": "Das Schließen des schwebenden Fensters unterbricht die Übersetzung nicht.",
+      "trans-success": "Übersetzung abgeschlossen",
+      "trans-failed": "Ups! Übersetzungsfehler"
+    },
+    "common": {
+      "translating": "Übersetzung läuft..."
+    }
   }
 }

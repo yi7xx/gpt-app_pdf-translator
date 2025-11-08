@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "اختبار صيغة تايلور",
-    "showHint": "عرض التلميح",
-    "hideHint": "إخفاء التلميح",
-    "previous": "السابق",
-    "next": "التالي",
-    "complete": "إكمال",
-    "submit": "إرسال",
-    "completeTitle": "تم إكمال الاختبار!",
-    "score": "الدرجة",
-    "accuracy": "الدقة",
-    "timeSpent": "الوقت المستغرق",
-    "retake": "إعادة الاختبار",
-    "hint": "تلميح"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "إخفاء الشريط الجانبي",
+      "thumbnail": "صورة مصغرة",
+      "highlight": "تمييز",
+      "highlight-empty": "لا يوجد تمييز بعد",
+      "zoom-in": "تكبير",
+      "zoom-out": "تصغير",
+      "fit-width": "ملاءمة العرض",
+      "fit-height": "ملاءمة الارتفاع",
+      "pre-page": "الصفحة السابقة",
+      "next-page": "الصفحة التالية",
+      "translate": "ترجمة",
+      "full-text": "ترجمة النص بالكامل",
+      "close-trans": "إغلاق الترجمة",
+      "original": "الأصلي",
+      "compare": "مقارنة",
+      "model": "نموذج",
+      "free": "مجاني",
+      "basic": "أساسي",
+      "advanced": "متقدم",
+      "source-language": "لغة المصدر",
+      "translated-to": "مترجم إلى",
+      "confirm": "تأكيد",
+      "cost-basic": "التكلفة <count></count> أساسي",
+      "cost-advanced": "التكلفة <count></count> متقدم",
+      "cost-tooltip": "التقدير يعتمد على النموذج المستخدم ومحتوى المستند؛ يرجى الرجوع إلى الاستهلاك الفعلي للدقة.",
+      "copy": "نسخ",
+      "copy-success": "تم النسخ بنجاح",
+      "edit": "تحرير",
+      "notAllowTranslate": "الصفحة الأصلية لا تدعم الترجمة حاليًا.",
+      "translate-service": "خدمة الترجمة"
+    },
+    "error": {
+      "load-failed": "فشل التحميل",
+      "retry": "إعادة المحاولة",
+      "trans-failed": "فشلت الترجمة",
+      "fetch-data-error": "فشل استرجاع البيانات"
+    },
+    "ocr": {
+      "tooltip": "ترجمة محتوى الصفحة الحالية بدقة، مطابقة تمامًا للنص الأصلي، بما في ذلك الصيغ."
+    },
+    "download": {
+      "retry": "إعادة المحاولة",
+      "not-support": "الوضع الحالي لا يدعم طباعة ملفات PDF المترجمة",
+      "trans-info": "الملف الحالي يحتوي على محتوى غير مترجم ({count} صفحات). هل ترغب في ترجمة الكل وتنزيله؟ ستخصم الترجمة النقاط المقابلة.",
+      "direct": "تنزيل مباشر",
+      "trans": "ترجمة وتنزيل",
+      "trans-progress": "الترجمة جارية {current}/{total}",
+      "trans-progress-info": "إغلاق النافذة العائمة لن يقطع الترجمة.",
+      "trans-success": "اكتملت الترجمة",
+      "trans-failed": "عذرًا! خطأ في الترجمة"
+    },
+    "common": {
+      "translating": "جارٍ الترجمة..."
+    }
   }
 }

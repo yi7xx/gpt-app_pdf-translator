@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "테일러 공식 퀴즈",
-    "showHint": "힌트 보기",
-    "hideHint": "힌트 숨기기",
-    "previous": "이전",
-    "next": "다음",
-    "complete": "완료",
-    "submit": "제출",
-    "completeTitle": "퀴즈 완료!",
-    "score": "점수",
-    "accuracy": "정확도",
-    "timeSpent": "소요 시간",
-    "retake": "퀴즈 다시 풀기",
-    "hint": "힌트"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "사이드바 숨기기",
+      "thumbnail": "썸네일",
+      "highlight": "하이라이트",
+      "highlight-empty": "아직 하이라이트 없음",
+      "zoom-in": "확대",
+      "zoom-out": "축소",
+      "fit-width": "너비에 맞추기",
+      "fit-height": "높이에 맞추기",
+      "pre-page": "이전 페이지",
+      "next-page": "다음 페이지",
+      "translate": "번역",
+      "full-text": "전체 텍스트 번역",
+      "close-trans": "번역 닫기",
+      "original": "원본",
+      "compare": "비교",
+      "model": "모델",
+      "free": "무료",
+      "basic": "기본",
+      "advanced": "고급",
+      "source-language": "원본 언어",
+      "translated-to": "번역된 언어",
+      "confirm": "확인",
+      "cost-basic": "비용 <count></count> 기본",
+      "cost-advanced": "비용 <count></count> 고급",
+      "cost-tooltip": "견적은 사용된 모델과 문서의 내용에 기반하며, 정확한 소비량은 실제 사용량을 참조하세요.",
+      "copy": "복사",
+      "copy-success": "복사 성공",
+      "edit": "편집",
+      "notAllowTranslate": "원본 웹페이지는 현재 번역을 지원하지 않습니다.",
+      "translate-service": "번역 서비스"
+    },
+    "error": {
+      "load-failed": "로드 실패",
+      "retry": "다시 시도",
+      "trans-failed": "번역 실패",
+      "fetch-data-error": "데이터 검색 실패"
+    },
+    "ocr": {
+      "tooltip": "현재 페이지의 내용을 정확하게 번역하여, 수식까지 원문과 완벽하게 일치시킵니다."
+    },
+    "download": {
+      "retry": "다시 시도",
+      "not-support": "현재 모드는 번역된 PDF 인쇄를 지원하지 않습니다.",
+      "trans-info": "현재 파일에는 번역되지 않은 콘텐츠가 포함되어 있습니다（{count} 페이지）. 모두 번역하여 다운로드하시겠습니까? 번역 시 해당 포인트가 차감됩니다.",
+      "direct": "직접 다운로드",
+      "trans": "번역 및 다운로드",
+      "trans-progress": "번역 진행 중 {current}/{total}",
+      "trans-progress-info": "플로팅 창을 닫아도 번역이 중단되지 않습니다.",
+      "trans-success": "번역 완료",
+      "trans-failed": "이런! 번역 오류"
+    },
+    "common": {
+      "translating": "번역 중..."
+    }
   }
 }

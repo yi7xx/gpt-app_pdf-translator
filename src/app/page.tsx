@@ -6,7 +6,7 @@ import {
   useMaxHeight,
   useRequestDisplayMode,
   useWidgetProps,
-} from '@/hooks'
+} from '@/hooks/openai'
 
 export default function Home() {
   const toolOutput = useWidgetProps<{

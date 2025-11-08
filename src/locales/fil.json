@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor Formula Quiz",
-    "showHint": "Ipakita ang Pahiwatig",
-    "hideHint": "Itago ang Pahiwatig",
-    "previous": "Nakaraang",
-    "next": "Susunod",
-    "complete": "Kumpleto",
-    "submit": "Isumite",
-    "completeTitle": "Kumpleto na ang Quiz!",
-    "score": "Iskor",
-    "accuracy": "Katumpakan",
-    "timeSpent": "Oras na Ginugol",
-    "retake": "Ulitin ang Quiz",
-    "hint": "Pahiwatig"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Itago ang Sidebar",
+      "thumbnail": "Thumbnail",
+      "highlight": "I-highlight",
+      "highlight-empty": "Wala pang Highlight",
+      "zoom-in": "Palakihin",
+      "zoom-out": "Palitin",
+      "fit-width": "Kasya sa Lapad",
+      "fit-height": "Kasya sa Taas",
+      "pre-page": "Nakaraang Pahina",
+      "next-page": "Susunod na Pahina",
+      "translate": "Isalin",
+      "full-text": "Isalin ang Buong Teksto",
+      "close-trans": "Isara ang Pagsasalin",
+      "original": "Orihinal",
+      "compare": "Ihambing",
+      "model": "Modelo",
+      "free": "Libre",
+      "basic": "Pangunahing",
+      "advanced": "Advanced",
+      "source-language": "Wikang Pinagmulan",
+      "translated-to": "Isinalin sa",
+      "confirm": "Kumpirmahin",
+      "cost-basic": "Gastos <count></count> pangunahing",
+      "cost-advanced": "Gastos <count></count> advanced",
+      "cost-tooltip": "Ang pagtatantya ay batay sa modelong ginamit at sa nilalaman ng dokumento; mangyaring sumangguni sa aktwal na pagkonsumo para sa katumpakan.",
+      "copy": "Kopyahin",
+      "copy-success": "Matagumpay na nakopya",
+      "edit": "I-edit",
+      "notAllowTranslate": "Ang orihinal na webpage ay kasalukuyang hindi sumusuporta sa pagsasalin.",
+      "translate-service": "Serbisyo ng Pagsasalin"
+    },
+    "error": {
+      "load-failed": "Nabigo ang Pag-load",
+      "retry": "Subukang Muli",
+      "trans-failed": "Nabigo ang Pagsasalin",
+      "fetch-data-error": "Nabigo ang Pagkuha ng Data"
+    },
+    "ocr": {
+      "tooltip": "Isalin nang tumpak ang nilalaman ng kasalukuyang pahina, perpektong tumutugma sa orihinal na teksto, kasama ang mga formula."
+    },
+    "download": {
+      "retry": "Subukang Muli",
+      "not-support": "Ang kasalukuyang mode ay hindi sumusuporta sa pag-print ng isinaling PDF",
+      "trans-info": "Ang kasalukuyang file ay naglalaman ng hindi isinaling nilalaman（{count} na mga pahina）. Nais mo bang isalin lahat ito at i-download? Ang pagsasalin ay magbabawas ng kaukulang puntos.",
+      "direct": "Direktang I-download",
+      "trans": "Isalin at I-download",
+      "trans-progress": "Pagsasalin sa progreso {current}/{total}",
+      "trans-progress-info": "Ang pagsasara ng lumulutang na bintana ay hindi makakaabala sa pagsasalin.",
+      "trans-success": "Natapos na ang Pagsasalin",
+      "trans-failed": "Oops! Error sa Pagsasalin"
+    },
+    "common": {
+      "translating": "Isinasalin..."
+    }
   }
 }

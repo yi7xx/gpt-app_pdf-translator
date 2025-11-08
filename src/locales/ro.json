@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Chestionar despre Formula Taylor",
-    "showHint": "Arată Indiciu",
-    "hideHint": "Ascunde Indiciu",
-    "previous": "Anterior",
-    "next": "Următor",
-    "complete": "Finalizare",
-    "submit": "Trimite",
-    "completeTitle": "Chestionarul este complet!",
-    "score": "Scor",
-    "accuracy": "Precizie",
-    "timeSpent": "Timp Petrecut",
-    "retake": "Reia Chestionarul",
-    "hint": "Indiciu"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Ascunde bara laterală",
+      "thumbnail": "Miniatură",
+      "highlight": "Evidențiază",
+      "highlight-empty": "Nicio evidențiere încă",
+      "zoom-in": "Mărește",
+      "zoom-out": "Micșorează",
+      "fit-width": "Potrivește pe lățime",
+      "fit-height": "Potrivește pe înălțime",
+      "pre-page": "Pagina anterioară",
+      "next-page": "Pagina următoare",
+      "translate": "Tradu",
+      "full-text": "Tradu textul complet",
+      "close-trans": "Închide traducerea",
+      "original": "Original",
+      "compare": "Compară",
+      "model": "Model",
+      "free": "Gratuit",
+      "basic": "De bază",
+      "advanced": "Avansat",
+      "source-language": "Limba sursă",
+      "translated-to": "Tradus în",
+      "confirm": "Confirmă",
+      "cost-basic": "Cost <count></count> de bază",
+      "cost-advanced": "Cost <count></count> avansat",
+      "cost-tooltip": "Estimarea se bazează pe modelul utilizat și conținutul documentului; vă rugăm să consultați consumul real pentru acuratețe.",
+      "copy": "Copiază",
+      "copy-success": "Copiere reușită",
+      "edit": "Editează",
+      "notAllowTranslate": "Pagina web originală nu suportă momentan traducerea.",
+      "translate-service": "Serviciu de traducere"
+    },
+    "error": {
+      "load-failed": "Încărcare eșuată",
+      "retry": "Reîncearcă",
+      "trans-failed": "Traducerea a eșuat",
+      "fetch-data-error": "Eșec la preluarea datelor"
+    },
+    "ocr": {
+      "tooltip": "Tradu conținutul paginii curente cu acuratețe, potrivind perfect textul original, inclusiv formulele."
+    },
+    "download": {
+      "retry": "Reîncearcă",
+      "not-support": "Modul curent nu suportă imprimarea PDF-urilor traduse",
+      "trans-info": "Fișierul curent conține conținut netradus（{count} pagini）. Doriți să traduceți tot și să descărcați? Traducerea va deduce punctele corespunzătoare.",
+      "direct": "Descărcare directă",
+      "trans": "Tradu și descarcă",
+      "trans-progress": "Traducere în curs {current}/{total}",
+      "trans-progress-info": "Închiderea ferestrei flotante nu va întrerupe traducerea.",
+      "trans-success": "Traducere completă",
+      "trans-failed": "Ups! Eroare de traducere"
+    },
+    "common": {
+      "translating": "Se traduce..."
+    }
   }
 }

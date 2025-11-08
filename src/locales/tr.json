@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor Formülü Sınavı",
-    "showHint": "İpucu Göster",
-    "hideHint": "İpucu Gizle",
-    "previous": "Önceki",
-    "next": "Sonraki",
-    "complete": "Tamamla",
-    "submit": "Gönder",
-    "completeTitle": "Sınav Tamamlandı!",
-    "score": "Puan",
-    "accuracy": "Doğruluk",
-    "timeSpent": "Geçen Süre",
-    "retake": "Sınavı Tekrar Al",
-    "hint": "İpucu"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Kenar Çubuğunu Gizle",
+      "thumbnail": "Küçük Resim",
+      "highlight": "Vurgula",
+      "highlight-empty": "Henüz Vurgu Yok",
+      "zoom-in": "Yakınlaştır",
+      "zoom-out": "Uzaklaştır",
+      "fit-width": "Genişliğe Sığdır",
+      "fit-height": "Yüksekliğe Sığdır",
+      "pre-page": "Önceki Sayfa",
+      "next-page": "Sonraki Sayfa",
+      "translate": "Çevir",
+      "full-text": "Tam Metni Çevir",
+      "close-trans": "Çeviriyi Kapat",
+      "original": "Orijinal",
+      "compare": "Karşılaştır",
+      "model": "Model",
+      "free": "Ücretsiz",
+      "basic": "Temel",
+      "advanced": "İleri Düzey",
+      "source-language": "Kaynak dil",
+      "translated-to": "Çevrilen dil",
+      "confirm": "Onayla",
+      "cost-basic": "Maliyet <count></count> temel",
+      "cost-advanced": "Maliyet <count></count> ileri düzey",
+      "cost-tooltip": "Tahmin, kullanılan model ve belgenin içeriğine dayanmaktadır; doğruluk için lütfen gerçek tüketimi kontrol edin.",
+      "copy": "Kopyala",
+      "copy-success": "Başarıyla kopyalandı",
+      "edit": "Düzenle",
+      "notAllowTranslate": "Orijinal web sayfası şu anda çeviriyi desteklemiyor.",
+      "translate-service": "Çeviri Hizmeti"
+    },
+    "error": {
+      "load-failed": "Yükleme Başarısız",
+      "retry": "Tekrar Dene",
+      "trans-failed": "Çeviri başarısız",
+      "fetch-data-error": "Veri Alma Başarısız"
+    },
+    "ocr": {
+      "tooltip": "Mevcut sayfanın içeriğini, formüller dahil olmak üzere, orijinal metinle mükemmel bir şekilde eşleşecek şekilde doğru bir şekilde çevirin."
+    },
+    "download": {
+      "retry": "Tekrar Dene",
+      "not-support": "Mevcut mod, çevrilmiş PDF'lerin yazdırılmasını desteklemiyor",
+      "trans-info": "Mevcut dosya çevrilmemiş içerik içeriyor（{count} sayfa）. Hepsini çevirmek ve indirmek ister misiniz? Çeviri, karşılık gelen puanları düşecektir.",
+      "direct": "Doğrudan İndir",
+      "trans": "Çevir ve İndir",
+      "trans-progress": "Çeviri devam ediyor {current}/{total}",
+      "trans-progress-info": "Yüzer pencereyi kapatmak çeviriyi kesintiye uğratmaz.",
+      "trans-success": "Çeviri tamamlandı",
+      "trans-failed": "Hata! Çeviri hatası"
+    },
+    "common": {
+      "translating": "Çeviri yapılıyor..."
+    }
   }
 }

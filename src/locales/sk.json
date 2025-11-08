@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylorova formula - kvíz",
-    "showHint": "Zobraziť nápovedu",
-    "hideHint": "Skryť nápovedu",
-    "previous": "Predchádzajúci",
-    "next": "Ďalší",
-    "complete": "Dokončiť",
-    "submit": "Odoslať",
-    "completeTitle": "Kvíz dokončený!",
-    "score": "Skóre",
-    "accuracy": "Presnosť",
-    "timeSpent": "Čas strávený",
-    "retake": "Opakovať kvíz",
-    "hint": "Nápoveda"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Skryť bočný panel",
+      "thumbnail": "Náhľad",
+      "highlight": "Zvýrazniť",
+      "highlight-empty": "Zatiaľ žiadne zvýraznenie",
+      "zoom-in": "Priblížiť",
+      "zoom-out": "Oddialiť",
+      "fit-width": "Prispôsobiť šírke",
+      "fit-height": "Prispôsobiť výške",
+      "pre-page": "Predchádzajúca strana",
+      "next-page": "Ďalšia strana",
+      "translate": "Preložiť",
+      "full-text": "Preložiť celý text",
+      "close-trans": "Zavrieť preklad",
+      "original": "Pôvodný",
+      "compare": "Porovnať",
+      "model": "Model",
+      "free": "Zdarma",
+      "basic": "Základný",
+      "advanced": "Pokročilý",
+      "source-language": "Zdrojový jazyk",
+      "translated-to": "Preložené do",
+      "confirm": "Potvrdiť",
+      "cost-basic": "Cena <count></count> základný",
+      "cost-advanced": "Cena <count></count> pokročilý",
+      "cost-tooltip": "Odhad je založený na použitom modeli a obsahu dokumentu; pre presnosť sa prosím odvolajte na skutočnú spotrebu.",
+      "copy": "Kopírovať",
+      "copy-success": "Kopírovanie úspešné",
+      "edit": "Upraviť",
+      "notAllowTranslate": "Pôvodná webová stránka momentálne nepodporuje preklad.",
+      "translate-service": "Prekladová služba"
+    },
+    "error": {
+      "load-failed": "Načítanie zlyhalo",
+      "retry": "Skúsiť znova",
+      "trans-failed": "Preklad zlyhal",
+      "fetch-data-error": "Načítanie údajov zlyhalo"
+    },
+    "ocr": {
+      "tooltip": "Presne preložte obsah aktuálnej stránky, dokonale zodpovedajúci pôvodnému textu, vrátane vzorcov."
+    },
+    "download": {
+      "retry": "Skúsiť znova",
+      "not-support": "Aktuálny režim nepodporuje tlač preložených PDF",
+      "trans-info": "Aktuálny súbor obsahuje nepreložený obsah（{count} strán）. Chcete ho preložiť celý a stiahnuť? Preklad odpočíta zodpovedajúce body.",
+      "direct": "Priame stiahnutie",
+      "trans": "Preložiť a stiahnuť",
+      "trans-progress": "Preklad prebieha {current}/{total}",
+      "trans-progress-info": "Zatvorenie plávajúceho okna nepretrhne preklad.",
+      "trans-success": "Preklad dokončený",
+      "trans-failed": "Ups! Chyba prekladu"
+    },
+    "common": {
+      "translating": "Prekladá sa..."
+    }
   }
 }

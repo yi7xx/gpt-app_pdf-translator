@@ -1,6 +1,6 @@
 import { cn } from '@/utils/cn'
-import { useTranslations } from 'next-intl'
 import { memo, useMemo, type FC } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import {
   TranslateType,
@@ -19,7 +19,7 @@ const ModelList: FC<ModelListProps> = ({
   activeModel,
   onChange,
 }) => {
-  const t = useTranslations('ui.pdfViewer.tools')
+  const { t } = useTranslation('pdfViewer.tools')
   const { translationService } = useDocumentContext()
 
   const modelOptions = useMemo(() => {

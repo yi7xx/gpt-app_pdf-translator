@@ -2,8 +2,8 @@ import { cn } from '@/utils/cn'
 import { ArrowLineB, ArrowLineT } from '@sider/icons'
 import { useKeyPress } from 'ahooks'
 import { Tooltip } from 'antd'
-import { useTranslations } from 'next-intl'
 import { useEffect, useLayoutEffect, useRef, useState, type FC } from 'react'
+import { useTranslation } from 'react-i18next'
 
 interface PageSwitcherProps {
   numPages: number
@@ -16,7 +16,7 @@ const PageSwitcher: FC<PageSwitcherProps> = ({
   nowPage,
   onPageChange,
 }) => {
-  const t = useTranslations('ui.pdfViewer')
+  const { t } = useTranslation('pdfViewer')
   const [page, setPage] = useState<number>(nowPage)
   useEffect(() => {
     setPage(nowPage)

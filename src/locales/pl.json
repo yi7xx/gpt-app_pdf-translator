@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Quiz z Formuły Taylora",
-    "showHint": "Pokaż wskazówkę",
-    "hideHint": "Ukryj wskazówkę",
-    "previous": "Poprzedni",
-    "next": "Następny",
-    "complete": "Zakończ",
-    "submit": "Prześlij",
-    "completeTitle": "Quiz zakończony!",
-    "score": "Wynik",
-    "accuracy": "Dokładność",
-    "timeSpent": "Czas spędzony",
-    "retake": "Powtórz quiz",
-    "hint": "Wskazówka"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Ukryj pasek boczny",
+      "thumbnail": "Miniatura",
+      "highlight": "Wyróżnienie",
+      "highlight-empty": "Brak wyróżnień",
+      "zoom-in": "Powiększ",
+      "zoom-out": "Pomniejsz",
+      "fit-width": "Dopasuj do szerokości",
+      "fit-height": "Dopasuj do wysokości",
+      "pre-page": "Poprzednia strona",
+      "next-page": "Następna strona",
+      "translate": "Tłumacz",
+      "full-text": "Przetłumacz cały tekst",
+      "close-trans": "Zamknij tłumaczenie",
+      "original": "Oryginał",
+      "compare": "Porównaj",
+      "model": "Model",
+      "free": "Darmowy",
+      "basic": "Podstawowy",
+      "advanced": "Zaawansowany",
+      "source-language": "Język źródłowy",
+      "translated-to": "Przetłumaczono na",
+      "confirm": "Potwierdź",
+      "cost-basic": "Koszt <count></count> podstawowy",
+      "cost-advanced": "Koszt <count></count> zaawansowany",
+      "cost-tooltip": "Szacunkowa wartość opiera się na użytym modelu i zawartości dokumentu; prosimy o odniesienie się do rzeczywistego zużycia dla dokładności.",
+      "copy": "Kopiuj",
+      "copy-success": "Kopiowanie zakończone sukcesem",
+      "edit": "Edytuj",
+      "notAllowTranslate": "Oryginalna strona nie obsługuje obecnie tłumaczenia.",
+      "translate-service": "Usługa tłumaczenia"
+    },
+    "error": {
+      "load-failed": "Ładowanie nie powiodło się",
+      "retry": "Ponów próbę",
+      "trans-failed": "Tłumaczenie nie powiodło się",
+      "fetch-data-error": "Pobieranie danych nie powiodło się"
+    },
+    "ocr": {
+      "tooltip": "Przetłumacz zawartość bieżącej strony dokładnie, idealnie dopasowując do oryginalnego tekstu, w tym formuły."
+    },
+    "download": {
+      "retry": "Ponów próbę",
+      "not-support": "Obecny tryb nie obsługuje drukowania przetłumaczonych plików PDF",
+      "trans-info": "Bieżący plik zawiera nieprzetłumaczoną zawartość（{count} stron）. Czy chcesz przetłumaczyć wszystko i pobrać? Tłumaczenie spowoduje odjęcie odpowiednich punktów.",
+      "direct": "Pobierz bezpośrednio",
+      "trans": "Przetłumacz i pobierz",
+      "trans-progress": "Tłumaczenie w toku {current}/{total}",
+      "trans-progress-info": "Zamknięcie okna pływającego nie przerwie tłumaczenia.",
+      "trans-success": "Tłumaczenie zakończone",
+      "trans-failed": "Ups! Błąd tłumaczenia"
+    },
+    "common": {
+      "translating": "Tłumaczenie..."
+    }
   }
 }

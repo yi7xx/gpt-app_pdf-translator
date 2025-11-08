@@ -1,8 +1,8 @@
 import { cn } from '@/utils/cn'
 import { Typography } from 'antd'
-import { useTranslations } from 'next-intl'
 import { Fragment, useCallback, useRef, useState } from 'react'
 import { CustomScroll } from 'react-custom-scroll'
+import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent } from '../events'
 import { UIEvents } from '../events/ui'
@@ -33,7 +33,7 @@ const useUpdate = () => {
 }
 
 export const HighlightList = ({ className }: HighlightListProps) => {
-  const t = useTranslations('ui.pdfViewer.tools')
+  const { t } = useTranslation('pdfViewer.tools')
   const { pdfViewer } = useDocumentContext()
   // pageNumber -> highlights
   const highlightsMapRef = useRef<Record<number, HighlightItem[]>>({})

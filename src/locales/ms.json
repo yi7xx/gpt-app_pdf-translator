@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Kuiz Formula Taylor",
-    "showHint": "Tunjukkan Petunjuk",
-    "hideHint": "Sembunyikan Petunjuk",
-    "previous": "Sebelumnya",
-    "next": "Seterusnya",
-    "complete": "Lengkap",
-    "submit": "Hantar",
-    "completeTitle": "Kuiz Lengkap!",
-    "score": "Skor",
-    "accuracy": "Ketepatan",
-    "timeSpent": "Masa Dihabiskan",
-    "retake": "Ambil Semula Kuiz",
-    "hint": "Petunjuk"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Sembunyikan Bar Sisi",
+      "thumbnail": "Gambar Kecil",
+      "highlight": "Serlahkan",
+      "highlight-empty": "Belum Ada Serlahan",
+      "zoom-in": "Zum Masuk",
+      "zoom-out": "Zum Keluar",
+      "fit-width": "Sesuaikan dengan Lebar",
+      "fit-height": "Sesuaikan dengan Tinggi",
+      "pre-page": "Halaman Sebelumnya",
+      "next-page": "Halaman Seterusnya",
+      "translate": "Terjemah",
+      "full-text": "Terjemah Teks Penuh",
+      "close-trans": "Tutup Terjemahan",
+      "original": "Asal",
+      "compare": "Bandingkan",
+      "model": "Model",
+      "free": "Percuma",
+      "basic": "Asas",
+      "advanced": "Lanjutan",
+      "source-language": "Bahasa sumber",
+      "translated-to": "Diterjemah ke",
+      "confirm": "Sahkan",
+      "cost-basic": "Kos <count></count> asas",
+      "cost-advanced": "Kos <count></count> lanjutan",
+      "cost-tooltip": "Anggaran berdasarkan model yang digunakan dan kandungan dokumen; sila rujuk kepada penggunaan sebenar untuk ketepatan.",
+      "copy": "Salin",
+      "copy-success": "Salin berjaya",
+      "edit": "Sunting",
+      "notAllowTranslate": "Laman web asal tidak menyokong terjemahan buat masa ini.",
+      "translate-service": "Perkhidmatan Terjemahan"
+    },
+    "error": {
+      "load-failed": "Gagal Memuatkan",
+      "retry": "Cuba Lagi",
+      "trans-failed": "Terjemahan gagal",
+      "fetch-data-error": "Pengambilan Data Gagal"
+    },
+    "ocr": {
+      "tooltip": "Terjemahkan kandungan halaman semasa dengan tepat, sepadan sempurna dengan teks asal, termasuk formula."
+    },
+    "download": {
+      "retry": "Cuba Lagi",
+      "not-support": "Mod semasa tidak menyokong pencetakan PDF yang diterjemah",
+      "trans-info": "Fail semasa mengandungi kandungan yang belum diterjemah（{count} halaman）. Adakah anda ingin menterjemah kesemuanya dan muat turun? Terjemahan akan menolak mata yang sepadan.",
+      "direct": "Muat Turun Terus",
+      "trans": "Terjemah dan Muat Turun",
+      "trans-progress": "Terjemahan sedang berlangsung {current}/{total}",
+      "trans-progress-info": "Menutup tetingkap terapung tidak akan mengganggu terjemahan.",
+      "trans-success": "Terjemahan selesai",
+      "trans-failed": "Oops! Ralat terjemahan"
+    },
+    "common": {
+      "translating": "Sedang menterjemah..."
+    }
   }
 }

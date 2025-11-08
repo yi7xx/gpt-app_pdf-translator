@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor Formels Quiz",
-    "showHint": "Visa Ledtråd",
-    "hideHint": "Dölj Ledtråd",
-    "previous": "Föregående",
-    "next": "Nästa",
-    "complete": "Avsluta",
-    "submit": "Skicka in",
-    "completeTitle": "Quiz Avslutat!",
-    "score": "Poäng",
-    "accuracy": "Noggrannhet",
-    "timeSpent": "Tid Använd",
-    "retake": "Gör om Quiz",
-    "hint": "Ledtråd"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Dölj sidofält",
+      "thumbnail": "Miniatyr",
+      "highlight": "Markera",
+      "highlight-empty": "Inga markeringar ännu",
+      "zoom-in": "Zooma in",
+      "zoom-out": "Zooma ut",
+      "fit-width": "Anpassa till bredd",
+      "fit-height": "Anpassa till höjd",
+      "pre-page": "Föregående sida",
+      "next-page": "Nästa sida",
+      "translate": "Översätt",
+      "full-text": "Översätt hela texten",
+      "close-trans": "Stäng översättning",
+      "original": "Original",
+      "compare": "Jämför",
+      "model": "Modell",
+      "free": "Gratis",
+      "basic": "Grundläggande",
+      "advanced": "Avancerad",
+      "source-language": "Källspråk",
+      "translated-to": "Översatt till",
+      "confirm": "Bekräfta",
+      "cost-basic": "Kostnad <count></count> grundläggande",
+      "cost-advanced": "Kostnad <count></count> avancerad",
+      "cost-tooltip": "Uppskattningen baseras på den använda modellen och dokumentets innehåll; vänligen hänvisa till den faktiska förbrukningen för noggrannhet.",
+      "copy": "Kopiera",
+      "copy-success": "Kopiering lyckades",
+      "edit": "Redigera",
+      "notAllowTranslate": "Den ursprungliga webbsidan stöder för närvarande inte översättning.",
+      "translate-service": "Översättningstjänst"
+    },
+    "error": {
+      "load-failed": "Laddning misslyckades",
+      "retry": "Försök igen",
+      "trans-failed": "Översättning misslyckades",
+      "fetch-data-error": "Datahämtning misslyckades"
+    },
+    "ocr": {
+      "tooltip": "Översätt innehållet på den aktuella sidan noggrant, perfekt matchande originaltexten, inklusive formler."
+    },
+    "download": {
+      "retry": "Försök igen",
+      "not-support": "Det aktuella läget stöder inte utskrift av översatta PDF-filer",
+      "trans-info": "Den aktuella filen innehåller oöversatt innehåll（{count} sidor）. Vill du översätta allt och ladda ner? Översättningen kommer att dra av motsvarande poäng.",
+      "direct": "Direkt nedladdning",
+      "trans": "Översätt och ladda ner",
+      "trans-progress": "Översättning pågår {current}/{total}",
+      "trans-progress-info": "Att stänga det flytande fönstret avbryter inte översättningen.",
+      "trans-success": "Översättning slutförd",
+      "trans-failed": "Hoppsan! Översättningsfel"
+    },
+    "common": {
+      "translating": "Översätter..."
+    }
   }
 }

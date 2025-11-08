@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "חידון נוסחת טיילור",
-    "showHint": "הצג רמז",
-    "hideHint": "הסתר רמז",
-    "previous": "קודם",
-    "next": "הבא",
-    "complete": "השלם",
-    "submit": "שלח",
-    "completeTitle": "החידון הושלם!",
-    "score": "ציון",
-    "accuracy": "דיוק",
-    "timeSpent": "זמן שהושקע",
-    "retake": "חזור על החידון",
-    "hint": "רמז"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "הסתר סרגל צד",
+      "thumbnail": "תמונה ממוזערת",
+      "highlight": "הדגש",
+      "highlight-empty": "עדיין אין הדגשה",
+      "zoom-in": "הגדל",
+      "zoom-out": "הקטן",
+      "fit-width": "התאם לרוחב",
+      "fit-height": "התאם לגובה",
+      "pre-page": "עמוד קודם",
+      "next-page": "עמוד הבא",
+      "translate": "תרגם",
+      "full-text": "תרגם את כל הטקסט",
+      "close-trans": "סגור תרגום",
+      "original": "מקור",
+      "compare": "השווה",
+      "model": "מודל",
+      "free": "חינם",
+      "basic": "בסיסי",
+      "advanced": "מתקדם",
+      "source-language": "שפת מקור",
+      "translated-to": "תורגם ל",
+      "confirm": "אשר",
+      "cost-basic": "עלות <count></count> בסיסי",
+      "cost-advanced": "עלות <count></count> מתקדם",
+      "cost-tooltip": "ההערכה מבוססת על המודל בשימוש ותוכן המסמך; נא להתייחס לצריכה בפועל לדיוק.",
+      "copy": "העתק",
+      "copy-success": "ההעתקה הצליחה",
+      "edit": "ערוך",
+      "notAllowTranslate": "הדף המקורי אינו תומך כרגע בתרגום.",
+      "translate-service": "שירות תרגום"
+    },
+    "error": {
+      "load-failed": "הטעינה נכשלה",
+      "retry": "נסה שוב",
+      "trans-failed": "התרגום נכשל",
+      "fetch-data-error": "שליפת הנתונים נכשלה"
+    },
+    "ocr": {
+      "tooltip": "תרגם את תוכן העמוד הנוכחי בצורה מדויקת, תואם באופן מושלם לטקסט המקורי, כולל נוסחאות."
+    },
+    "download": {
+      "retry": "נסה שוב",
+      "not-support": "המצב הנוכחי אינו תומך בהדפסת קובצי PDF מתורגמים",
+      "trans-info": "הקובץ הנוכחי מכיל תוכן שלא תורגם ({count} עמודים). האם ברצונך לתרגם את כולו ולהוריד? התרגום יפחית נקודות בהתאם.",
+      "direct": "הורדה ישירה",
+      "trans": "תרגם והורד",
+      "trans-progress": "התרגום בתהליך {current}/{total}",
+      "trans-progress-info": "סגירת החלון הצף לא תפסיק את התרגום.",
+      "trans-success": "התרגום הושלם",
+      "trans-failed": "אופס! שגיאת תרגום"
+    },
+    "common": {
+      "translating": "מתרגם..."
+    }
   }
 }

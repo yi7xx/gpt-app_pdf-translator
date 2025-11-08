@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor Formel Quiz",
-    "showHint": "Vis Hint",
-    "hideHint": "Skjul Hint",
-    "previous": "Forrige",
-    "next": "Næste",
-    "complete": "Fuldfør",
-    "submit": "Indsend",
-    "completeTitle": "Quiz Fuldført!",
-    "score": "Score",
-    "accuracy": "Nøjagtighed",
-    "timeSpent": "Brugt Tid",
-    "retake": "Tag Quiz igen",
-    "hint": "Hint"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Skjul sidebjælke",
+      "thumbnail": "Miniaturebillede",
+      "highlight": "Fremhæv",
+      "highlight-empty": "Ingen fremhævning endnu",
+      "zoom-in": "Zoom ind",
+      "zoom-out": "Zoom ud",
+      "fit-width": "Tilpas til bredde",
+      "fit-height": "Tilpas til højde",
+      "pre-page": "Forrige side",
+      "next-page": "Næste side",
+      "translate": "Oversæt",
+      "full-text": "Oversæt hele teksten",
+      "close-trans": "Luk oversættelse",
+      "original": "Original",
+      "compare": "Sammenlign",
+      "model": "Model",
+      "free": "Gratis",
+      "basic": "Basis",
+      "advanced": "Avanceret",
+      "source-language": "Kildesprog",
+      "translated-to": "Oversat til",
+      "confirm": "Bekræft",
+      "cost-basic": "Omkostning <count></count> basis",
+      "cost-advanced": "Omkostning <count></count> avanceret",
+      "cost-tooltip": "Estimatet er baseret på den anvendte model og dokumentets indhold; henvis venligst til det faktiske forbrug for nøjagtighed.",
+      "copy": "Kopiér",
+      "copy-success": "Kopiering lykkedes",
+      "edit": "Rediger",
+      "notAllowTranslate": "Den originale webside understøtter ikke oversættelse i øjeblikket.",
+      "translate-service": "Oversættelsestjeneste"
+    },
+    "error": {
+      "load-failed": "Indlæsning mislykkedes",
+      "retry": "Prøv igen",
+      "trans-failed": "Oversættelse mislykkedes",
+      "fetch-data-error": "Datahentning mislykkedes"
+    },
+    "ocr": {
+      "tooltip": "Oversæt indholdet af den aktuelle side nøjagtigt, så det perfekt matcher den originale tekst, inklusive formler."
+    },
+    "download": {
+      "retry": "Prøv igen",
+      "not-support": "Den aktuelle tilstand understøtter ikke udskrivning af oversatte PDF'er",
+      "trans-info": "Den aktuelle fil indeholder uoversat indhold（{count} sider）. Vil du oversætte det hele og downloade? Oversættelse vil trække tilsvarende point.",
+      "direct": "Direkte download",
+      "trans": "Oversæt og download",
+      "trans-progress": "Oversættelse i gang {current}/{total}",
+      "trans-progress-info": "Lukning af det flydende vindue vil ikke afbryde oversættelsen.",
+      "trans-success": "Oversættelse fuldført",
+      "trans-failed": "Ups! Oversættelsesfejl"
+    },
+    "common": {
+      "translating": "Oversætter..."
+    }
   }
 }

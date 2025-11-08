@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Kvíz o Taylorově vzorci",
-    "showHint": "Zobrazit nápovědu",
-    "hideHint": "Skrýt nápovědu",
-    "previous": "Předchozí",
-    "next": "Další",
-    "complete": "Dokončit",
-    "submit": "Odeslat",
-    "completeTitle": "Kvíz dokončen!",
-    "score": "Skóre",
-    "accuracy": "Přesnost",
-    "timeSpent": "Strávený čas",
-    "retake": "Opakovat kvíz",
-    "hint": "Nápověda"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Skrýt postranní panel",
+      "thumbnail": "Náhled",
+      "highlight": "Zvýraznit",
+      "highlight-empty": "Zatím žádné zvýraznění",
+      "zoom-in": "Přiblížit",
+      "zoom-out": "Oddálit",
+      "fit-width": "Přizpůsobit šířce",
+      "fit-height": "Přizpůsobit výšce",
+      "pre-page": "Předchozí stránka",
+      "next-page": "Další stránka",
+      "translate": "Přeložit",
+      "full-text": "Přeložit celý text",
+      "close-trans": "Zavřít překlad",
+      "original": "Originál",
+      "compare": "Porovnat",
+      "model": "Model",
+      "free": "Zdarma",
+      "basic": "Základní",
+      "advanced": "Pokročilý",
+      "source-language": "Zdrojový jazyk",
+      "translated-to": "Přeloženo do",
+      "confirm": "Potvrdit",
+      "cost-basic": "Cena <count></count> základní",
+      "cost-advanced": "Cena <count></count> pokročilý",
+      "cost-tooltip": "Odhad je založen na použitém modelu a obsahu dokumentu; pro přesnost se prosím podívejte na skutečnou spotřebu.",
+      "copy": "Kopírovat",
+      "copy-success": "Kopírování úspěšné",
+      "edit": "Upravit",
+      "notAllowTranslate": "Původní webová stránka momentálně nepodporuje překlad.",
+      "translate-service": "Překladová služba"
+    },
+    "error": {
+      "load-failed": "Načítání selhalo",
+      "retry": "Zkusit znovu",
+      "trans-failed": "Překlad selhal",
+      "fetch-data-error": "Načítání dat selhalo"
+    },
+    "ocr": {
+      "tooltip": "Přeložte obsah aktuální stránky přesně, aby dokonale odpovídal původnímu textu, včetně vzorců."
+    },
+    "download": {
+      "retry": "Zkusit znovu",
+      "not-support": "Aktuální režim nepodporuje tisk přeložených PDF",
+      "trans-info": "Aktuální soubor obsahuje nepřeložený obsah（{count} stránek）. Chcete přeložit vše a stáhnout? Překlad odečte odpovídající body.",
+      "direct": "Přímé stažení",
+      "trans": "Přeložit a stáhnout",
+      "trans-progress": "Překlad probíhá {current}/{total}",
+      "trans-progress-info": "Zavření plovoucího okna nepřeruší překlad.",
+      "trans-success": "Překlad dokončen",
+      "trans-failed": "Jejda! Chyba překladu"
+    },
+    "common": {
+      "translating": "Překládá se..."
+    }
   }
 }

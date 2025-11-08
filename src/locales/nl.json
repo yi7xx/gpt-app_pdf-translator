@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylor Formule Quiz",
-    "showHint": "Toon Hint",
-    "hideHint": "Verberg Hint",
-    "previous": "Vorige",
-    "next": "Volgende",
-    "complete": "Voltooi",
-    "submit": "Indienen",
-    "completeTitle": "Quiz Voltooid!",
-    "score": "Score",
-    "accuracy": "Nauwkeurigheid",
-    "timeSpent": "Tijd Besteed",
-    "retake": "Quiz Herhalen",
-    "hint": "Hint"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Verberg zijbalk",
+      "thumbnail": "Miniatuur",
+      "highlight": "Markeren",
+      "highlight-empty": "Nog geen markeringen",
+      "zoom-in": "Inzoomen",
+      "zoom-out": "Uitzoomen",
+      "fit-width": "Passend op breedte",
+      "fit-height": "Passend op hoogte",
+      "pre-page": "Vorige pagina",
+      "next-page": "Volgende pagina",
+      "translate": "Vertalen",
+      "full-text": "Volledige tekst vertalen",
+      "close-trans": "Sluit vertaling",
+      "original": "Origineel",
+      "compare": "Vergelijken",
+      "model": "Model",
+      "free": "Gratis",
+      "basic": "Basis",
+      "advanced": "Geavanceerd",
+      "source-language": "Bron taal",
+      "translated-to": "Vertaald naar",
+      "confirm": "Bevestigen",
+      "cost-basic": "Kosten <count></count> basis",
+      "cost-advanced": "Kosten <count></count> geavanceerd",
+      "cost-tooltip": "De schatting is gebaseerd op het gebruikte model en de inhoud van het document; raadpleeg het daadwerkelijke verbruik voor nauwkeurigheid.",
+      "copy": "Kopiëren",
+      "copy-success": "Kopiëren geslaagd",
+      "edit": "Bewerken",
+      "notAllowTranslate": "De originele webpagina ondersteunt momenteel geen vertaling.",
+      "translate-service": "Vertaalservice"
+    },
+    "error": {
+      "load-failed": "Laden mislukt",
+      "retry": "Opnieuw proberen",
+      "trans-failed": "Vertaling mislukt",
+      "fetch-data-error": "Gegevens ophalen mislukt"
+    },
+    "ocr": {
+      "tooltip": "Vertaal de inhoud van de huidige pagina nauwkeurig, perfect overeenkomend met de originele tekst, inclusief formules."
+    },
+    "download": {
+      "retry": "Opnieuw proberen",
+      "not-support": "De huidige modus ondersteunt het afdrukken van vertaalde PDF's niet",
+      "trans-info": "Het huidige bestand bevat niet-vertaalde inhoud（{count} pagina's）. Wilt u alles vertalen en downloaden? Vertaling zal overeenkomstige punten aftrekken.",
+      "direct": "Direct downloaden",
+      "trans": "Vertalen en downloaden",
+      "trans-progress": "Vertaling bezig {current}/{total}",
+      "trans-progress-info": "Het sluiten van het zwevende venster zal de vertaling niet onderbreken.",
+      "trans-success": "Vertaling voltooid",
+      "trans-failed": "Oeps! Vertaalfout"
+    },
+    "common": {
+      "translating": "Bezig met vertalen..."
+    }
   }
 }

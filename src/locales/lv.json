@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Teilora formulas tests",
-    "showHint": "Rādīt padomu",
-    "hideHint": "Slēpt padomu",
-    "previous": "Iepriekšējais",
-    "next": "Nākamais",
-    "complete": "Pabeigt",
-    "submit": "Iesniegt",
-    "completeTitle": "Tests pabeigts!",
-    "score": "Rezultāts",
-    "accuracy": "Precizitāte",
-    "timeSpent": "Pavadītais laiks",
-    "retake": "Atkārtot testu",
-    "hint": "Padoms"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Paslēpt sānjoslu",
+      "thumbnail": "Sīktēls",
+      "highlight": "Izcelt",
+      "highlight-empty": "Vēl nav izcelts",
+      "zoom-in": "Pietuvināt",
+      "zoom-out": "Attālināt",
+      "fit-width": "Pielāgot platumam",
+      "fit-height": "Pielāgot augstumam",
+      "pre-page": "Iepriekšējā lapa",
+      "next-page": "Nākamā lapa",
+      "translate": "Tulkot",
+      "full-text": "Tulkot pilnu tekstu",
+      "close-trans": "Aizvērt tulkojumu",
+      "original": "Oriģināls",
+      "compare": "Salīdzināt",
+      "model": "Modelis",
+      "free": "Bezmaksas",
+      "basic": "Pamata",
+      "advanced": "Paplašināts",
+      "source-language": "Avota valoda",
+      "translated-to": "Tulkots uz",
+      "confirm": "Apstiprināt",
+      "cost-basic": "Izmaksas <count></count> pamata",
+      "cost-advanced": "Izmaksas <count></count> paplašināts",
+      "cost-tooltip": "Aprēķins balstīts uz izmantoto modeli un dokumenta saturu; lūdzu, atsaucieties uz faktisko patēriņu precizitātei.",
+      "copy": "Kopēt",
+      "copy-success": "Kopēšana veiksmīga",
+      "edit": "Rediģēt",
+      "notAllowTranslate": "Oriģinālā tīmekļa lapa pašlaik neatbalsta tulkošanu.",
+      "translate-service": "Tulkotāja pakalpojums"
+    },
+    "error": {
+      "load-failed": "Ielāde neizdevās",
+      "retry": "Mēģināt vēlreiz",
+      "trans-failed": "Tulkošana neizdevās",
+      "fetch-data-error": "Datu iegūšana neizdevās"
+    },
+    "ocr": {
+      "tooltip": "Precīzi iztulkot pašreizējās lapas saturu, pilnībā atbilstot oriģinālajam tekstam, ieskaitot formulas."
+    },
+    "download": {
+      "retry": "Mēģināt vēlreiz",
+      "not-support": "Pašreizējais režīms neatbalsta tulkotu PDF drukāšanu",
+      "trans-info": "Pašreizējais fails satur netulkotu saturu（{count} lapas）. Vai vēlaties to visu iztulkot un lejupielādēt? Tulkošana atskaitīs atbilstošos punktus.",
+      "direct": "Tieša lejupielāde",
+      "trans": "Tulkot un lejupielādēt",
+      "trans-progress": "Tulkošana notiek {current}/{total}",
+      "trans-progress-info": "Aizverot peldošo logu, tulkošana netiks pārtraukta.",
+      "trans-success": "Tulkošana pabeigta",
+      "trans-failed": "Ups! Tulkošanas kļūda"
+    },
+    "common": {
+      "translating": "Tiek tulkots..."
+    }
   }
 }

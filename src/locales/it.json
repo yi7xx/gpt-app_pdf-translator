@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Quiz sulla Formula di Taylor",
-    "showHint": "Mostra Suggerimento",
-    "hideHint": "Nascondi Suggerimento",
-    "previous": "Precedente",
-    "next": "Successivo",
-    "complete": "Completa",
-    "submit": "Invia",
-    "completeTitle": "Quiz Completato!",
-    "score": "Punteggio",
-    "accuracy": "Precisione",
-    "timeSpent": "Tempo Trascorso",
-    "retake": "Rifai il Quiz",
-    "hint": "Suggerimento"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Nascondi Barra Laterale",
+      "thumbnail": "Miniatura",
+      "highlight": "Evidenzia",
+      "highlight-empty": "Nessuna Evidenziazione ancora",
+      "zoom-in": "Ingrandisci",
+      "zoom-out": "Riduci",
+      "fit-width": "Adatta alla Larghezza",
+      "fit-height": "Adatta all'Altezza",
+      "pre-page": "Pagina Precedente",
+      "next-page": "Pagina Successiva",
+      "translate": "Traduci",
+      "full-text": "Traduci Testo Completo",
+      "close-trans": "Chiudi Traduzione",
+      "original": "Originale",
+      "compare": "Confronta",
+      "model": "Modello",
+      "free": "Gratuito",
+      "basic": "Base",
+      "advanced": "Avanzato",
+      "source-language": "Lingua di origine",
+      "translated-to": "Tradotto in",
+      "confirm": "Conferma",
+      "cost-basic": "Costo <count></count> base",
+      "cost-advanced": "Costo <count></count> avanzato",
+      "cost-tooltip": "La stima si basa sul modello utilizzato e sul contenuto del documento; per precisione, fare riferimento al consumo effettivo.",
+      "copy": "Copia",
+      "copy-success": "Copia riuscita",
+      "edit": "Modifica",
+      "notAllowTranslate": "La pagina web originale attualmente non supporta la traduzione.",
+      "translate-service": "Servizio di Traduzione"
+    },
+    "error": {
+      "load-failed": "Caricamento Fallito",
+      "retry": "Riprova",
+      "trans-failed": "Traduzione fallita",
+      "fetch-data-error": "Recupero Dati Fallito"
+    },
+    "ocr": {
+      "tooltip": "Traduci accuratamente il contenuto della pagina corrente, corrispondendo perfettamente al testo originale, incluse le formule."
+    },
+    "download": {
+      "retry": "Riprova",
+      "not-support": "La modalità attuale non supporta la stampa di PDF tradotti",
+      "trans-info": "Il file corrente contiene contenuti non tradotti（{count} pagine）. Vuoi tradurre tutto e scaricare? La traduzione dedurrà i punti corrispondenti.",
+      "direct": "Scarica Direttamente",
+      "trans": "Traduci e Scarica",
+      "trans-progress": "Traduzione in corso {current}/{total}",
+      "trans-progress-info": "Chiudere la finestra mobile non interromperà la traduzione.",
+      "trans-success": "Traduzione completata",
+      "trans-failed": "Ops! Errore di traduzione"
+    },
+    "common": {
+      "translating": "Traducendo..."
+    }
   }
 }

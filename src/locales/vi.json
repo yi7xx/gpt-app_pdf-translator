@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Bài kiểm tra Công thức Taylor",
-    "showHint": "Hiện gợi ý",
-    "hideHint": "Ẩn gợi ý",
-    "previous": "Trước",
-    "next": "Tiếp theo",
-    "complete": "Hoàn thành",
-    "submit": "Gửi",
-    "completeTitle": "Bài kiểm tra đã hoàn thành!",
-    "score": "Điểm số",
-    "accuracy": "Độ chính xác",
-    "timeSpent": "Thời gian đã sử dụng",
-    "retake": "Làm lại bài kiểm tra",
-    "hint": "Gợi ý"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Ẩn Thanh Bên",
+      "thumbnail": "Hình Thu Nhỏ",
+      "highlight": "Đánh Dấu Nổi Bật",
+      "highlight-empty": "Chưa Có Đánh Dấu Nổi Bật",
+      "zoom-in": "Phóng To",
+      "zoom-out": "Thu Nhỏ",
+      "fit-width": "Vừa Chiều Rộng",
+      "fit-height": "Vừa Chiều Cao",
+      "pre-page": "Trang Trước",
+      "next-page": "Trang Tiếp Theo",
+      "translate": "Dịch",
+      "full-text": "Dịch Toàn Bộ Văn Bản",
+      "close-trans": "Đóng Dịch",
+      "original": "Nguyên Bản",
+      "compare": "So Sánh",
+      "model": "Mô Hình",
+      "free": "Miễn Phí",
+      "basic": "Cơ Bản",
+      "advanced": "Nâng Cao",
+      "source-language": "Ngôn ngữ nguồn",
+      "translated-to": "Dịch sang",
+      "confirm": "Xác Nhận",
+      "cost-basic": "Chi phí <count></count> cơ bản",
+      "cost-advanced": "Chi phí <count></count> nâng cao",
+      "cost-tooltip": "Ước tính dựa trên mô hình sử dụng và nội dung tài liệu; vui lòng tham khảo mức tiêu thụ thực tế để có độ chính xác.",
+      "copy": "Sao Chép",
+      "copy-success": "Sao chép thành công",
+      "edit": "Chỉnh Sửa",
+      "notAllowTranslate": "Trang web gốc hiện không hỗ trợ dịch.",
+      "translate-service": "Dịch Vụ Dịch Thuật"
+    },
+    "error": {
+      "load-failed": "Tải Thất Bại",
+      "retry": "Thử Lại",
+      "trans-failed": "Dịch thất bại",
+      "fetch-data-error": "Lấy Dữ Liệu Thất Bại"
+    },
+    "ocr": {
+      "tooltip": "Dịch nội dung của trang hiện tại một cách chính xác, hoàn toàn khớp với văn bản gốc, bao gồm cả công thức."
+    },
+    "download": {
+      "retry": "Thử Lại",
+      "not-support": "Chế độ hiện tại không hỗ trợ in PDF đã dịch",
+      "trans-info": "Tệp hiện tại chứa nội dung chưa được dịch（{count} trang）. Bạn có muốn dịch tất cả và tải xuống không? Việc dịch sẽ trừ điểm tương ứng.",
+      "direct": "Tải Xuống Trực Tiếp",
+      "trans": "Dịch và Tải Xuống",
+      "trans-progress": "Đang dịch {current}/{total}",
+      "trans-progress-info": "Đóng cửa sổ nổi sẽ không làm gián đoạn quá trình dịch.",
+      "trans-success": "Dịch Hoàn Tất",
+      "trans-failed": "Rất tiếc! Lỗi dịch"
+    },
+    "common": {
+      "translating": "Đang dịch..."
+    }
   }
 }

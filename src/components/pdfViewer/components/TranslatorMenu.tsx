@@ -1,10 +1,10 @@
+import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
 import { ArrowOutlineSB, ExclamationMark, TranslateLite } from '@sider/icons'
-import LanguageSelect from '@sider/ui/languageSelect'
 import { useClickAway, useUpdate } from 'ahooks'
 import { Popover, Select, Switch, Tooltip } from 'antd'
-import { useTranslations } from 'next-intl'
 import { memo, useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent } from '../events'
 import { usePDFEvent } from '../hooks/usePDFEvent'
@@ -33,7 +33,8 @@ const TranslatorMenu = ({
   showTranslateName: boolean
 }) => {
   const { translationService, onGlobalModelChange } = useDocumentContext()
-  const t = useTranslations('ui.pdfViewer.tools')
+  const { t } = useTranslation('pdfViewer.tools')
+  const { t: tTool } = useI18n()
 
   const [loaded, setLoaded] = useState(false)
 
@@ -318,12 +319,12 @@ const TranslatorMenu = ({
               <div className="text-color-text-primary-3 font-normal-12">
                 {t('translated-to')}
               </div>
-              <LanguageSelect
+              {/* <LanguageSelect
                 variant="filled"
                 value={toLang.current}
                 onChange={(item) => handleToLangChange(item.code)}
                 getPopupContainer={() => popoverRef.current[0]!}
-              />
+              /> */}
             </div>
             {isFreeTranslation() || (
               <div className="f-i-center px-[8px] pt-[4px]">
@@ -332,20 +333,19 @@ const TranslatorMenu = ({
                     <ExclamationMark size={12} />
                   </span>
                   <span className="text-color-text-primary-3 font-normal-12">
-                    {t.rich(
+                    {tTool(
                       modelOption.current.type === TranslateType.BASIC
-                        ? 'cost-basic'
-                        : 'cost-advanced',
+                        ? 'pdfViewer.tools.cost-basic'
+                        : 'pdfViewer.tools.cost-advanced',
                       {
-                        count: () => (
+                        count: (
                           <Tooltip
-                            overlayInnerStyle={{
-                              textAlign: 'center',
-                              fontWeight: '400',
-                            }}
                             title={t('cost-tooltip')}
+                            styles={{
+                              body: { textAlign: 'center', fontWeight: '400' },
+                            }}
                           >
-                            <span className="text-color-brand-primary-normal cursor-pointer text-[12px] leading-[18px] font-[700]">
+                            <span className="text-color-brand-primary-normal cursor-pointer text-[12px] font-[700]">
                               {pageCount}
                             </span>
                           </Tooltip>

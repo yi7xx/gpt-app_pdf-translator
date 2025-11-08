@@ -20,11 +20,9 @@ export default function RootLayout({
         <NextChatSDKBootstrap baseUrl={baseURL} />
       </head>
       <body>
-          <AntdCompatible>
-            <I18nInitial>
-              {children}
-            </I18nInitial>
-          </AntdCompatible>
+        <AntdCompatible>
+          <I18nInitial>{children}</I18nInitial>
+        </AntdCompatible>
       </body>
     </html>
   )

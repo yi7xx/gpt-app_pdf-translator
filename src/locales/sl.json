@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Taylorjeva formula - kviz",
-    "showHint": "Prikaži namig",
-    "hideHint": "Skrij namig",
-    "previous": "Prejšnje",
-    "next": "Naslednje",
-    "complete": "Dokončaj",
-    "submit": "Oddaj",
-    "completeTitle": "Kviz je zaključen!",
-    "score": "Rezultat",
-    "accuracy": "Natančnost",
-    "timeSpent": "Porabljen čas",
-    "retake": "Ponovno opravi kviz",
-    "hint": "Namig"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Skrij stransko vrstico",
+      "thumbnail": "Sličica",
+      "highlight": "Označi",
+      "highlight-empty": "Še ni označeno",
+      "zoom-in": "Povečaj",
+      "zoom-out": "Pomanjšaj",
+      "fit-width": "Prilagodi širini",
+      "fit-height": "Prilagodi višini",
+      "pre-page": "Prejšnja stran",
+      "next-page": "Naslednja stran",
+      "translate": "Prevedi",
+      "full-text": "Prevedi celotno besedilo",
+      "close-trans": "Zapri prevod",
+      "original": "Izvirnik",
+      "compare": "Primerjaj",
+      "model": "Model",
+      "free": "Brezplačno",
+      "basic": "Osnovno",
+      "advanced": "Napredno",
+      "source-language": "Izvorni jezik",
+      "translated-to": "Prevedeno v",
+      "confirm": "Potrdi",
+      "cost-basic": "Strošek <count></count> osnovno",
+      "cost-advanced": "Strošek <count></count> napredno",
+      "cost-tooltip": "Ocena temelji na uporabljenem modelu in vsebini dokumenta; za natančnost se sklicujte na dejansko porabo.",
+      "copy": "Kopiraj",
+      "copy-success": "Kopiranje uspešno",
+      "edit": "Uredi",
+      "notAllowTranslate": "Izvirna spletna stran trenutno ne podpira prevajanja.",
+      "translate-service": "Prevajalska storitev"
+    },
+    "error": {
+      "load-failed": "Nalaganje ni uspelo",
+      "retry": "Poskusi znova",
+      "trans-failed": "Prevod ni uspel",
+      "fetch-data-error": "Pridobivanje podatkov ni uspelo"
+    },
+    "ocr": {
+      "tooltip": "Natančno prevedite vsebino trenutne strani, popolnoma ujemajoč se z izvirnim besedilom, vključno s formulami."
+    },
+    "download": {
+      "retry": "Poskusi znova",
+      "not-support": "Trenutni način ne podpira tiskanja prevedenih PDF-jev",
+      "trans-info": "Trenutna datoteka vsebuje neprevedeno vsebino ({count} strani). Ali želite vse to prevesti in prenesti? Prevod bo odštel ustrezne točke.",
+      "direct": "Neposreden prenos",
+      "trans": "Prevedi in prenesi",
+      "trans-progress": "Prevod v teku {current}/{total}",
+      "trans-progress-info": "Zapiranje plavajočega okna ne bo prekinilo prevoda.",
+      "trans-success": "Prevod zaključen",
+      "trans-failed": "Ups! Napaka pri prevodu"
+    },
+    "common": {
+      "translating": "Prevajanje..."
+    }
   }
 }

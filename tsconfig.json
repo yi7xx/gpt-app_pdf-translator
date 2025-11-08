@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2018",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -20,6 +20,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "@hooks/openai": ["./src/hooks/openai/index.ts"],
       "@sider/icons": ["./src/packages/icons/index.ts"],
       "@sider/hooks": ["./src/packages/hooks/index.ts"],
       "@sider/hooks/*": ["./src/packages/hooks/*"],

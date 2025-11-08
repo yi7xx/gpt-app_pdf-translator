@@ -1,17 +1,59 @@
 {
-  "quiz": {
-    "title": "Kujifunza kuhusu Msingi wa Taylor",
-    "showHint": "Onyesha Kidokezo",
-    "hideHint": "Ficha Kidokezo",
-    "previous": "Kabla",
-    "next": "Ifuatayo",
-    "complete": "Kamilisha",
-    "submit": "Wasilisha",
-    "completeTitle": "Kujifunza Kumekamilika!",
-    "score": "Alama",
-    "accuracy": "Usahihi",
-    "timeSpent": "Muda uliotumika",
-    "retake": "Chukua Tena Kujifunza",
-    "hint": "Kidokezo"
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "Ficha Upau wa Pembeni",
+      "thumbnail": "Picha Ndogo",
+      "highlight": "Angazia",
+      "highlight-empty": "Bado Hakuna Angazia",
+      "zoom-in": "Kuza Ndani",
+      "zoom-out": "Kuza Nje",
+      "fit-width": "Ingia Upana",
+      "fit-height": "Ingia Urefu",
+      "pre-page": "Ukurasa Uliopita",
+      "next-page": "Ukurasa Unaofuata",
+      "translate": "Tafsiri",
+      "full-text": "Tafsiri Maandishi Yote",
+      "close-trans": "Funga Tafsiri",
+      "original": "Asili",
+      "compare": "Linganishi",
+      "model": "Mfano",
+      "free": "Bure",
+      "basic": "Msingi",
+      "advanced": "Juu",
+      "source-language": "Lugha ya Chanzo",
+      "translated-to": "Imetafsiriwa kwa",
+      "confirm": "Thibitisha",
+      "cost-basic": "Gharama <count></count> msingi",
+      "cost-advanced": "Gharama <count></count> juu",
+      "cost-tooltip": "Makadirio yanategemea mfano uliotumika na maudhui ya hati; tafadhali rejelea matumizi halisi kwa usahihi.",
+      "copy": "Nakili",
+      "copy-success": "Nakili imefanikiwa",
+      "edit": "Hariri",
+      "notAllowTranslate": "Ukurasa wa asili kwa sasa hauungi mkono tafsiri.",
+      "translate-service": "Huduma ya Tafsiri"
+    },
+    "error": {
+      "load-failed": "Imeshindwa Kupakia",
+      "retry": "Jaribu Tena",
+      "trans-failed": "Tafsiri imeshindwa",
+      "fetch-data-error": "Imeshindwa Kupata Data"
+    },
+    "ocr": {
+      "tooltip": "Tafsiri maudhui ya ukurasa wa sasa kwa usahihi, ikilingana kikamilifu na maandishi asili, ikijumuisha fomula."
+    },
+    "download": {
+      "retry": "Jaribu Tena",
+      "not-support": "Hali ya sasa haiungi mkono kuchapisha PDF zilizotafsiriwa",
+      "trans-info": "Faili ya sasa ina maudhui ambayo hayajatafsiriwa（{count} kurasa）. Je, ungependa kutafsiri yote na kupakua? Tafsiri itapunguza pointi zinazolingana.",
+      "direct": "Pakua Moja kwa Moja",
+      "trans": "Tafsiri na Pakua",
+      "trans-progress": "Tafsiri inaendelea {current}/{total}",
+      "trans-progress-info": "Kufunga dirisha linaloelea haitaingilia tafsiri.",
+      "trans-success": "Tafsiri imekamilika",
+      "trans-failed": "Pole! Hitilafu ya tafsiri"
+    },
+    "common": {
+      "translating": "Inatafsiri..."
+    }
   }
 }
