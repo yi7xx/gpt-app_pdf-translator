@@ -2,6 +2,7 @@ import { baseURL } from '@/baseUrl'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import AntdCompatible from './AntdCompatible19'
+import AntdThemeConfig from './AntdThemeConfig'
 import I18nInitial from './I18nInitial'
 
 export const metadata: Metadata = {
@@ -21,7 +22,9 @@ export default function RootLayout({
       </head>
       <body>
         <AntdCompatible>
-          <I18nInitial>{children}</I18nInitial>
+          <AntdThemeConfig>
+            <I18nInitial>{children}</I18nInitial>
+          </AntdThemeConfig>
         </AntdCompatible>
       </body>
     </html>
