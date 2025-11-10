@@ -44,16 +44,25 @@
     "download": {
       "retry": "Ponów próbę",
       "not-support": "Obecny tryb nie obsługuje drukowania przetłumaczonych plików PDF",
-      "trans-info": "Bieżący plik zawiera nieprzetłumaczoną zawartość（{count} stron）. Czy chcesz przetłumaczyć wszystko i pobrać? Tłumaczenie spowoduje odjęcie odpowiednich punktów.",
+      "trans-info": "Bieżący plik zawiera nieprzetłumaczoną zawartość（{{count}} stron）. Czy chcesz przetłumaczyć wszystko i pobrać? Tłumaczenie spowoduje odjęcie odpowiednich punktów.",
       "direct": "Pobierz bezpośrednio",
       "trans": "Przetłumacz i pobierz",
-      "trans-progress": "Tłumaczenie w toku {current}/{total}",
+      "trans-progress": "Tłumaczenie w toku {{current}}/{{total}}",
       "trans-progress-info": "Zamknięcie okna pływającego nie przerwie tłumaczenia.",
       "trans-success": "Tłumaczenie zakończone",
       "trans-failed": "Ups! Błąd tłumaczenia"
     },
     "common": {
-      "translating": "Tłumaczenie..."
+      "translating": "Tłumaczenie...",
+      "source-file": "Plik źródłowy",
+      "translated-file": "Plik przetłumaczony"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Kliknij lub przeciągnij plik na tę stronę, aby przesłać",
+    "supportedFormats": "Formaty: pdf / doc / ppt",
+    "dragFileHere": "Przeciągnij pliki tutaj, aby przesłać",
+    "uploading": "Przesyłanie...",
+    "fullScreen": "Pełnoekranowe czytanie/tłumaczenie"
   }
 }

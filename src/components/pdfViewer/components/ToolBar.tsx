@@ -1,8 +1,11 @@
+import GPTButton from '@/components/GPTButton'
+import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
 import { useLocalStorageState } from '@sider/hooks'
 import {
   AddCircleOutline,
-  ArrowOutlineMB,
+  CheckMd,
+  Download,
   HamburgerMenuS,
   MinusCircleOutline,
   MoreH,
@@ -13,18 +16,18 @@ import { useEventListener, useMemoizedFn } from 'ahooks'
 import { Popover, Tooltip } from 'antd'
 import { debounce } from 'lodash-es'
 import { memo, useMemo, useRef, useState, type FC } from 'react'
-import { useTranslation } from 'react-i18next'
 import { PDF_ACTION_TOOL_STORAGE_KEY } from '../constants'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent, UIEvents } from '../events'
 import { usePDFEvent } from '../hooks/usePDFEvent'
+import { SpreadMode } from '../modules/PDFViewer'
 import { ScaleMode } from '../utils/ui'
 import PageSwitcher from './PageSwitcher'
 import TranslatorMenu from './TranslatorMenu'
 
 const ActionTool = memo(function ActionTool() {
   const { eventBus } = useDocumentContext()
-  const { t } = useTranslation('pdfViewer.tools')
+  const { t } = useI18n()
   const [actionTool, setActionTool] = useLocalStorageState(
     PDF_ACTION_TOOL_STORAGE_KEY,
     { defaultValue: 'thumbnail', listenStorageChange: true },
@@ -36,27 +39,118 @@ const ActionTool = memo(function ActionTool() {
   const actionTools = useMemo(
     () =>
       [
-        { type: 'hide-bar', text: t('hide-bar') },
-        { type: 'thumbnail', text: t('thumbnail') },
-        { type: 'highlight', text: t('highlight') },
+        { type: 'hide-bar', text: t('pdfViewer.tools.hide-bar') },
+        { type: 'thumbnail', text: t('pdfViewer.tools.thumbnail') },
+        // { type: 'highlight', text: t('highlight') },
       ] as const,
     [t],
   )
   return (
-    <div className="flex w-[164px] flex-col gap-[2px]">
+    <div className="w-[245px] space-y-0.5 p-1.5">
       {actionTools.map((v) => (
         <div
           key={v.type}
           className={cn(
-            'text-color-text-primary-1 font-normal-14 hover:bg-color-grey-fill1-hover line-clamp-1 flex cursor-pointer rounded-[8px] px-[9px] py-[6px] transition-colors',
-            { '!bg-color-brand-primary-focus': v.type === actionTool },
+            'flex-between font-semibold-13 w-full cursor-pointer truncate rounded-md p-2.5 transition-colors',
+            'text-interactive-label-secondary-default bg-interactive-bg-secondary-default hover:bg-interactive-bg-secondary-hover hover:text-interactive-label-secondary-hover',
           )}
           onClick={() => onActionChange(v.type)}
         >
           {v.text}
+          {v.type === actionTool && <CheckMd size={18} />}
         </div>
       ))}
     </div>
+  )
+})
+
+async function downloadFile(file: string | Blob, name?: string) {
+  let url = ''
+  let shouldRevoke = false
+  if (typeof file === 'string') {
+    url = file
+  } else {
+    shouldRevoke = true
+    url = URL.createObjectURL(file)
+  }
+
+  const a = document.createElement('a')
+  a.href = url
+  if (name) {
+    a.download = name
+  } else if (file instanceof File) {
+    a.download = file.name || ''
+  }
+  a.click()
+  shouldRevoke && URL.revokeObjectURL(url)
+}
+
+const DownloadMenu = memo(function DownloadMenu() {
+  const { t } = useI18n()
+  const { file, eventBus, pdfViewer } = useDocumentContext()
+  const [open, setOpen] = useState(false)
+
+  const [spreadMode, setSpreadMode] = useState(
+    pdfViewer?.spreadMode || SpreadMode.READ,
+  )
+
+  usePDFEvent(PDFViewerEvent.SpreadModeChanged, ({ source }) => {
+    setSpreadMode(source.spreadMode)
+  })
+
+  const handleDownload = () => {
+    downloadFile(file)
+  }
+
+  const handlePrintTransPDF = () => {
+    eventBus.emit(UIEvents.Print)
+  }
+
+  if (spreadMode === SpreadMode.READ) {
+    return (
+      <GPTButton
+        variant="text"
+        icon={<Download size={20} />}
+        onClick={handleDownload}
+      />
+    )
+  }
+
+  return (
+    <Popover
+      arrow={false}
+      placement="bottomRight"
+      styles={{
+        body: { padding: 0, borderRadius: 20 },
+      }}
+      open={open}
+      onOpenChange={setOpen}
+      content={
+        <div className="w-[245px] space-y-0.5 p-1.5">
+          <div
+            className={cn(
+              'flex-between font-semibold-13 w-full cursor-pointer truncate rounded-md p-2.5 transition-colors',
+              'text-interactive-label-secondary-default bg-interactive-bg-secondary-default hover:bg-interactive-bg-secondary-hover hover:text-interactive-label-secondary-hover',
+            )}
+            onClick={handleDownload}
+          >
+            {t('pdfViewer.common.source-file')}
+          </div>
+          <div
+            className={cn(
+              'flex-between font-semibold-13 w-full cursor-pointer truncate rounded-md p-2.5 transition-colors',
+              'text-interactive-label-secondary-default bg-interactive-bg-secondary-default hover:bg-interactive-bg-secondary-hover hover:text-interactive-label-secondary-hover',
+            )}
+            onClick={handlePrintTransPDF}
+          >
+            {t('pdfViewer.common.translated-file')}
+          </div>
+        </div>
+      }
+      destroyOnHidden
+    >
+      <GPTButton variant="text" icon={<Download size={20} />} />
+    </Popover>
   )
 })
 
@@ -64,63 +158,46 @@ const ZoomControls = memo(function ZoomControls({
   scaleMode,
   updateZoom,
   handleScaleChange,
-  t,
 }: {
   scaleMode: string
   updateZoom: (steps: number) => void
   handleScaleChange: (scale: ScaleMode) => void
-  t: (key: string) => string
 }) {
+  const { t } = useI18n()
   return (
-    <div className="flex">
-      <Tooltip title={t('zoom-in')}>
-        <div
+    <div className="f-i-center gap-2.5">
+      <Tooltip title={t('pdfViewer.tools.zoom-in')} arrow={false}>
+        <GPTButton
+          variant="text"
+          disabled={scaleMode === '300%'}
           onClick={() => updateZoom(1)}
-          className={cn(
-            'rounded-[8px] p-[8px] transition-colors',
-            scaleMode === '300%'
-              ? 'bg-color-grey-fill1-normal text-color-text-primary-5 cursor-not-allowed'
-              : 'text-color-text-primary-1 hover:bg-color-grey-fill1-hover cursor-pointer',
-          )}
-        >
-          <AddCircleOutline size={16} />
-        </div>
+          icon={<AddCircleOutline size={20} />}
+        />
       </Tooltip>
-      <Tooltip title={t('zoom-out')}>
-        <div
+      <Tooltip title={t('pdfViewer.tools.zoom-out')} arrow={false}>
+        <GPTButton
+          variant="text"
           onClick={() => updateZoom(-1)}
-          className={cn(
-            'rounded-[8px] p-[8px] transition-colors',
-            scaleMode === '10%'
-              ? 'bg-color-grey-fill1-normal text-color-text-primary-5 cursor-not-allowed'
-              : 'text-color-text-primary-1 hover:bg-color-grey-fill1-hover cursor-pointer',
-          )}
-        >
-          <MinusCircleOutline size={16} />
-        </div>
+          icon={<MinusCircleOutline size={20} />}
+          disabled={scaleMode === '10%'}
+        />
       </Tooltip>
       {scaleMode === ScaleMode.PAGE_HEIGHT && (
-        <Tooltip title={t('fit-width')}>
-          <div
+        <Tooltip title={t('pdfViewer.tools.fit-width')} arrow={false}>
+          <GPTButton
+            variant="text"
             onClick={() => handleScaleChange(ScaleMode.PAGE_WIDTH)}
-            className="hover:bg-color-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px] transition-colors"
-          >
-            <span className="text-color-text-primary-1">
-              <StretchOutExpandH size={16} />
-            </span>
-          </div>
+            icon={<StretchOutExpandH size={20} />}
+          />
         </Tooltip>
       )}
       {scaleMode === ScaleMode.PAGE_WIDTH && (
-        <Tooltip title={t('fit-height')}>
-          <div
+        <Tooltip title={t('pdfViewer.tools.fit-height')} arrow={false}>
+          <GPTButton
+            variant="text"
             onClick={() => handleScaleChange(ScaleMode.PAGE_HEIGHT)}
-            className="hover:bg-color-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px] transition-colors"
-          >
-            <span className="text-color-text-primary-1">
-              <StretchOutExpandV size={16} />
-            </span>
-          </div>
+            icon={<StretchOutExpandV size={20} />}
+          />
         </Tooltip>
       )}
     </div>
@@ -134,7 +211,6 @@ const ControlsMenu = memo(function ControlsMenu({
   pageCount,
   currentPageNumber,
   onPageChange,
-  t,
 }: {
   scaleMode: string
   updateZoom: (steps: number) => void
@@ -142,17 +218,15 @@ const ControlsMenu = memo(function ControlsMenu({
   pageCount: number
   currentPageNumber: number
   onPageChange: (page: number) => void
-  t: (key: string) => string
 }) {
   return (
-    <div className="flex min-w-[200px] items-center gap-2">
+    <div className="f-i-center gap-2.5">
       <ZoomControls
         scaleMode={scaleMode}
         updateZoom={updateZoom}
         handleScaleChange={handleScaleChange}
-        t={t}
       />
-      <div className="bg-color-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
+      <div className="border-border-default h-4 w-0 shrink-0 border-l" />
       <PageSwitcher
         numPages={pageCount}
         nowPage={currentPageNumber}
@@ -172,7 +246,6 @@ export const ToolBar: FC<ToolBarProps> = ({
   extraNode,
   onOpenChange,
 }) => {
-  const { t } = useTranslation('pdfViewer.tools')
   const toolbarRef = useRef<HTMLDivElement>(null)
   const controlsRef = useRef<HTMLDivElement>(null)
   const [showInMore, setShowInMore] = useState(false)
@@ -297,55 +370,46 @@ export const ToolBar: FC<ToolBarProps> = ({
   const debouncedCheckSpace = useMemo(() => debounce(checkSpace, 50), [])
   useEventListener('resize', debouncedCheckSpace)
 
+  const splitLine = (
+    <div className="border-border-default h-4 w-0 shrink-0 border-l" />
+  )
+
   return (
     <div className="flex w-full flex-col">
       <div
         ref={toolbarRef}
-        className="bg-color-grey-layer1-semitrans2 flex items-center px-[20px] py-[12px]"
+        className="border-border-default bg-grey-layer1-semitrans2 flex items-center border-b px-3 py-2.5"
       >
-        <div data-left-container className="flex items-center gap-[8px]">
+        <div data-left-container className="f-i-center gap-2.5">
           {backNode && (
             <>
               {backNode}
-              <div className="bg-color-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
+              {splitLine}
             </>
           )}
           <Popover
-            trigger="hover"
             arrow={false}
             placement="bottomLeft"
-            overlayInnerStyle={{
-              padding: 8,
-              borderRadius: 16,
-              background: 'var(--color-grey-layer3-normal)',
+            styles={{
+              body: { padding: 0, borderRadius: 20 },
             }}
             onOpenChange={onOpenChange}
             content={<ActionTool />}
-            destroyTooltipOnHide
+            destroyOnHidden
           >
-            <div className="f-i-center hover:bg-color-grey-fill1-hover shrink-0 cursor-pointer gap-[8px] rounded-[8px] p-[8px] transition-colors">
-              <span className="text-color-text-primary-1">
-                <HamburgerMenuS size={16} />
-              </span>
-              <span className="text-color-text-primary-1">
-                <ArrowOutlineMB size={12} />
-              </span>
-            </div>
+            <GPTButton variant="text" icon={<HamburgerMenuS size={20} />} />
           </Popover>
-          <div
-            data-menu-divider
-            className="bg-color-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"
-          ></div>
+
+          {/* 分割线 */}
+          {splitLine}
 
           {showInMore ? (
             <Popover
               trigger="hover"
               arrow={false}
               placement="bottom"
-              overlayInnerStyle={{
-                padding: 8,
-                borderRadius: 16,
-                background: 'var(--color-grey-layer3-normal)',
+              styles={{
+                body: { padding: 8, borderRadius: 16 },
               }}
               content={
                 <ControlsMenu
@@ -355,13 +419,12 @@ export const ToolBar: FC<ToolBarProps> = ({
                   pageCount={pageCount}
                   currentPageNumber={currentPageNumber}
                   onPageChange={handlePageChange}
-                  t={t}
                 />
               }
             >
               <div
                 data-more-button
-                className="text-color-text-primary-1 hover:bg-color-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px] transition-colors"
+                className="text-text-primary-1 hover:bg-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px] transition-colors"
               >
                 <MoreH size={16} />
               </div>
@@ -376,9 +439,8 @@ export const ToolBar: FC<ToolBarProps> = ({
                 scaleMode={scaleMode}
                 updateZoom={updateZoom}
                 handleScaleChange={handleScaleChange}
-                t={t}
               />
-              <div className="bg-color-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
+              <div className="bg-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
               <PageSwitcher
                 numPages={pageCount}
                 nowPage={currentPageNumber}
@@ -389,7 +451,7 @@ export const ToolBar: FC<ToolBarProps> = ({
           {globalEnableTranslate && (
             <>
               {!showInMore && (
-                <div className="bg-color-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
+                <div className="bg-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
               )}
               <div data-current-translator className="shrink-0">
                 <TranslatorMenu showTranslateName={showTranslateName} />
@@ -407,9 +469,8 @@ export const ToolBar: FC<ToolBarProps> = ({
                 scaleMode={scaleMode}
                 updateZoom={updateZoom}
                 handleScaleChange={handleScaleChange}
-                t={t}
               />
-              <div className="bg-color-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
+              <div className="bg-text-primary-5 mx-[7px] h-[16px] w-[1px] shrink-0"></div>
               <PageSwitcher
                 numPages={pageCount}
                 nowPage={currentPageNumber}
@@ -428,12 +489,10 @@ export const ToolBar: FC<ToolBarProps> = ({
             </div>
           )}
         </div>
-        <div data-spacer className="min-w-2 flex-1"></div>
-        <div data-right-container className="flex items-center gap-[8px]">
-          <div className="flex shrink-0">{extraNode}</div>
+        <div className="ms-auto">
+          <DownloadMenu />
         </div>
       </div>
-      <div className="border-color-grey-line1-normal shrink-0 border-b"></div>
     </div>
   )
 }

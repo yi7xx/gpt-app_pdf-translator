@@ -44,16 +44,25 @@
     "download": {
       "retry": "Erneut versuchen",
       "not-support": "Der aktuelle Modus unterstützt das Drucken von übersetzten PDFs nicht",
-      "trans-info": "Die aktuelle Datei enthält unübersetzte Inhalte（{count} Seiten）. Möchten Sie alles übersetzen und herunterladen? Die Übersetzung wird entsprechende Punkte abziehen.",
+      "trans-info": "Die aktuelle Datei enthält unübersetzte Inhalte（{{count}} Seiten）. Möchten Sie alles übersetzen und herunterladen? Die Übersetzung wird entsprechende Punkte abziehen.",
       "direct": "Direkt herunterladen",
       "trans": "Übersetzen und herunterladen",
-      "trans-progress": "Übersetzung läuft {current}/{total}",
+      "trans-progress": "Übersetzung läuft {{current}}/{{total}}",
       "trans-progress-info": "Das Schließen des schwebenden Fensters unterbricht die Übersetzung nicht.",
       "trans-success": "Übersetzung abgeschlossen",
       "trans-failed": "Ups! Übersetzungsfehler"
     },
     "common": {
-      "translating": "Übersetzung läuft..."
+      "translating": "Übersetzung läuft...",
+      "source-file": "Quelldatei",
+      "translated-file": "Übersetzte Datei"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klicken oder Datei auf diese Seite ziehen, um sie hochzuladen",
+    "supportedFormats": "Formate: pdf / doc / ppt",
+    "dragFileHere": "Dateien hierher ziehen, um sie hochzuladen",
+    "uploading": "Wird hochgeladen...",
+    "fullScreen": "Vollbild-Lesen/Übersetzung"
   }
 }

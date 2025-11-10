@@ -44,16 +44,25 @@
     "download": {
       "retry": "נסה שוב",
       "not-support": "המצב הנוכחי אינו תומך בהדפסת קובצי PDF מתורגמים",
-      "trans-info": "הקובץ הנוכחי מכיל תוכן שלא תורגם ({count} עמודים). האם ברצונך לתרגם את כולו ולהוריד? התרגום יפחית נקודות בהתאם.",
+      "trans-info": "הקובץ הנוכחי מכיל תוכן שלא תורגם ({{count}} עמודים). האם ברצונך לתרגם את כולו ולהוריד? התרגום יפחית נקודות בהתאם.",
       "direct": "הורדה ישירה",
       "trans": "תרגם והורד",
-      "trans-progress": "התרגום בתהליך {current}/{total}",
+      "trans-progress": "התרגום בתהליך {{current}}/{{total}}",
       "trans-progress-info": "סגירת החלון הצף לא תפסיק את התרגום.",
       "trans-success": "התרגום הושלם",
       "trans-failed": "אופס! שגיאת תרגום"
     },
     "common": {
-      "translating": "מתרגם..."
+      "translating": "מתרגם...",
+      "source-file": "קובץ מקור",
+      "translated-file": "קובץ מתורגם"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "לחץ או גרור קובץ לעמוד זה להעלאה",
+    "supportedFormats": "פורמטים: pdf / doc / ppt",
+    "dragFileHere": "גרור קבצים לכאן להעלאה",
+    "uploading": "מעלה...",
+    "fullScreen": "קריאה/תרגום במסך מלא"
   }
 }

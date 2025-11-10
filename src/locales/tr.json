@@ -44,16 +44,25 @@
     "download": {
       "retry": "Tekrar Dene",
       "not-support": "Mevcut mod, çevrilmiş PDF'lerin yazdırılmasını desteklemiyor",
-      "trans-info": "Mevcut dosya çevrilmemiş içerik içeriyor（{count} sayfa）. Hepsini çevirmek ve indirmek ister misiniz? Çeviri, karşılık gelen puanları düşecektir.",
+      "trans-info": "Mevcut dosya çevrilmemiş içerik içeriyor（{{count}} sayfa）. Hepsini çevirmek ve indirmek ister misiniz? Çeviri, karşılık gelen puanları düşecektir.",
       "direct": "Doğrudan İndir",
       "trans": "Çevir ve İndir",
-      "trans-progress": "Çeviri devam ediyor {current}/{total}",
+      "trans-progress": "Çeviri devam ediyor {{current}}/{{total}}",
       "trans-progress-info": "Yüzer pencereyi kapatmak çeviriyi kesintiye uğratmaz.",
       "trans-success": "Çeviri tamamlandı",
       "trans-failed": "Hata! Çeviri hatası"
     },
     "common": {
-      "translating": "Çeviri yapılıyor..."
+      "translating": "Çeviri yapılıyor...",
+      "source-file": "Kaynak Dosya",
+      "translated-file": "Çevrilmiş Dosya"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Yüklemek için dosyayı buraya tıklayın veya sürükleyin",
+    "supportedFormats": "Formatlar: pdf / doc / ppt",
+    "dragFileHere": "Yüklemek için dosyaları buraya sürükleyin",
+    "uploading": "Yükleniyor...",
+    "fullScreen": "Tam Ekran Okuma/Çeviri"
   }
 }

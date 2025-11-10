@@ -44,16 +44,25 @@
     "download": {
       "retry": "Coba Lagi",
       "not-support": "Mode saat ini tidak mendukung pencetakan PDF yang diterjemahkan",
-      "trans-info": "File saat ini mengandung konten yang belum diterjemahkan（{count} halaman）. Apakah Anda ingin menerjemahkan semuanya dan mengunduh? Terjemahan akan mengurangi poin yang sesuai.",
+      "trans-info": "File saat ini mengandung konten yang belum diterjemahkan（{{count}} halaman）. Apakah Anda ingin menerjemahkan semuanya dan mengunduh? Terjemahan akan mengurangi poin yang sesuai.",
       "direct": "Unduh Langsung",
       "trans": "Terjemahkan dan Unduh",
-      "trans-progress": "Terjemahan sedang berlangsung {current}/{total}",
+      "trans-progress": "Terjemahan sedang berlangsung {{current}}/{{total}}",
       "trans-progress-info": "Menutup jendela mengambang tidak akan menghentikan terjemahan.",
       "trans-success": "Terjemahan selesai",
       "trans-failed": "Ups! Kesalahan terjemahan"
     },
     "common": {
-      "translating": "Sedang menerjemahkan..."
+      "translating": "Sedang menerjemahkan...",
+      "source-file": "Berkas Sumber",
+      "translated-file": "Berkas Terjemahan"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klik atau seret berkas ke halaman ini untuk mengunggah",
+    "supportedFormats": "Format: pdf / doc / ppt",
+    "dragFileHere": "Seret berkas ke sini untuk mengunggah",
+    "uploading": "Mengunggah...",
+    "fullScreen": "Membaca/Terjemahan Layar Penuh"
   }
 }

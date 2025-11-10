@@ -1,10 +1,11 @@
+import GPTButton from '@/components/GPTButton'
+import LanguageSelect from '@/components/LanguageSelect'
 import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
-import { ArrowOutlineSB, ExclamationMark, TranslateLite } from '@sider/icons'
-import { useClickAway, useUpdate } from 'ahooks'
-import { Popover, Select, Switch, Tooltip } from 'antd'
+import { DownMd, TranslateLite } from '@sider/icons'
+import { useUpdate } from 'ahooks'
+import { Popover, Switch } from 'antd'
 import { memo, useEffect, useRef, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent } from '../events'
 import { usePDFEvent } from '../hooks/usePDFEvent'
@@ -12,7 +13,6 @@ import {
   TranslateType,
   type TranslateOption,
 } from '../services/TranslationService'
-import ModelList from './ModelList'
 
 /**
  * 同步更新状态
@@ -33,8 +33,7 @@ const TranslatorMenu = ({
   showTranslateName: boolean
 }) => {
   const { translationService, onGlobalModelChange } = useDocumentContext()
-  const { t } = useTranslation('pdfViewer.tools')
-  const { t: tTool } = useI18n()
+  const { t } = useI18n()
 
   const [loaded, setLoaded] = useState(false)
 
@@ -49,7 +48,6 @@ const TranslatorMenu = ({
     setIsPrinting(isPrinting)
   })
 
-  const popoverRef = useRef<HTMLDivElement[]>([])
   const [popoverOpen, setPopoverOpen] = useState(false)
   const [modelListOpen, setModelListOpen] = useState(false)
 
@@ -195,8 +193,6 @@ const TranslatorMenu = ({
     }
   }
 
-  useClickAway(cancel, popoverRef.current)
-
   const update = useUpdate()
   // 点击模型列表时，更新组件来确保ref生效
   useEffect(() => {
@@ -207,182 +203,71 @@ const TranslatorMenu = ({
 
   return (
     <div className="f-i-center h-[32px]">
-      <div
-        onClick={() => toggleTranslateService(!enableTrans.current)}
+      <GPTButton
+        variant="secondary"
+        disabled={!loaded}
         className={cn(
-          'bg-color-grey-fill2-normal f-i-center hover:bg-color-grey-fill2-hover cursor-pointer gap-2 rounded-l-[8px] transition-colors',
-          showTranslateName ? 'px-[16px] py-[6px]' : 'p-[9px]',
-          loaded || 'cursor-not-allowed',
-          enableTrans.current
-            ? 'text-color-brand-secondary-normal'
-            : 'text-color-text-primary-1',
+          'rounded-r-none',
+          enableTrans.current && 'text-interactive-icon-accent-default',
         )}
+        icon={<TranslateLite size={14} />}
+        onClick={() => toggleTranslateService(!enableTrans.current)}
       >
-        <TranslateLite size={14} />
-        {showTranslateName && (
-          <span className="font-normal-14 whitespace-nowrap">
-            {enableTrans.current ? t('close-trans') : t('translate')}
-          </span>
-        )}
-      </div>
+        {enableTrans.current
+          ? t('pdfViewer.tools.close-trans')
+          : t('pdfViewer.tools.translate')}
+      </GPTButton>
       <Popover
         open={popoverOpen}
         trigger={'click'}
-        overlayInnerStyle={{
-          width: 260,
-          padding: 0,
-          borderRadius: 16,
-          background: 'var(--color-grey-layer3-normal)',
-          boxShadow:
-            '0px 6px 24px 0px rgba(12, 13, 25, 0.04), 0px 12px 48px 0px rgba(12, 13, 25, 0.04), 0px 24px 96px 0px rgba(12, 13, 25, 0.04)',
-        }}
+        onOpenChange={setPopoverOpen}
+        styles={{ body: { width: 260, padding: 0, borderRadius: 16 } }}
         arrow={false}
-        destroyTooltipOnHide
+        placement="bottomRight"
+        destroyOnHidden
+        getPopupContainer={(node) => node.parentElement!}
         content={
-          <div
-            ref={(ref) => {
-              if (ref) {
-                popoverRef.current[0] = ref
-              }
-            }}
-            className="relative flex flex-col gap-[4px] px-[8px] pt-[8px] pb-[16px]"
-          >
-            <div className="f-i-center px-[8px] py-[6px]">
-              <span className="text-color-text-primary-1 font-normal-14 mr-auto">
-                {t('compare')}
-              </span>
-              <Switch
-                className="w-[28px]"
-                size="small"
-                checked={compareEnabled.current}
-                onChange={handleCompareChange}
-              />
-            </div>
-            <div className="border-color-grey-line1-normal mx-[9px] my-[6px] shrink-0 border-t" />
-            <div className="mx-2 shrink-0">
-              <div className="text-color-text-primary-3 font-normal-12 mb-1">
-                {t('translate-service')}
+          <div className="size-full">
+            <div className="w-full p-1.5">
+              <div className="f-i-center h-9 w-full ps-2.5 pe-2">
+                <span className="font-normal-13 text-interactive-label-secondary-default">
+                  {t('pdfViewer.tools.compare')}
+                </span>
+                <Switch
+                  className="ms-auto w-8 shrink-0"
+                  checked={compareEnabled.current}
+                  onChange={handleCompareChange}
+                />
               </div>
-              <Select
-                className="w-full"
-                variant="filled"
-                open={modelListOpen}
-                value={modelOption.current}
-                suffixIcon={
-                  <span className="text-color-text-primary-3 flex-center">
-                    <ArrowOutlineSB size={12} />
-                  </span>
-                }
-                onDropdownVisibleChange={(visible) => setModelListOpen(visible)}
-                getPopupContainer={() => popoverRef.current[0]!}
-                dropdownRender={() => (
-                  <div
-                    className="w-full"
-                    ref={(ref) => {
-                      if (ref) {
-                        popoverRef.current[3] = ref
-                      }
-                    }}
-                  >
-                    <ModelList
-                      activeModel={modelOption.current.name}
-                      onChange={handleModelOptionChange}
-                    />
-                  </div>
-                )}
-                labelRender={() => (
-                  <div className="f-i-center shrink-0 gap-[7px]">
-                    <span className="text-[16px]">
-                      {modelOption.current.icon}
-                    </span>
-                    <span className="font-normal-14">
-                      {modelOption.current.displayName ||
-                        modelOption.current.name}
-                    </span>
-                  </div>
-                )}
-              />
-            </div>
 
-            <div className="mt-[4px] box-border flex w-full flex-col gap-[4px] px-[8px]">
-              {/* 根据需求暂时不需要源语言 */}
-              {/* <div className="text-color-text-primary-3 font-normal-12">
-                {t('source-language')}
-              </div>
-              <LanguageSelect
-                isAuto
-                variant="filled"
-                value={fromLang.current}
-                onChange={(item) => handleFromLangChange(item.code)}
-                getPopupContainer={() => popoverRef.current[0]!}
-              /> */}
-              <div className="text-color-text-primary-3 font-normal-12">
-                {t('translated-to')}
-              </div>
-              {/* <LanguageSelect
-                variant="filled"
-                value={toLang.current}
-                onChange={(item) => handleToLangChange(item.code)}
-                getPopupContainer={() => popoverRef.current[0]!}
-              /> */}
-            </div>
-            {isFreeTranslation() || (
-              <div className="f-i-center px-[8px] pt-[4px]">
-                <div className="f-i-center gap-[4px]">
-                  <span className="text-color-text-primary-4">
-                    <ExclamationMark size={12} />
-                  </span>
-                  <span className="text-color-text-primary-3 font-normal-12">
-                    {tTool(
-                      modelOption.current.type === TranslateType.BASIC
-                        ? 'pdfViewer.tools.cost-basic'
-                        : 'pdfViewer.tools.cost-advanced',
-                      {
-                        count: (
-                          <Tooltip
-                            title={t('cost-tooltip')}
-                            styles={{
-                              body: { textAlign: 'center', fontWeight: '400' },
-                            }}
-                          >
-                            <span className="text-color-brand-primary-normal cursor-pointer text-[12px] font-[700]">
-                              {pageCount}
-                            </span>
-                          </Tooltip>
-                        ),
-                      },
-                    )}
-                  </span>
+              <div className="border-border-default my-1.5 w-full border-t" />
+
+              <div className="space-y-2 px-2.5 py-2">
+                <div className="text-text-tertiary font-normal-14">
+                  {t('pdfViewer.tools.translated-to')}
                 </div>
-                <button
-                  onClick={handleConfirm}
-                  className="hover:bg-color-advanced-fil-hover bg-color-advanced-fill-normal ml-auto rounded-[6px] px-[12px] py-[2px] transition-colors"
-                >
-                  <span className="text-color-text-white-1 font-normal-12">
-                    {t('confirm')}
-                  </span>
-                </button>
+                <LanguageSelect
+                  value={toLang.current}
+                  onChange={(item) => handleToLangChange(item.code)}
+                />
               </div>
-            )}
+            </div>
+            <div className="f-i-center bg-brand-primary-bg text-brand-secondary-normal h-11 cursor-pointer gap-1 rounded-b-2xl px-4">
+              <div className="font-normal-12 -tracking-[0.1px] whitespace-nowrap">
+                Get better translation quality on Sider
+              </div>
+              <span className="shrink-0 -rotate-90">
+                <DownMd size={14}></DownMd>
+              </span>
+            </div>
           </div>
         }
       >
-        <div
-          ref={(ref) => {
-            if (ref) {
-              popoverRef.current[1] = ref
-            }
-          }}
-          onClick={handleClickArrow}
-          className={cn(
-            'border-color-grey-fill2-normal rounded-r-[8px] border-l p-[10px] transition-colors',
-            isPrinting
-              ? 'bg-color-grey-fill2-normal text-color-text-primary-5 cursor-not-allowed'
-              : 'bg-color-grey-fill2-normal text-color-text-primary-1 hover:bg-color-grey-fill2-hover cursor-pointer',
-          )}
-        >
-          <ArrowOutlineSB size={12} />
-        </div>
+        <GPTButton
+          variant="secondary"
+          className="rounded-l-none rounded-r-full border-l-0"
+          icon={<DownMd size={20} />}
+        />
       </Popover>
     </div>
   )

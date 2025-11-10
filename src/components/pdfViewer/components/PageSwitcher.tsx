@@ -1,9 +1,10 @@
+import GPTButton from '@/components/GPTButton'
+import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
 import { ArrowLineB, ArrowLineT } from '@sider/icons'
 import { useKeyPress } from 'ahooks'
 import { Tooltip } from 'antd'
 import { useEffect, useLayoutEffect, useRef, useState, type FC } from 'react'
-import { useTranslation } from 'react-i18next'
 
 interface PageSwitcherProps {
   numPages: number
@@ -16,7 +17,7 @@ const PageSwitcher: FC<PageSwitcherProps> = ({
   nowPage,
   onPageChange,
 }) => {
-  const { t } = useTranslation('pdfViewer')
+  const { t } = useI18n()
   const [page, setPage] = useState<number>(nowPage)
   useEffect(() => {
     setPage(nowPage)
@@ -45,16 +46,12 @@ const PageSwitcher: FC<PageSwitcherProps> = ({
     }
   }
 
-  const [focus, setFocus] = useState(false)
-
   const handleInputBlur = () => {
     handlePageChange(page)
-    setFocus(false)
     inputRef.current?.blur()
   }
   const handleFocus = () => {
     setTimeout(() => inputRef.current?.focus(), 0)
-    setFocus(true)
   }
 
   useLayoutEffect(() => {
@@ -94,43 +91,27 @@ const PageSwitcher: FC<PageSwitcherProps> = ({
   })
 
   return (
-    <div className="bg-color-grey-fill2-normal flex h-[32px] rounded-[8px]">
-      <Tooltip title={t('tools.pre-page')}>
+    <div className="f-i-center gap-1">
+      <Tooltip title={t('pdfViewer.tools.pre-page')} arrow={false}>
+        <GPTButton
+          variant="text"
+          onClick={() => handlePageChange((page || 0) - 1)}
+          icon={<ArrowLineT size={20} />}
+          disabled={page === 1}
+        />
+      </Tooltip>
+      <div className="f-i-center">
         <div
           className={cn(
-            'rounded-l-[8px] p-[8px] transition-colors',
-            page === 1
-              ? 'text-color-text-primary-5 cursor-not-allowed'
-              : 'text-color-text-primary-1 hover:bg-color-grey-fill2-hover cursor-pointer',
+            'flex-center text-text-primary bg-bg-tertiary box-content h-[28px] min-w-14 flex-1 cursor-text rounded-full border border-transparent transition-all',
+            'focus-within:border-text-primary',
           )}
-          onClick={() => handlePageChange((page || 0) - 1)}
+          onClick={handleFocus}
         >
-          <ArrowLineT size={16} />
-        </div>
-      </Tooltip>
-      <div className="bg-color-grey-fill2-normal h-full w-[1px] shrink-0"></div>
-      <div
-        className={cn(
-          'f-i-center box-border shrink-0 gap-[8px] border-[1px] border-solid px-[12px] py-[6px] transition-colors',
-          focus
-            ? 'border-color-brand-primary-normal bg-color-grey-layer2-normal'
-            : 'hover:bg-color-grey-fill2-hover border-transparent',
-        )}
-        style={{
-          boxShadow: focus
-            ? ' 0px 0px 0px 3px var(--color-focus-primary-1)'
-            : '',
-        }}
-        onClick={handleFocus}
-      >
-        <div className="flex-center min-w-[20px] flex-1 cursor-text">
-          <div
-            className="text-color-text-primary-1 font-normal-14 inline-flex w-min"
-            ref={boxRef}
-          >
+          <div className="font-normal-14 inline-flex" ref={boxRef}>
             <input
               type="text"
-              className="h-full w-full bg-transparent text-inherit outline-none"
+              className="size-full bg-transparent text-inherit outline-none"
               value={page}
               onChange={handleInputChange}
               onBlur={handleInputBlur}
@@ -145,23 +126,17 @@ const PageSwitcher: FC<PageSwitcherProps> = ({
             </span>
           </div>
         </div>
-        <span className="text-color-text-primary-4 font-normal-12 shrink-0 text-nowrap">
+        <span className="font-normal-14 text-text-tertiary ms-[9px] shrink-0 text-nowrap">
           / {numPages}
         </span>
       </div>
-      <div className="bg-color-grey-fill2-normal h-full w-[1px] shrink-0"></div>
-      <Tooltip title={t('tools.next-page')}>
-        <div
-          className={cn(
-            'rounded-r-[8px] p-[8px] transition-colors',
-            page === numPages
-              ? 'text-color-text-primary-5 cursor-not-allowed'
-              : 'text-color-text-primary-1 hover:bg-color-grey-fill2-hover cursor-pointer',
-          )}
+      <Tooltip title={t('pdfViewer.tools.next-page')} arrow={false}>
+        <GPTButton
+          variant="text"
           onClick={() => handlePageChange((page || 0) + 1)}
-        >
-          <ArrowLineB size={16} />
-        </div>
+          icon={<ArrowLineB size={20} />}
+          disabled={page === numPages}
+        />
       </Tooltip>
     </div>
   )

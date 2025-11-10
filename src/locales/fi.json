@@ -44,16 +44,25 @@
     "download": {
       "retry": "Yritä uudelleen",
       "not-support": "Nykyinen tila ei tue käännettyjen PDF-tiedostojen tulostamista",
-      "trans-info": "Nykyisessä tiedostossa on kääntämätöntä sisältöä（{count} sivua）. Haluatko kääntää kaiken ja ladata? Käännös vähentää vastaavia pisteitä.",
+      "trans-info": "Nykyisessä tiedostossa on kääntämätöntä sisältöä（{{count}} sivua）. Haluatko kääntää kaiken ja ladata? Käännös vähentää vastaavia pisteitä.",
       "direct": "Lataa suoraan",
       "trans": "Käännä ja lataa",
-      "trans-progress": "Käännös käynnissä {current}/{total}",
+      "trans-progress": "Käännös käynnissä {{current}}/{{total}}",
       "trans-progress-info": "Kelluvan ikkunan sulkeminen ei keskeytä käännöstä.",
       "trans-success": "Käännös valmis",
       "trans-failed": "Hups! Käännösvirhe"
     },
     "common": {
-      "translating": "Käännetään..."
+      "translating": "Käännetään...",
+      "source-file": "Lähdetiedosto",
+      "translated-file": "Käännetty tiedosto"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Napsauta tai vedä tiedosto tälle sivulle ladataksesi",
+    "supportedFormats": "Tiedostomuodot: pdf / doc / ppt",
+    "dragFileHere": "Vedä tiedostot tähän ladataksesi",
+    "uploading": "Ladataan...",
+    "fullScreen": "Koko näytön lukeminen/kääntäminen"
   }
 }

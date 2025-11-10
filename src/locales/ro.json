@@ -44,16 +44,25 @@
     "download": {
       "retry": "Reîncearcă",
       "not-support": "Modul curent nu suportă imprimarea PDF-urilor traduse",
-      "trans-info": "Fișierul curent conține conținut netradus（{count} pagini）. Doriți să traduceți tot și să descărcați? Traducerea va deduce punctele corespunzătoare.",
+      "trans-info": "Fișierul curent conține conținut netradus（{{count}} pagini）. Doriți să traduceți tot și să descărcați? Traducerea va deduce punctele corespunzătoare.",
       "direct": "Descărcare directă",
       "trans": "Tradu și descarcă",
-      "trans-progress": "Traducere în curs {current}/{total}",
+      "trans-progress": "Traducere în curs {{current}}/{{total}}",
       "trans-progress-info": "Închiderea ferestrei flotante nu va întrerupe traducerea.",
       "trans-success": "Traducere completă",
       "trans-failed": "Ups! Eroare de traducere"
     },
     "common": {
-      "translating": "Se traduce..."
+      "translating": "Se traduce...",
+      "source-file": "Fișier sursă",
+      "translated-file": "Fișier tradus"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Faceți clic sau trageți fișierul pe această pagină pentru a încărca",
+    "supportedFormats": "Formate: pdf / doc / ppt",
+    "dragFileHere": "Trageți fișierele aici pentru a le încărca",
+    "uploading": "Se încarcă...",
+    "fullScreen": "Citire/Traducere pe ecran complet"
   }
 }

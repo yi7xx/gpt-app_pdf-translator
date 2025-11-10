@@ -25,11 +25,12 @@ function widgetMeta(widget: ContentWidget) {
     'openai/toolInvocation/invoked': widget.invoked,
     'openai/widgetAccessible': false,
     'openai/resultCanProduceWidget': true,
+    'openai/sandboxPermissions': ['allow-modals'],
   } as const
 }
 
 const handler = createMcpHandler(async (server) => {
-  const html = await getAppsSdkCompatibleHtml(baseURL, '/button-demo')
+  const html = await getAppsSdkCompatibleHtml(baseURL, '/')
 
   const contentWidget: ContentWidget = {
     id: 'show_content',

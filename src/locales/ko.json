@@ -44,16 +44,25 @@
     "download": {
       "retry": "다시 시도",
       "not-support": "현재 모드는 번역된 PDF 인쇄를 지원하지 않습니다.",
-      "trans-info": "현재 파일에는 번역되지 않은 콘텐츠가 포함되어 있습니다（{count} 페이지）. 모두 번역하여 다운로드하시겠습니까? 번역 시 해당 포인트가 차감됩니다.",
+      "trans-info": "현재 파일에는 번역되지 않은 콘텐츠가 포함되어 있습니다（{{count}} 페이지）. 모두 번역하여 다운로드하시겠습니까? 번역 시 해당 포인트가 차감됩니다.",
       "direct": "직접 다운로드",
       "trans": "번역 및 다운로드",
-      "trans-progress": "번역 진행 중 {current}/{total}",
+      "trans-progress": "번역 진행 중 {{current}}/{{total}}",
       "trans-progress-info": "플로팅 창을 닫아도 번역이 중단되지 않습니다.",
       "trans-success": "번역 완료",
       "trans-failed": "이런! 번역 오류"
     },
     "common": {
-      "translating": "번역 중..."
+      "translating": "번역 중...",
+      "source-file": "원본 파일",
+      "translated-file": "번역된 파일"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "업로드하려면 파일을 클릭하거나 이 페이지로 드래그하세요",
+    "supportedFormats": "형식: pdf / doc / ppt",
+    "dragFileHere": "업로드하려면 파일을 이곳으로 드래그하세요",
+    "uploading": "업로드 중...",
+    "fullScreen": "전체 화면 읽기/번역"
   }
 }

@@ -44,16 +44,25 @@
     "download": {
       "retry": "Retry",
       "not-support": "The current mode does not support printing translated PDFs",
-      "trans-info": "The current file contains untranslated content（{count} pages）. Would you like to translate all of it and download? Translation will deduct corresponding points.",
+      "trans-info": "The current file contains untranslated content（{{count}} pages）. Would you like to translate all of it and download? Translation will deduct corresponding points.",
       "direct": "Direct Download",
       "trans": "Translate and Download",
-      "trans-progress": "Translation in progress {current}/{total}",
+      "trans-progress": "Translation in progress {{current}}/{{total}}",
       "trans-progress-info": "Closing the floating window will not interrupt the translation.",
       "trans-success": "Translation completed",
       "trans-failed": "Oops! Translation error"
     },
     "common": {
-      "translating": "Translating..."
+      "translating": "Translating...",
+      "source-file": "Source File",
+      "translated-file": "Translated File"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Click or drag file to this page to upload",
+    "supportedFormats": "Formats: pdf / doc /ppt",
+    "dragFileHere": "Drag files here to upload",
+    "uploading": "Uploading...",
+    "fullScreen": "Full Screen Reading/Translation"
   }
 }

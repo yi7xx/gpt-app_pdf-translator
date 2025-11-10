@@ -44,16 +44,25 @@
     "download": {
       "retry": "Thử Lại",
       "not-support": "Chế độ hiện tại không hỗ trợ in PDF đã dịch",
-      "trans-info": "Tệp hiện tại chứa nội dung chưa được dịch（{count} trang）. Bạn có muốn dịch tất cả và tải xuống không? Việc dịch sẽ trừ điểm tương ứng.",
+      "trans-info": "Tệp hiện tại chứa nội dung chưa được dịch（{{count}} trang）. Bạn có muốn dịch tất cả và tải xuống không? Việc dịch sẽ trừ điểm tương ứng.",
       "direct": "Tải Xuống Trực Tiếp",
       "trans": "Dịch và Tải Xuống",
-      "trans-progress": "Đang dịch {current}/{total}",
+      "trans-progress": "Đang dịch {{current}}/{{total}}",
       "trans-progress-info": "Đóng cửa sổ nổi sẽ không làm gián đoạn quá trình dịch.",
       "trans-success": "Dịch Hoàn Tất",
       "trans-failed": "Rất tiếc! Lỗi dịch"
     },
     "common": {
-      "translating": "Đang dịch..."
+      "translating": "Đang dịch...",
+      "source-file": "Tệp nguồn",
+      "translated-file": "Tệp đã dịch"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Nhấp hoặc kéo tệp vào trang này để tải lên",
+    "supportedFormats": "Định dạng: pdf / doc / ppt",
+    "dragFileHere": "Kéo tệp vào đây để tải lên",
+    "uploading": "Đang tải lên...",
+    "fullScreen": "Đọc/Dịch toàn màn hình"
   }
 }

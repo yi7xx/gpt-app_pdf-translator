@@ -1,4 +1,4 @@
-import { sleep } from '@sider/utils/index'
+import { sleep } from '@/packages/utils/sleep'
 import { PDFViewerEvent, TransServerEvents, type PDFEventBus } from '../events'
 import { LinkService } from '../modules/LinkService'
 import { type Paragraph } from '../modules/PDFTransViewerUIManager'

@@ -44,16 +44,25 @@
     "download": {
       "retry": "እንደገና ሞክር",
       "not-support": "አሁኑ ሁነታ የተተረጎመ ፒዲኤፍ ማተም አይደግፍም",
-      "trans-info": "አሁኑ ፋይል ያልተተረጎመ ይዘት ይዟል（{count} ገጾች）። ሁሉንም ትርጉም እና አውርድ ይፈልጋሉ? ትርጉም ተመነ ነጥቦችን ያስወግዳል።",
+      "trans-info": "አሁኑ ፋይል ያልተተረጎመ ይዘት ይዟል（{{count}} ገጾች）። ሁሉንም ትርጉም እና አውርድ ይፈልጋሉ? ትርጉም ተመነ ነጥቦችን ያስወግዳል።",
       "direct": "ቀጥታ አውርድ",
       "trans": "ተርጉም እና አውርድ",
-      "trans-progress": "ትርጉም በሂደት ላይ {current}/{total}",
+      "trans-progress": "ትርጉም በሂደት ላይ {{current}}/{{total}}",
       "trans-progress-info": "እንቅስቃሴ መዝጊያ መስኮት ትርጉምን አያቋርጥም።",
       "trans-success": "ትርጉም ተጠናቋል",
       "trans-failed": "አይ! የትርጉም ስህተት"
     },
     "common": {
-      "translating": "ትርጉም በሂደት ላይ..."
+      "translating": "ትርጉም በሂደት ላይ...",
+      "source-file": "የመነሻ ፋይል",
+      "translated-file": "የተተረጎመ ፋይል"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "ፋይል ለመስቀል ወይም ለመስቀል ይህን ገጽ ይጫኑ",
+    "supportedFormats": "ቅርጸቶች፡ pdf / doc / ppt",
+    "dragFileHere": "ፋይሎችን እዚህ ይጫኑ ለማስገባት",
+    "uploading": "በመስቀል ላይ...",
+    "fullScreen": "ሙሉ ማውጫ ንባብ/ትርጉም"
   }
 }

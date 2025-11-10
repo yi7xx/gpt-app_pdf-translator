@@ -1,6 +1,6 @@
+import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
 import { memo, useMemo, type FC } from 'react'
-import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import {
   TranslateType,
@@ -19,7 +19,7 @@ const ModelList: FC<ModelListProps> = ({
   activeModel,
   onChange,
 }) => {
-  const { t } = useTranslation('pdfViewer.tools')
+  const { t } = useI18n()
   const { translationService } = useDocumentContext()
 
   const modelOptions = useMemo(() => {
@@ -51,9 +51,9 @@ const ModelList: FC<ModelListProps> = ({
 
   const typeI18n = useMemo(() => {
     const categoryDisplaynamies: Record<string, string> = {
-      [TranslateType.FREE]: t('free'),
-      [TranslateType.BASIC]: t('basic'),
-      [TranslateType.ADVANCED]: t('advanced'),
+      [TranslateType.FREE]: t('pdfViewer.tools.free'),
+      [TranslateType.BASIC]: t('pdfViewer.tools.basic'),
+      [TranslateType.ADVANCED]: t('pdfViewer.tools.advanced'),
     }
 
     for (const [type, option] of modelOptions) {
@@ -70,7 +70,7 @@ const ModelList: FC<ModelListProps> = ({
       {modelOptions.map(([type, options]) => (
         <div className="flex flex-col gap-[2px]" key={type}>
           {(type !== TranslateType.FREE || options.length > 1) && (
-            <div className="text-color-text-primary-4 font-normal-11 px-[9px] py-[8px] pb-[4px]">
+            <div className="text-text-primary-4 font-normal-11 px-[9px] py-[8px] pb-[4px]">
               {typeI18n[type]}
             </div>
           )}
@@ -81,14 +81,14 @@ const ModelList: FC<ModelListProps> = ({
               className={cn(
                 'font-normal-14 f-i-center cursor-pointer gap-[6px] rounded-[8px] px-[8px] py-[6px] transition-colors',
                 activeModel === option.name
-                  ? 'bg-color-brand-primary-focus'
-                  : 'bg-color-grey-fill1-normal hover:bg-color-grey-fill1-hover',
+                  ? 'bg-brand-primary-focus'
+                  : 'bg-grey-fill1-normal hover:bg-grey-fill1-hover',
               )}
             >
               <div className="flex-center size-[16px] shrink-0 text-[16px]">
                 {option.icon}
               </div>
-              <span className="text-color-text-primary-1 line-clamp-1 w-0 flex-1">
+              <span className="text-text-primary-1 line-clamp-1 w-0 flex-1">
                 {option.displayName || option.name}
               </span>
             </div>

@@ -23,7 +23,6 @@
     "next": "15.5.4",
     "pdfjs-dist": "4.9.155",
     "react": "19.1.0",
-    "react-custom-scroll": "^7.0.0",
     "react-dom": "19.1.0",
     "react-i18next": "^16.2.4",
     "tailwind-merge": "^3.3.1",

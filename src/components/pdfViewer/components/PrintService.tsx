@@ -3,7 +3,6 @@ import { CloseOutlineM, Loading } from '@sider/icons'
 import { Button, ConfigProvider, Modal, message, notification } from 'antd'
 import { useRef, useState } from 'react'
 import ReactDOM from 'react-dom'
-import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent, UIEvents } from '../events'
 import { usePDFEvent } from '../hooks/usePDFEvent'
@@ -14,8 +13,7 @@ import {
 
 export const PrintService = () => {
   const { pdfViewer, pdfDocument, docFileName, eventBus } = useDocumentContext()
-  const { t } = useTranslation('pdfViewer.download')
-  const { t: tTool } = useI18n()
+  const { t } = useI18n()
   const printContainerRef = useRef<HTMLDivElement>(null)
   const [open, setOpen] = useState(false)
   const printServiceRef = useRef<PDFPrintService | null>(null)
@@ -27,7 +25,7 @@ export const PrintService = () => {
       !pdfDocument ||
       !(pdfViewer.isTranslateMode || pdfViewer.isCompareMode)
     ) {
-      message.warning(t('not-support'), 1)
+      message.warning(t('pdfViewer.download.not-support'), 1)
       return
     }
     if (printServiceRef.current) {
@@ -56,16 +54,16 @@ export const PrintService = () => {
     api.open({
       key: key,
       message: (
-        <span className="text-color-text-primary-1 font-medium-16">
-          {tTool('pdfViewer.download.trans-progress', {
+        <span className="text-text-primary-1 font-medium-16">
+          {t('pdfViewer.download.trans-progress', {
             current: completed,
             total: total,
           })}
         </span>
       ),
       description: (
-        <span className="text-color-text-primary-3 font-normal-14">
-          {t('trans-progress-info')}
+        <span className="text-text-primary-3 font-normal-14">
+          {t('pdfViewer.download.trans-progress-info')}
         </span>
       ),
       icon: (
@@ -96,20 +94,20 @@ export const PrintService = () => {
     setTimeout(() => {
       api.warning({
         message: (
-          <span className="text-color-text-primary-1 font-medium-16">
-            {t('trans-failed')}
+          <span className="text-text-primary-1 font-medium-16">
+            {t('pdfViewer.download.trans-failed')}
           </span>
         ),
         description: (
           <div className="-mt-[4px] text-right">
             <span
-              className="text-color-brand-secondary-normal font-medium-12 hover:text-color-brand-secondary-hover cursor-pointer transition-colors"
+              className="text-brand-secondary-normal font-medium-12 hover:text-brand-secondary-hover cursor-pointer transition-colors"
               onClick={() => {
                 api.destroy()
                 printService.rebuild(mode)
               }}
             >
-              {t('retry')}
+              {t('pdfViewer.download.retry')}
             </span>
           </div>
         ),
@@ -201,29 +199,29 @@ export const PrintService = () => {
           <div className="absolute top-[8px] right-[8px]">
             <span
               onClick={() => setOpen(false)}
-              className="bg-color-glass-fill1-normal text-color-text-white-1 flex-center hover:bg-color-glass-fill1-hover size-[20px] cursor-pointer rounded-[50%] backdrop-blur-[8px] transition-colors"
+              className="bg-glass-fill1-normal text-text-white-1 flex-center hover:bg-glass-fill1-hover size-[20px] cursor-pointer rounded-[50%] backdrop-blur-[8px] transition-colors"
             >
               <CloseOutlineM size={12} />
             </span>
           </div>
-          <div className="text-color-text-primary-2 font-normal-14">
-            {tTool('pdfViewer.download.trans-info', {
+          <div className="text-text-primary-2 font-normal-14">
+            {t('pdfViewer.download.trans-info', {
               count: pdfViewer?.pagesCount || 0,
             })}
           </div>
           <div className="f-i-center gap-[8px]">
             <button
               onClick={() => printPDF('direct')}
-              className="bg-color-grey-fill2-normal text-color-text-primary-1 font-normal-14 flex-center hover:bg-color-grey-fill2-hover h-[32px] flex-1 rounded-[8px] transition-colors"
+              className="bg-grey-fill2-normal text-text-primary-1 font-normal-14 flex-center hover:bg-grey-fill2-hover h-[32px] flex-1 rounded-[8px] transition-colors"
             >
-              {t('direct')}
+              {t('pdfViewer.download.direct')}
             </button>
             <Button
               onClick={() => printPDF('translate')}
               type="primary"
               className="font-normal-14 flex-1"
             >
-              {t('trans')}
+              {t('pdfViewer.download.trans')}
             </Button>
           </div>
         </div>

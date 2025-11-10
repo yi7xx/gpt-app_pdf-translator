@@ -44,16 +44,25 @@
     "download": {
       "retry": "Újrapróbálkozás",
       "not-support": "A jelenlegi mód nem támogatja a fordított PDF-ek nyomtatását",
-      "trans-info": "A jelenlegi fájl nem fordított tartalmat tartalmaz ({count} oldal). Szeretné az egészet lefordítani és letölteni? A fordítás a megfelelő pontokat levonja.",
+      "trans-info": "A jelenlegi fájl nem fordított tartalmat tartalmaz ({{count}} oldal). Szeretné az egészet lefordítani és letölteni? A fordítás a megfelelő pontokat levonja.",
       "direct": "Közvetlen letöltés",
       "trans": "Fordítás és letöltés",
-      "trans-progress": "Fordítás folyamatban {current}/{total}",
+      "trans-progress": "Fordítás folyamatban {{current}}/{{total}}",
       "trans-progress-info": "A lebegő ablak bezárása nem szakítja meg a fordítást.",
       "trans-success": "Fordítás befejezve",
       "trans-failed": "Hoppá! Fordítási hiba"
     },
     "common": {
-      "translating": "Fordítás..."
+      "translating": "Fordítás...",
+      "source-file": "Forrásfájl",
+      "translated-file": "Fordított fájl"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Kattintson vagy húzza a fájlt erre az oldalra a feltöltéshez",
+    "supportedFormats": "Formátumok: pdf / doc / ppt",
+    "dragFileHere": "Húzza ide a fájlokat a feltöltéshez",
+    "uploading": "Feltöltés...",
+    "fullScreen": "Teljes képernyős olvasás/fordítás"
   }
 }

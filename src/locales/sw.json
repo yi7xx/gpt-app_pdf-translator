@@ -44,16 +44,25 @@
     "download": {
       "retry": "Jaribu Tena",
       "not-support": "Hali ya sasa haiungi mkono kuchapisha PDF zilizotafsiriwa",
-      "trans-info": "Faili ya sasa ina maudhui ambayo hayajatafsiriwa（{count} kurasa）. Je, ungependa kutafsiri yote na kupakua? Tafsiri itapunguza pointi zinazolingana.",
+      "trans-info": "Faili ya sasa ina maudhui ambayo hayajatafsiriwa（{{count}} kurasa）. Je, ungependa kutafsiri yote na kupakua? Tafsiri itapunguza pointi zinazolingana.",
       "direct": "Pakua Moja kwa Moja",
       "trans": "Tafsiri na Pakua",
-      "trans-progress": "Tafsiri inaendelea {current}/{total}",
+      "trans-progress": "Tafsiri inaendelea {{current}}/{{total}}",
       "trans-progress-info": "Kufunga dirisha linaloelea haitaingilia tafsiri.",
       "trans-success": "Tafsiri imekamilika",
       "trans-failed": "Pole! Hitilafu ya tafsiri"
     },
     "common": {
-      "translating": "Inatafsiri..."
+      "translating": "Inatafsiri...",
+      "source-file": "Faili Asilia",
+      "translated-file": "Faili Iliyotafsiriwa"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Bofya au buruta faili kwenye ukurasa huu ili kupakia",
+    "supportedFormats": "Formati: pdf / doc / ppt",
+    "dragFileHere": "Buruta faili hapa ili kupakia",
+    "uploading": "Inapakia...",
+    "fullScreen": "Usomaji/Tafsiri ya Skrini Kamili"
   }
 }

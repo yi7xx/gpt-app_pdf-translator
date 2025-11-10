@@ -38,8 +38,7 @@ import {
   type TranslateServiceInfoDefault,
 } from './services/TranslationServiceManager'
 
-import 'tippy.js/dist/tippy.css'
-import './index.scss'
+import './index.css'
 
 export type PDFForwardRef = {
   getSpreadMode: () => SpreadMode
@@ -78,7 +77,7 @@ interface MainProps extends DocumentOptions {
   enableFind?: boolean
   globalEnableTranslate?: boolean
   ocrService?: OCRService
-  translationStorageService?: TranslationStorageService
+  translationStorageService: TranslationStorageService
   defaultTranslateServerInfo?: TranslateServiceInfoDefault
   translateServices?: TranslationService[]
 
@@ -198,6 +197,7 @@ const Main: ForwardRefRenderFunction<PDFForwardRef, MainProps> = (
   const childrenContext = useMemo(
     () => ({
       version,
+      file,
       pdfDocument,
       spreadMode,
       pdfViewer,
@@ -211,6 +211,7 @@ const Main: ForwardRefRenderFunction<PDFForwardRef, MainProps> = (
       onGlobalModelChange,
     }),
     [
+      file,
       pdfDocument,
       spreadMode,
       pdfViewer,
@@ -232,7 +233,7 @@ const Main: ForwardRefRenderFunction<PDFForwardRef, MainProps> = (
       data-ext-context-menu="no"
       data-ext-inject="no"
       className={cn(
-        'bg-color-grey-layer1-semitrans h-full w-full contain-layout',
+        'bg-grey-layer1-semitrans h-full w-full contain-layout',
         className,
       )}
       style={

@@ -44,16 +44,25 @@
     "download": {
       "retry": "Bandyti dar kartą",
       "not-support": "Dabartinis režimas nepalaiko išverstų PDF spausdinimo",
-      "trans-info": "Dabartiniame faile yra neišversto turinio ({count} puslapiai). Ar norite išversti viską ir atsisiųsti? Vertimas atims atitinkamus taškus.",
+      "trans-info": "Dabartiniame faile yra neišversto turinio ({{count}} puslapiai). Ar norite išversti viską ir atsisiųsti? Vertimas atims atitinkamus taškus.",
       "direct": "Tiesioginis atsisiuntimas",
       "trans": "Versti ir atsisiųsti",
-      "trans-progress": "Vertimas vyksta {current}/{total}",
+      "trans-progress": "Vertimas vyksta {{current}}/{{total}}",
       "trans-progress-info": "Uždarius plaukiojantį langą vertimas nebus nutrauktas.",
       "trans-success": "Vertimas baigtas",
       "trans-failed": "Oi! Vertimo klaida"
     },
     "common": {
-      "translating": "Verčiama..."
+      "translating": "Verčiama...",
+      "source-file": "Šaltinio failas",
+      "translated-file": "Išverstas failas"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Spustelėkite arba vilkite failą į šį puslapį, kad įkeltumėte",
+    "supportedFormats": "Formatai: pdf / doc / ppt",
+    "dragFileHere": "Vilkite failus čia, kad įkeltumėte",
+    "uploading": "Įkeliama...",
+    "fullScreen": "Viso ekrano skaitymas/vertimas"
   }
 }

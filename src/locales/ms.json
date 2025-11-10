@@ -44,16 +44,25 @@
     "download": {
       "retry": "Cuba Lagi",
       "not-support": "Mod semasa tidak menyokong pencetakan PDF yang diterjemah",
-      "trans-info": "Fail semasa mengandungi kandungan yang belum diterjemah（{count} halaman）. Adakah anda ingin menterjemah kesemuanya dan muat turun? Terjemahan akan menolak mata yang sepadan.",
+      "trans-info": "Fail semasa mengandungi kandungan yang belum diterjemah（{{count}} halaman）. Adakah anda ingin menterjemah kesemuanya dan muat turun? Terjemahan akan menolak mata yang sepadan.",
       "direct": "Muat Turun Terus",
       "trans": "Terjemah dan Muat Turun",
-      "trans-progress": "Terjemahan sedang berlangsung {current}/{total}",
+      "trans-progress": "Terjemahan sedang berlangsung {{current}}/{{total}}",
       "trans-progress-info": "Menutup tetingkap terapung tidak akan mengganggu terjemahan.",
       "trans-success": "Terjemahan selesai",
       "trans-failed": "Oops! Ralat terjemahan"
     },
     "common": {
-      "translating": "Sedang menterjemah..."
+      "translating": "Sedang menterjemah...",
+      "source-file": "Fail Sumber",
+      "translated-file": "Fail Diterjemah"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klik atau seret fail ke halaman ini untuk memuat naik",
+    "supportedFormats": "Format: pdf / doc / ppt",
+    "dragFileHere": "Seret fail ke sini untuk memuat naik",
+    "uploading": "Sedang memuat naik...",
+    "fullScreen": "Pembacaan/Penterjemahan Skrin Penuh"
   }
 }

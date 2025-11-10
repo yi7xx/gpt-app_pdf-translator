@@ -85,6 +85,7 @@ const webpackSvgr: NextConfig['webpack'] = (config, context) => {
 }
 
 const nextConfig: NextConfig = {
+  reactStrictMode: false,
   assetPrefix: baseURL,
   sassOptions: {},
   webpack: (config, context) => {

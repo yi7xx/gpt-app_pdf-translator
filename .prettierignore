@@ -22,3 +22,6 @@ coverage
 
 # 打包输出  
 *.tgz  
+
+# 其他忽略文件
+/public/pdfjs/*

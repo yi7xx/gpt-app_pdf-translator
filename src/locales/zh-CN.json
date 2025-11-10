@@ -1,59 +1,68 @@
 {
-   "pdfViewer": {
-      "tools": {
-        "hide-bar": "隐藏侧边栏",
-        "thumbnail": "缩略图",
-        "zoom-in": "放大",
-        "zoom-out": "缩小",
-        "fit-width": "适合宽度",
-        "fit-height": "适合高度",
-        "pre-page": "上一页",
-        "next-page": "下一页",
-        "highlight": "高亮",
-        "translate": "翻译",
-        "original": "原文",
-        "compare": "对比",
-        "model": "模型",
-        "free": "免费",
-        "basic": "基础",
-        "advanced": "高级",
-        "source-language": "源语言",
-        "translated-to": "翻译为",
-        "confirm": "确认",
-        "cost-basic": "费用 <count></count> 基础",
-        "cost-advanced": "费用 <count></count> 高级",
-        "cost-tooltip": "估算基于所用模型和文档内容；请参考实际消耗以确保准确性。",
-        "copy": "复制",
-        "copy-success": "复制成功",
-        "edit": "编辑",
-        "full-text": "全文翻译",
-        "close-trans": "关闭翻译",
-        "highlight-empty": "暂无高亮",
-        "notAllowTranslate": "原始网页目前不支持翻译。",
-        "translate-service": "翻译服务"
-      },
-      "error": {
-        "load-failed": "加载失败",
-        "retry": "重试",
-        "trans-failed": "翻译失败",
-        "fetch-data-error": "数据检索失败"
-      },
-      "ocr": {
-        "tooltip": "准确翻译当前页面内容，完美匹配原文，包括公式。"
-      },
-      "common": {
-        "translating": "翻译中..."
-      },
-      "download": {
-        "retry": "重试",
-        "not-support": "当前模式不支持打印翻译后的PDF文件",
-        "trans-info": "当前文件包含未翻译的内容（{count}页）。您想翻译全部内容并下载吗？翻译将扣除相应的积分。",
-        "direct": "直接下载",
-        "trans": "翻译并下载",
-        "trans-progress": "翻译进行中 {current}/{total}",
-        "trans-progress-info": "关闭浮动窗口不会中断翻译。",
-        "trans-success": "翻译完成",
-        "trans-failed": "哎呀！翻译出错"
-      }
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "隐藏侧边栏",
+      "thumbnail": "缩略图",
+      "zoom-in": "放大",
+      "zoom-out": "缩小",
+      "fit-width": "适合宽度",
+      "fit-height": "适合高度",
+      "pre-page": "上一页",
+      "next-page": "下一页",
+      "highlight": "高亮",
+      "translate": "翻译",
+      "original": "原文",
+      "compare": "对比",
+      "model": "模型",
+      "free": "免费",
+      "basic": "基础",
+      "advanced": "高级",
+      "source-language": "源语言",
+      "translated-to": "翻译为",
+      "confirm": "确认",
+      "cost-basic": "费用 <count></count> 基础",
+      "cost-advanced": "费用 <count></count> 高级",
+      "cost-tooltip": "估算基于所用模型和文档内容；请参考实际消耗以确保准确性。",
+      "copy": "复制",
+      "copy-success": "复制成功",
+      "edit": "编辑",
+      "full-text": "全文翻译",
+      "close-trans": "关闭翻译",
+      "highlight-empty": "暂无高亮",
+      "notAllowTranslate": "原始网页目前不支持翻译。",
+      "translate-service": "翻译服务"
+    },
+    "error": {
+      "load-failed": "加载失败",
+      "retry": "重试",
+      "trans-failed": "翻译失败",
+      "fetch-data-error": "数据检索失败"
+    },
+    "ocr": {
+      "tooltip": "准确翻译当前页面内容，完美匹配原文，包括公式。"
+    },
+    "common": {
+      "translating": "翻译中...",
+      "source-file": "源文件",
+      "translated-file": "翻译文件"
+    },
+    "download": {
+      "retry": "重试",
+      "not-support": "当前模式不支持打印翻译后的PDF文件",
+      "trans-info": "当前文件包含未翻译的内容（{{count}}页）。您想翻译全部内容并下载吗？翻译将扣除相应的积分。",
+      "direct": "直接下载",
+      "trans": "翻译并下载",
+      "trans-progress": "翻译进行中 {{current}}/{{total}}",
+      "trans-progress-info": "关闭浮动窗口不会中断翻译。",
+      "trans-success": "翻译完成",
+      "trans-failed": "哎呀！翻译出错"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "点击或拖动文件到此页面上传",
+    "supportedFormats": "格式：pdf / doc / ppt",
+    "dragFileHere": "将文件拖到此处上传",
+    "uploading": "上传中...",
+    "fullScreen": "全屏阅读/翻译"
+  }
 }

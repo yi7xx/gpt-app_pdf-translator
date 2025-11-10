@@ -138,7 +138,7 @@
   }
 }
 
-@theme inline {
+@theme {
   /* Semantic Colors - Light Mode (Default) */
   /* Background Colors */
   --color-bg-primary: var(--gray-0);

@@ -44,16 +44,25 @@
     "download": {
       "retry": "Zkusit znovu",
       "not-support": "Aktuální režim nepodporuje tisk přeložených PDF",
-      "trans-info": "Aktuální soubor obsahuje nepřeložený obsah（{count} stránek）. Chcete přeložit vše a stáhnout? Překlad odečte odpovídající body.",
+      "trans-info": "Aktuální soubor obsahuje nepřeložený obsah（{{count}} stránek）. Chcete přeložit vše a stáhnout? Překlad odečte odpovídající body.",
       "direct": "Přímé stažení",
       "trans": "Přeložit a stáhnout",
-      "trans-progress": "Překlad probíhá {current}/{total}",
+      "trans-progress": "Překlad probíhá {{current}}/{{total}}",
       "trans-progress-info": "Zavření plovoucího okna nepřeruší překlad.",
       "trans-success": "Překlad dokončen",
       "trans-failed": "Jejda! Chyba překladu"
     },
     "common": {
-      "translating": "Překládá se..."
+      "translating": "Překládá se...",
+      "source-file": "Zdrojový soubor",
+      "translated-file": "Přeložený soubor"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klikněte nebo přetáhněte soubor na tuto stránku pro nahrání",
+    "supportedFormats": "Formáty: pdf / doc / ppt",
+    "dragFileHere": "Přetáhněte soubory sem pro nahrání",
+    "uploading": "Nahrávání...",
+    "fullScreen": "Čtení/Překlad na celou obrazovku"
   }
 }

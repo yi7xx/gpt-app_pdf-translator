@@ -44,16 +44,25 @@
     "download": {
       "retry": "Pokušaj ponovo",
       "not-support": "Trenutni režim ne podržava štampanje prevedenih PDF-ova",
-      "trans-info": "Trenutni fajl sadrži nepreveden sadržaj（{count} stranica）. Da li želite da sve prevedete i preuzmete? Prevod će oduzeti odgovarajuće poene.",
+      "trans-info": "Trenutni fajl sadrži nepreveden sadržaj（{{count}} stranica）. Da li želite da sve prevedete i preuzmete? Prevod će oduzeti odgovarajuće poene.",
       "direct": "Direktno preuzimanje",
       "trans": "Prevedi i preuzmi",
-      "trans-progress": "Prevod u toku {current}/{total}",
+      "trans-progress": "Prevod u toku {{current}}/{{total}}",
       "trans-progress-info": "Zatvaranje plutajućeg prozora neće prekinuti prevod.",
       "trans-success": "Prevod završen",
       "trans-failed": "Ups! Greška u prevodu"
     },
     "common": {
-      "translating": "Prevođenje..."
+      "translating": "Prevođenje...",
+      "source-file": "Izvorna datoteka",
+      "translated-file": "Prevedena datoteka"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Kliknite ili prevucite datoteku na ovu stranicu za otpremanje",
+    "supportedFormats": "Formati: pdf / doc / ppt",
+    "dragFileHere": "Prevucite datoteke ovde za otpremanje",
+    "uploading": "Otpremanje...",
+    "fullScreen": "Čitanje/Prevođenje preko celog ekrana"
   }
 }

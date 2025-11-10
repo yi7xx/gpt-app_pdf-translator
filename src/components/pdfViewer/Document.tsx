@@ -1,12 +1,11 @@
+import useI18n from '@/hooks/useI18n'
 import { ExclamationMarkCircleFilledError, Loading } from '@sider/icons'
 import { useAsyncEffect, useMemoizedFn } from 'ahooks'
 import { debounce } from 'lodash-es'
 import { type PDFDocumentLoadingTask, type PDFDocumentProxy } from 'pdfjs-dist'
 import { memo, useEffect, useMemo, useRef, useState, type FC } from 'react'
-import { CustomScroll } from 'react-custom-scroll'
-import { useTranslation } from 'react-i18next'
 import TranslationSpotlight from './components/TranslationSpotlight'
-import { SCROLL_CONTAINER_ID, VERTICAL_PADDING } from './constants'
+import { VERTICAL_PADDING } from './constants'
 import { useDocumentContext } from './context/DocumentContext'
 import { PDFViewerEvent } from './events'
 import { useBindEvent } from './hooks/useBindEvent'
@@ -72,7 +71,7 @@ const Document: FC<DocumentProps> = (props) => {
     onSpreadModeChanged,
     onTriggerTranslateService,
   } = props
-  const { t } = useTranslation('pdfViewer')
+  const { t } = useI18n()
   const {
     pdfViewer,
     pdfDocument,
@@ -85,18 +84,11 @@ const Document: FC<DocumentProps> = (props) => {
   } = useDocumentContext()
 
   // 滚动容器
-  const containerRef = useRef<HTMLDivElement | null>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
   // pdf 容器
   const pdfViewerRef = useRef<HTMLDivElement>(null)
   // pdf 加载任务
   const pdfLoadingTask = useRef<PDFDocumentLoadingTask | null>(null)
-
-  useEffect(() => {
-    const container = document.querySelector(
-      `#${SCROLL_CONTAINER_ID} .pdf-container-document .rcs-inner-container`,
-    ) as HTMLDivElement
-    containerRef.current = container
-  }, [])
 
   // 加载资源失败
   const [loadError, setLoadError] = useState<any>(null)
@@ -167,11 +159,11 @@ const Document: FC<DocumentProps> = (props) => {
         translationService,
         spreadMode,
         i18n: {
-          orcTooltip: t('ocr.tooltip'),
-          translating: t('common.translating'),
-          retry: t('error.retry'),
-          transFailed: t('error.trans-failed'),
-          fetchDataError: t('error.fetch-data-error'),
+          orcTooltip: t('pdfViewer.ocr.tooltip'),
+          translating: t('pdfViewer.common.translating'),
+          retry: t('pdfViewer.error.retry'),
+          transFailed: t('pdfViewer.error.trans-failed'),
+          fetchDataError: t('pdfViewer.error.fetch-data-error'),
         },
       })
       setPDFViewer(viewer)
@@ -297,9 +289,16 @@ const Document: FC<DocumentProps> = (props) => {
   }, [file])
 
   return (
-    <CustomScroll
-      className="pdf-container-document h-full w-0 flex-1"
+    <div
+      ref={containerRef}
+      className="pdf-container-document custom-scrollbar custom-scrollbar-float custom-scrollbar-hidden relative h-full w-0 flex-1 overflow-y-auto py-3 pr-1 pl-3"
       onScroll={onScrollY}
+      style={
+        {
+          '--scrollbar-margin-block': '12px',
+          scrollbarGutter: 'stable',
+        } as React.CSSProperties
+      }
     >
       <div className="overflow-x-auto overflow-y-visible" onScroll={onScrollX}>
         <div
@@ -311,35 +310,34 @@ const Document: FC<DocumentProps> = (props) => {
       </div>
       {/* loading pdf */}
       {pdfDocument === null && !loadError && (
-        <div className="bg-color-grey-layer2-normal flex-center absolute inset-0 m-[12px] overflow-hidden rounded-[8px]">
-          <span className="text-primary">
+        <div className="bg-grey-layer2-normal flex-center absolute inset-0 m-[12px] overflow-hidden rounded-[8px]">
+          <span className="text-brand-primary-normal">
             <Loading size={32} className="animate-spin" />
           </span>
         </div>
       )}
       {/* loadError */}
       {loadError && (
-        <div className="bg-color-grey-layer2-normal flex-center absolute inset-0 m-[12px] overflow-hidden rounded-[8px]">
+        <div className="bg-grey-layer2-normal flex-center absolute inset-0 m-[12px] overflow-hidden rounded-[8px]">
           <div className="f-i-center flex-col">
-            <span className="text-color-error-normal shrink-0">
+            <span className="text-error-normal shrink-0">
               <ExclamationMarkCircleFilledError size={24} />
             </span>
-            <span className="text-color-text-primary-1 font-normal-16 mt-[8px] mb-[16px]">
-              {t('error.load-failed')}
+            <span className="text-text-primary-1 font-normal-16 mt-[8px] mb-[16px]">
+              {t('pdfViewer.error.load-failed')}
             </span>
             <button
               onClick={handleRetry}
-              className="bg-color-grey-fill2-normal text-color-text-primary-1 font-normal-12 hover:bg-color-grey-fill2-hover rounded-[6px] px-[12px] py-[4px] transition-colors"
+              className="bg-grey-fill2-normal text-text-primary-1 font-normal-12 hover:bg-grey-fill2-hover rounded-md px-3 py-1 transition-colors"
             >
-              {t('error.retry')}
+              {t('pdfViewer.error.retry')}
             </button>
           </div>
         </div>
       )}
       {globalEnableTranslate && <TranslationSpotlight />}
-      {/* children */}
       {children}
-    </CustomScroll>
+    </div>
   )
 }
 

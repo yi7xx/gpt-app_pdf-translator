@@ -44,16 +44,25 @@
     "download": {
       "retry": "Subukang Muli",
       "not-support": "Ang kasalukuyang mode ay hindi sumusuporta sa pag-print ng isinaling PDF",
-      "trans-info": "Ang kasalukuyang file ay naglalaman ng hindi isinaling nilalaman（{count} na mga pahina）. Nais mo bang isalin lahat ito at i-download? Ang pagsasalin ay magbabawas ng kaukulang puntos.",
+      "trans-info": "Ang kasalukuyang file ay naglalaman ng hindi isinaling nilalaman（{{count}} na mga pahina）. Nais mo bang isalin lahat ito at i-download? Ang pagsasalin ay magbabawas ng kaukulang puntos.",
       "direct": "Direktang I-download",
       "trans": "Isalin at I-download",
-      "trans-progress": "Pagsasalin sa progreso {current}/{total}",
+      "trans-progress": "Pagsasalin sa progreso {{current}}/{{total}}",
       "trans-progress-info": "Ang pagsasara ng lumulutang na bintana ay hindi makakaabala sa pagsasalin.",
       "trans-success": "Natapos na ang Pagsasalin",
       "trans-failed": "Oops! Error sa Pagsasalin"
     },
     "common": {
-      "translating": "Isinasalin..."
+      "translating": "Isinasalin...",
+      "source-file": "Pinagmulan ng File",
+      "translated-file": "Isinaling File"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "I-click o i-drag ang file sa pahinang ito para i-upload",
+    "supportedFormats": "Mga Format: pdf / doc / ppt",
+    "dragFileHere": "I-drag ang mga file dito para i-upload",
+    "uploading": "Nag-a-upload...",
+    "fullScreen": "Buong Screen na Pagbabasa/Pagsasalin"
   }
 }

@@ -6,7 +6,6 @@ import { PDF_ACTION_TOOL_STORAGE_KEY } from '../constants'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent, UIEvents } from '../events'
 import { usePDFEvent } from '../hooks/usePDFEvent'
-import { HighlightList } from './HighlightList'
 import ThumbnailList from './ThumbnailList'
 
 /**
@@ -18,8 +17,8 @@ const PADDING = 12
 
 const ActionWidthMap: Record<string, number> = {
   'hide-bar': 0,
-  thumbnail: 100 + PADDING,
-  highlight: 180 + PADDING,
+  thumbnail: 100 + 2 * PADDING,
+  // highlight: 180 + PADDING,
 }
 
 export const SiderBar = () => {
@@ -58,7 +57,7 @@ export const SiderBar = () => {
 
   return (
     <motion.div
-      className="relative h-full shrink-0 overflow-hidden contain-layout"
+      className="relative -mr-3 h-full shrink-0 overflow-hidden contain-layout"
       animate={{ width }}
       initial={false}
       transition={{ type: 'tween', duration: 0.15 }}
@@ -73,11 +72,11 @@ export const SiderBar = () => {
       >
         <ThumbnailList />
       </div>
-      <div
+      {/* <div
         className={cn('absolute inset-0 size-full', computedStyle('highlight'))}
       >
         <HighlightList />
-      </div>
+      </div> */}
     </motion.div>
   )
 }

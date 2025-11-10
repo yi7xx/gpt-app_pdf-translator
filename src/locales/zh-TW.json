@@ -1,59 +1,68 @@
 {
- "pdfViewer": {
-      "tools": {
-        "hide-bar": "隱藏側邊欄",
-        "thumbnail": "縮圖",
-        "zoom-in": "放大",
-        "zoom-out": "縮小",
-        "fit-width": "適合寬度",
-        "fit-height": "適合高度",
-        "pre-page": "上一頁",
-        "next-page": "下一頁",
-        "highlight": "重點",
-        "translate": "翻譯",
-        "original": "原始",
-        "compare": "比較",
-        "model": "模型",
-        "free": "免費",
-        "basic": "基礎",
-        "advanced": "進階",
-        "source-language": "來源語言",
-        "translated-to": "翻譯成",
-        "confirm": "確認",
-        "cost-basic": "成本 <count></count> 基礎",
-        "cost-advanced": "成本 <count></count> 進階",
-        "cost-tooltip": "此估算基於所使用的模型和文件內容；請參考實際消耗以獲得準確性。",
-        "copy": "複製",
-        "copy-success": "複製成功",
-        "edit": "編輯",
-        "full-text": "翻譯全文",
-        "close-trans": "關閉翻譯",
-        "highlight-empty": "尚未突出顯示",
-        "notAllowTranslate": "目前原始網頁不支援翻譯。",
-        "translate-service": "翻譯服務"
-      },
-      "error": {
-        "load-failed": "載入失敗",
-        "retry": "重試",
-        "trans-failed": "翻譯失敗",
-        "fetch-data-error": "資料擷取失敗"
-      },
-      "ocr": {
-        "tooltip": "準確翻譯當前頁面的內容，完美匹配原始文本，包括公式。"
-      },
-      "common": {
-        "translating": "翻譯中..."
-      },
-      "download": {
-        "retry": "重試",
-        "not-support": "當前模式不支持列印翻譯後的PDF",
-        "trans-info": "當前文件包含未翻譯的內容（{count}頁）。您想翻譯全部內容並下載嗎？翻譯將扣除相應的點數。",
-        "direct": "直接下載",
-        "trans": "翻譯並下載",
-        "trans-progress": "翻譯中 {current}/{total}",
-        "trans-progress-info": "關閉浮動窗口不會中斷翻譯。",
-        "trans-success": "翻譯完成",
-        "trans-failed": "哎呀！翻譯錯誤"
-      }
+  "pdfViewer": {
+    "tools": {
+      "hide-bar": "隱藏側邊欄",
+      "thumbnail": "縮圖",
+      "zoom-in": "放大",
+      "zoom-out": "縮小",
+      "fit-width": "適合寬度",
+      "fit-height": "適合高度",
+      "pre-page": "上一頁",
+      "next-page": "下一頁",
+      "highlight": "重點",
+      "translate": "翻譯",
+      "original": "原始",
+      "compare": "比較",
+      "model": "模型",
+      "free": "免費",
+      "basic": "基礎",
+      "advanced": "進階",
+      "source-language": "來源語言",
+      "translated-to": "翻譯成",
+      "confirm": "確認",
+      "cost-basic": "成本 <count></count> 基礎",
+      "cost-advanced": "成本 <count></count> 進階",
+      "cost-tooltip": "此估算基於所使用的模型和文件內容；請參考實際消耗以獲得準確性。",
+      "copy": "複製",
+      "copy-success": "複製成功",
+      "edit": "編輯",
+      "full-text": "翻譯全文",
+      "close-trans": "關閉翻譯",
+      "highlight-empty": "尚未突出顯示",
+      "notAllowTranslate": "目前原始網頁不支援翻譯。",
+      "translate-service": "翻譯服務"
+    },
+    "error": {
+      "load-failed": "載入失敗",
+      "retry": "重試",
+      "trans-failed": "翻譯失敗",
+      "fetch-data-error": "資料擷取失敗"
+    },
+    "ocr": {
+      "tooltip": "準確翻譯當前頁面的內容，完美匹配原始文本，包括公式。"
+    },
+    "common": {
+      "translating": "翻譯中...",
+      "source-file": "來源檔案",
+      "translated-file": "翻譯檔案"
+    },
+    "download": {
+      "retry": "重試",
+      "not-support": "當前模式不支持列印翻譯後的PDF",
+      "trans-info": "當前文件包含未翻譯的內容（{{count}}頁）。您想翻譯全部內容並下載嗎？翻譯將扣除相應的點數。",
+      "direct": "直接下載",
+      "trans": "翻譯並下載",
+      "trans-progress": "翻譯中 {{current}}/{{total}}",
+      "trans-progress-info": "關閉浮動窗口不會中斷翻譯。",
+      "trans-success": "翻譯完成",
+      "trans-failed": "哎呀！翻譯錯誤"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "點擊或拖曳檔案到此頁面上傳",
+    "supportedFormats": "格式：pdf / doc / ppt",
+    "dragFileHere": "將檔案拖曳到此處上傳",
+    "uploading": "上傳中...",
+    "fullScreen": "全螢幕閱讀/翻譯"
+  }
 }

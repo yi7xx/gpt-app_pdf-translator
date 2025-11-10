@@ -1,0 +1,12 @@
+.force-light-btn {
+  --color-interactive-label-primary-default: var(--gray-0);
+  --color-interactive-label-primary-hover: var(--gray-0);
+  --color-interactive-label-primary-press: var(--gray-0);
+  --color-interactive-label-primary-inactive: var(--gray-0);
+  --color-interactive-label-primary-selected: var(--gray-0);
+  --color-interactive-bg-primary-default: var(--gray-1000);
+  --color-interactive-bg-primary-hover: var(--gray-1000-a80);
+  --color-interactive-bg-primary-press: var(--gray-1000-a90);
+  --color-interactive-bg-primary-inactive: var(--gray-1000);
+  --color-interactive-bg-primary-selected: var(--gray-1000);
+}

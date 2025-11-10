@@ -44,16 +44,25 @@
     "download": {
       "retry": "Reintenta",
       "not-support": "El mode actual no admet la impressió de PDFs traduïts",
-      "trans-info": "El fitxer actual conté contingut no traduït ({count} pàgines). Voleu traduir-ho tot i descarregar? La traducció restarà els punts corresponents.",
+      "trans-info": "El fitxer actual conté contingut no traduït ({{count}} pàgines). Voleu traduir-ho tot i descarregar? La traducció restarà els punts corresponents.",
       "direct": "Descarrega directa",
       "trans": "Traduir i descarregar",
-      "trans-progress": "Traducció en curs {current}/{total}",
+      "trans-progress": "Traducció en curs {{current}}/{{total}}",
       "trans-progress-info": "Tancar la finestra flotant no interromprà la traducció.",
       "trans-success": "Traducció completada",
       "trans-failed": "Ups! Error de traducció"
     },
     "common": {
-      "translating": "Traduïnt..."
+      "translating": "Traduïnt...",
+      "source-file": "Fitxer d'origen",
+      "translated-file": "Fitxer traduït"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Fes clic o arrossega el fitxer a aquesta pàgina per pujar-lo",
+    "supportedFormats": "Formats: pdf / doc / ppt",
+    "dragFileHere": "Arrossega els fitxers aquí per pujar-los",
+    "uploading": "Pujant...",
+    "fullScreen": "Lectura/Traducció a pantalla completa"
   }
 }

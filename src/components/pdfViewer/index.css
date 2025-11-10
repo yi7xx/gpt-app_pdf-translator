@@ -2,16 +2,6 @@
   --page-margin: 0 auto;
 }
 
-#library-pdf-container
-  .rcs-custom-scroll.pdf-container-document
-  .rcs-inner-container
-  > div {
-  position: relative;
-  box-sizing: border-box;
-  min-height: 100%;
-  padding: 12px;
-}
-
 .pdf-container-document {
   --color-brand-primary-normal: #6128ff;
   --color-brand-primary-hover: #6a3fff;

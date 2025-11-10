@@ -44,16 +44,25 @@
     "download": {
       "retry": "再試行",
       "not-support": "現在のモードでは翻訳されたPDFの印刷をサポートしていません",
-      "trans-info": "現在のファイルには未翻訳のコンテンツが含まれています（{count}ページ）。すべて翻訳してダウンロードしますか？翻訳には対応するポイントが差し引かれます。",
+      "trans-info": "現在のファイルには未翻訳のコンテンツが含まれています（{{count}}ページ）。すべて翻訳してダウンロードしますか？翻訳には対応するポイントが差し引かれます。",
       "direct": "直接ダウンロード",
       "trans": "翻訳してダウンロード",
-      "trans-progress": "翻訳中 {current}/{total}",
+      "trans-progress": "翻訳中 {{current}}/{{total}}",
       "trans-progress-info": "フローティングウィンドウを閉じても翻訳は中断されません。",
       "trans-success": "翻訳完了",
       "trans-failed": "おっと！翻訳エラー"
     },
     "common": {
-      "translating": "翻訳中..."
+      "translating": "翻訳中...",
+      "source-file": "ソースファイル",
+      "translated-file": "翻訳ファイル"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "クリックまたはファイルをこのページにドラッグしてアップロード",
+    "supportedFormats": "フォーマット: pdf / doc / ppt",
+    "dragFileHere": "ファイルをここにドラッグしてアップロード",
+    "uploading": "アップロード中...",
+    "fullScreen": "全画面での読み取り/翻訳"
   }
 }

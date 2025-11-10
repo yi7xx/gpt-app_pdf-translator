@@ -44,16 +44,25 @@
     "download": {
       "retry": "Opnieuw proberen",
       "not-support": "De huidige modus ondersteunt het afdrukken van vertaalde PDF's niet",
-      "trans-info": "Het huidige bestand bevat niet-vertaalde inhoud（{count} pagina's）. Wilt u alles vertalen en downloaden? Vertaling zal overeenkomstige punten aftrekken.",
+      "trans-info": "Het huidige bestand bevat niet-vertaalde inhoud（{{count}} pagina's）. Wilt u alles vertalen en downloaden? Vertaling zal overeenkomstige punten aftrekken.",
       "direct": "Direct downloaden",
       "trans": "Vertalen en downloaden",
-      "trans-progress": "Vertaling bezig {current}/{total}",
+      "trans-progress": "Vertaling bezig {{current}}/{{total}}",
       "trans-progress-info": "Het sluiten van het zwevende venster zal de vertaling niet onderbreken.",
       "trans-success": "Vertaling voltooid",
       "trans-failed": "Oeps! Vertaalfout"
     },
     "common": {
-      "translating": "Bezig met vertalen..."
+      "translating": "Bezig met vertalen...",
+      "source-file": "Bronbestand",
+      "translated-file": "Vertaald bestand"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klik of sleep een bestand naar deze pagina om te uploaden",
+    "supportedFormats": "Formaten: pdf / doc / ppt",
+    "dragFileHere": "Sleep bestanden hierheen om te uploaden",
+    "uploading": "Uploaden...",
+    "fullScreen": "Volledig scherm lezen/vertalen"
   }
 }

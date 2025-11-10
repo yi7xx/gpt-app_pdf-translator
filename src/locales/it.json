@@ -44,16 +44,25 @@
     "download": {
       "retry": "Riprova",
       "not-support": "La modalità attuale non supporta la stampa di PDF tradotti",
-      "trans-info": "Il file corrente contiene contenuti non tradotti（{count} pagine）. Vuoi tradurre tutto e scaricare? La traduzione dedurrà i punti corrispondenti.",
+      "trans-info": "Il file corrente contiene contenuti non tradotti（{{count}} pagine）. Vuoi tradurre tutto e scaricare? La traduzione dedurrà i punti corrispondenti.",
       "direct": "Scarica Direttamente",
       "trans": "Traduci e Scarica",
-      "trans-progress": "Traduzione in corso {current}/{total}",
+      "trans-progress": "Traduzione in corso {{current}}/{{total}}",
       "trans-progress-info": "Chiudere la finestra mobile non interromperà la traduzione.",
       "trans-success": "Traduzione completata",
       "trans-failed": "Ops! Errore di traduzione"
     },
     "common": {
-      "translating": "Traducendo..."
+      "translating": "Traducendo...",
+      "source-file": "File di origine",
+      "translated-file": "File tradotto"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Clicca o trascina il file su questa pagina per caricarlo",
+    "supportedFormats": "Formati: pdf / doc / ppt",
+    "dragFileHere": "Trascina i file qui per caricarli",
+    "uploading": "Caricamento in corso...",
+    "fullScreen": "Lettura/Traduzione a schermo intero"
   }
 }

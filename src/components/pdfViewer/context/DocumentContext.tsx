@@ -9,6 +9,7 @@ import type { TranslateOption } from '../services/TranslationService'
 import { TranslationServiceManager } from '../services/TranslationServiceManager'
 
 interface DocumentContextType {
+  file: string
   version: string
   pdfDocument: PDFDocumentProxy | null
   linkService: LinkService

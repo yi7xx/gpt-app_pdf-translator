@@ -8,7 +8,7 @@ interface Props {
 }
 
 const AntdCompatible: FC<Props> = ({ children }) => {
-  return <AntdRegistry>{children}</AntdRegistry>
+  return <AntdRegistry layer>{children}</AntdRegistry>
 }
 
 export default AntdCompatible

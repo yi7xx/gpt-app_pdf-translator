@@ -1,3 +1,4 @@
+@layer theme, base, antd, components, utilities;
 @import 'tailwindcss';
 @import './var.css';
 @import './theme.css';
@@ -39,24 +40,173 @@
     tab-size: 4;
   }
 
-  /* CustomScroll的滚动条 */
-  .rcs-outer-container {
+  html,
+  body {
     height: 100%;
-  }
-  .rcs-inner-container {
-    height: 100%;
-  }
-  .rcs-inner-container > div {
-    height: 100%;
+    line-height: 1.16;
   }
 
-  div.rcs-custom-scroll .rcs-inner-handle {
-    background-color: var(--color-grey-line2-normal);
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    color: var(--color-text-primary-2);
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: var(--color-grey-layer1-normal);
   }
-  div.rcs-custom-scroll .rcs-inner-handle:hover {
-    background-color: var(--color-grey-line2-hover);
+}
+
+@layer base {
+  @property --sider-scrollbar-thumb-color {
+    syntax: '<color>';
+    inherits: true;
+    initial-value: white;
   }
-  div.rcs-custom-scroll .rcs-custom-scrollbar {
-    width: 4px;
+
+  .custom-scrollbar {
+    /* 避免外部使用此方式覆盖滚动条样式 */
+    scrollbar-width: initial;
+    scrollbar-color: initial;
+
+    --scrollbar-width: 4px;
+    --scrollbar-color: var(--color-grey-line2-normal);
+    --scrollbar-color-hover: var(--color-grey-line2-hover);
+    --scrollbar-color-active: var(--color-grey-line2-click);
+
+    --sider-scrollbar-thumb-color: var(--color-grey-line2-normal);
+  }
+
+  /* 更宽的滚动条 */
+  .custom-scrollbar.custom-scrollbar-wide {
+    --scrollbar-width: 8px;
+  }
+
+  /* 只有鼠标悬停时才显示滚动条 */
+  .custom-scrollbar.custom-scrollbar-hidden:not(.custom-scrollbar-force-show) {
+    transition: --sider-scrollbar-thumb-color;
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sider-scrollbar-thumb-color: transparent;
+  }
+
+  .custom-scrollbar.custom-scrollbar-hidden:not(
+      .custom-scrollbar-force-show
+    ):hover {
+    transition-duration: 0.15s;
+    --sider-scrollbar-thumb-color: var(--color-grey-line2-normal);
+  }
+
+  /* 左右各有 2px 的留白，看起来像是脱离了边缘 */
+  .custom-scrollbar.custom-scrollbar-float {
+    --scrollbar-width: var(--scrollbar-float-width, 8px);
+  }
+
+  .custom-scrollbar.custom-scrollbar-float::-webkit-scrollbar-thumb {
+    /* calc(var(--scrollbar-width) - (var(--border-width) * 2)) */
+    --float-radius: calc(var(--scrollbar-width) / 2);
+
+    background-clip: padding-box;
+    border-block-width: 0px;
+    border-inline-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+
+    border-radius: var(--scrollbar-width) / var(--float-radius);
+  }
+
+  .custom-scrollbar.custom-scrollbar-float::-webkit-scrollbar-thumb:horizontal {
+    border-block-width: 2px;
+    border-inline-width: 0px;
+
+    border-radius: var(--float-radius) / var(--scrollbar-width);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-corner {
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(
+      --sider-scrollbar-thumb-color,
+      var(--scrollbar-color)
+    );
+    border-radius: 9999px;
+    cursor: auto;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-color-hover);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-color-active);
+  }
+
+  /* scrollbar margin 竖向滚动条上下留白，横向滚动条左右留白 */
+  /* 注意：此样式有副作用：上方空出来的部分会可点击，点击后向下滚动 */
+  .custom-scrollbar::-webkit-scrollbar-track {
+    /* 这里的 margin-block 和 margin-inline 不能正确识别变量双值语法 */
+    /* 例如 `--scrollbar-margin-block: 10px 20px;`，需要分开写 */
+    /* --scrollbar-margin-block-start: 10px; */
+    /* --scrollbar-margin-block-end: 10px; */
+    margin-block-start: var(
+      --scrollbar-margin-block-start,
+      var(--scrollbar-margin-block, 0px)
+    );
+    margin-block-end: var(
+      --scrollbar-margin-block-end,
+      var(--scrollbar-margin-block, 0px)
+    );
+    margin-inline-start: var(
+      --scrollbar-margin-inline-start,
+      var(--scrollbar-margin-inline, 0px)
+    );
+    margin-inline-end: var(
+      --scrollbar-margin-inline-end,
+      var(--scrollbar-margin-inline, 0px)
+    );
+  }
+
+  /* 重置滚动条 margin，防止影响子元素滚动条 */
+  :where(.custom-scrollbar) > :where(span, div, ul, textarea) {
+    --scrollbar-margin-block: initial;
+    --scrollbar-margin-inline: initial;
+    --scrollbar-margin-block-start: initial;
+    --scrollbar-margin-block-end: initial;
+    --scrollbar-margin-inline-start: initial;
+    --scrollbar-margin-inline-end: initial;
+  }
+
+  /* 重置 inherit 的 margin，使用自己的 margin */
+  /* example:
+ <div 
+   className="custom-scrollbar-reset-margin custom-scrollbar"
+   style={{
+     '--scrollbar-margin-block': '10px',
+     '--scrollbar-margin-inline': '10px',
+   }}
+ >
+  
+ </div>
+*/
+  .custom-scrollbar-reset-margin {
+    --scrollbar-margin-block: initial;
+    --scrollbar-margin-inline: initial;
+    --scrollbar-margin-block-start: initial;
+    --scrollbar-margin-block-end: initial;
+    --scrollbar-margin-inline-start: initial;
+    --scrollbar-margin-inline-end: initial;
   }
 }

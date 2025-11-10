@@ -44,16 +44,25 @@
     "download": {
       "retry": "Försök igen",
       "not-support": "Det aktuella läget stöder inte utskrift av översatta PDF-filer",
-      "trans-info": "Den aktuella filen innehåller oöversatt innehåll（{count} sidor）. Vill du översätta allt och ladda ner? Översättningen kommer att dra av motsvarande poäng.",
+      "trans-info": "Den aktuella filen innehåller oöversatt innehåll（{{count}} sidor）. Vill du översätta allt och ladda ner? Översättningen kommer att dra av motsvarande poäng.",
       "direct": "Direkt nedladdning",
       "trans": "Översätt och ladda ner",
-      "trans-progress": "Översättning pågår {current}/{total}",
+      "trans-progress": "Översättning pågår {{current}}/{{total}}",
       "trans-progress-info": "Att stänga det flytande fönstret avbryter inte översättningen.",
       "trans-success": "Översättning slutförd",
       "trans-failed": "Hoppsan! Översättningsfel"
     },
     "common": {
-      "translating": "Översätter..."
+      "translating": "Översätter...",
+      "source-file": "Källfil",
+      "translated-file": "Översatt fil"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klicka eller dra fil till denna sida för att ladda upp",
+    "supportedFormats": "Format: pdf / doc / ppt",
+    "dragFileHere": "Dra filer hit för att ladda upp",
+    "uploading": "Laddar upp...",
+    "fullScreen": "Läs/Översätt i fullskärm"
   }
 }

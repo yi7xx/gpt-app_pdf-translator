@@ -44,16 +44,25 @@
     "download": {
       "retry": "Proovi uuesti",
       "not-support": "Praegune režiim ei toeta tõlgitud PDF-ide printimist",
-      "trans-info": "Praegune fail sisaldab tõlkimata sisu（{count} lehekülge）. Kas soovite kõik tõlkida ja alla laadida? Tõlkimine vähendab vastavaid punkte.",
+      "trans-info": "Praegune fail sisaldab tõlkimata sisu（{{count}} lehekülge）. Kas soovite kõik tõlkida ja alla laadida? Tõlkimine vähendab vastavaid punkte.",
       "direct": "Laadi otse alla",
       "trans": "Tõlgi ja laadi alla",
-      "trans-progress": "Tõlkimine käimas {current}/{total}",
+      "trans-progress": "Tõlkimine käimas {{current}}/{{total}}",
       "trans-progress-info": "Hõljuva akna sulgemine ei katkesta tõlkimist.",
       "trans-success": "Tõlkimine lõpetatud",
       "trans-failed": "Ups! Tõlke viga"
     },
     "common": {
-      "translating": "Tõlkimine..."
+      "translating": "Tõlkimine...",
+      "source-file": "Algfail",
+      "translated-file": "Tõlgitud fail"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klõpsake või lohistage fail sellele lehele üleslaadimiseks",
+    "supportedFormats": "Formaadid: pdf / doc / ppt",
+    "dragFileHere": "Lohistage failid siia üleslaadimiseks",
+    "uploading": "Üleslaadimine...",
+    "fullScreen": "Täisekraanil lugemine/tõlkimine"
   }
 }

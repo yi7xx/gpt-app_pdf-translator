@@ -25,7 +25,7 @@
   .gpt-btn-icon-only {
     justify-content: center;
     align-items: center;
-    @apply rounded-lg px-3 py-2;
+    @apply rounded-lg px-2.5 py-2;
   }
 
   .gpt-btn-loading {

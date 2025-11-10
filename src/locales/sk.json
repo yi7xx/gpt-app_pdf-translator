@@ -44,16 +44,25 @@
     "download": {
       "retry": "Skúsiť znova",
       "not-support": "Aktuálny režim nepodporuje tlač preložených PDF",
-      "trans-info": "Aktuálny súbor obsahuje nepreložený obsah（{count} strán）. Chcete ho preložiť celý a stiahnuť? Preklad odpočíta zodpovedajúce body.",
+      "trans-info": "Aktuálny súbor obsahuje nepreložený obsah（{{count}} strán）. Chcete ho preložiť celý a stiahnuť? Preklad odpočíta zodpovedajúce body.",
       "direct": "Priame stiahnutie",
       "trans": "Preložiť a stiahnuť",
-      "trans-progress": "Preklad prebieha {current}/{total}",
+      "trans-progress": "Preklad prebieha {{current}}/{{total}}",
       "trans-progress-info": "Zatvorenie plávajúceho okna nepretrhne preklad.",
       "trans-success": "Preklad dokončený",
       "trans-failed": "Ups! Chyba prekladu"
     },
     "common": {
-      "translating": "Prekladá sa..."
+      "translating": "Prekladá sa...",
+      "source-file": "Zdrojový súbor",
+      "translated-file": "Preložený súbor"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Kliknite alebo presuňte súbor na túto stránku na nahranie",
+    "supportedFormats": "Formáty: pdf / doc / ppt",
+    "dragFileHere": "Presuňte súbory sem na nahranie",
+    "uploading": "Nahrávanie...",
+    "fullScreen": "Čítanie/preklad na celú obrazovku"
   }
 }

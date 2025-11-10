@@ -44,16 +44,25 @@
     "download": {
       "retry": "Prøv igen",
       "not-support": "Den aktuelle tilstand understøtter ikke udskrivning af oversatte PDF'er",
-      "trans-info": "Den aktuelle fil indeholder uoversat indhold（{count} sider）. Vil du oversætte det hele og downloade? Oversættelse vil trække tilsvarende point.",
+      "trans-info": "Den aktuelle fil indeholder uoversat indhold（{{count}} sider）. Vil du oversætte det hele og downloade? Oversættelse vil trække tilsvarende point.",
       "direct": "Direkte download",
       "trans": "Oversæt og download",
-      "trans-progress": "Oversættelse i gang {current}/{total}",
+      "trans-progress": "Oversættelse i gang {{current}}/{{total}}",
       "trans-progress-info": "Lukning af det flydende vindue vil ikke afbryde oversættelsen.",
       "trans-success": "Oversættelse fuldført",
       "trans-failed": "Ups! Oversættelsesfejl"
     },
     "common": {
-      "translating": "Oversætter..."
+      "translating": "Oversætter...",
+      "source-file": "Kilde Fil",
+      "translated-file": "Oversat Fil"
     }
+  },
+  "pdfUploader": {
+    "clickOrDrag": "Klik eller træk fil til denne side for at uploade",
+    "supportedFormats": "Formater: pdf / doc / ppt",
+    "dragFileHere": "Træk filer her for at uploade",
+    "uploading": "Uploader...",
+    "fullScreen": "Fuldskærmslæsning/Oversættelse"
   }
 }

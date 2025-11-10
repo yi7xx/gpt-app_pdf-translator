@@ -1,8 +1,7 @@
+import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
 import { Typography } from 'antd'
 import { Fragment, useCallback, useRef, useState } from 'react'
-import { CustomScroll } from 'react-custom-scroll'
-import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import { PDFViewerEvent } from '../events'
 import { UIEvents } from '../events/ui'
@@ -33,7 +32,7 @@ const useUpdate = () => {
 }
 
 export const HighlightList = ({ className }: HighlightListProps) => {
-  const { t } = useTranslation('pdfViewer.tools')
+  const { t } = useI18n()
   const { pdfViewer } = useDocumentContext()
   // pageNumber -> highlights
   const highlightsMapRef = useRef<Record<number, HighlightItem[]>>({})
@@ -96,7 +95,7 @@ export const HighlightList = ({ className }: HighlightListProps) => {
         className,
       )}
     >
-      <CustomScroll className="absolute inset-0 w-[204px]">
+      <div className="custom-scrollbar absolute inset-0 w-[204px] overflow-y-auto">
         <div className="box-border flex size-full flex-col gap-[12px] p-[12px]">
           {Object.entries(highlightsMap).map(([pageNumber, highlights]) => (
             <Fragment key={pageNumber}>
@@ -105,11 +104,11 @@ export const HighlightList = ({ className }: HighlightListProps) => {
                   key={highlight.id}
                   onClick={() => handleClick(highlight)}
                   className={cn(
-                    'hover:bg-color-grey-fill1-hover box-border flex cursor-pointer rounded-[8px] p-[8px] transition-colors',
+                    'hover:bg-grey-fill1-hover box-border flex cursor-pointer rounded-[8px] p-[8px] transition-colors',
                   )}
                 >
                   <Typography.Paragraph
-                    className="text-color-text-primary-1 font-normal-12 !mb-0 box-border rounded-[2px] border-l-[2px] py-[2px] pl-[6px]"
+                    className="text-text-primary-1 font-normal-12 !mb-0 box-border rounded-[2px] border-l-[2px] py-[2px] pl-[6px]"
                     style={{
                       borderColor: highlight.color,
                     }}
@@ -129,12 +128,12 @@ export const HighlightList = ({ className }: HighlightListProps) => {
             </Fragment>
           ))}
           {Object.values(highlightsMap).length === 0 && (
-            <div className="py1.5 text-color-text-primary-4 font-normal-14 px-2">
-              {t('highlight-empty')}
+            <div className="py1.5 text-text-primary-4 font-normal-14 px-2">
+              {t('pdfViewer.tools.highlight-empty')}
             </div>
           )}
         </div>
-      </CustomScroll>
+      </div>
     </div>
   )
 }

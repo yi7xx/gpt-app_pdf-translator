@@ -1,4 +1,5 @@
 /* eslint-disable max-lines */
+import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
 import {
   ArrowOutlineLB,
@@ -21,7 +22,6 @@ import {
   type CSSProperties,
   type FC,
 } from 'react'
-import { useTranslation } from 'react-i18next'
 import { useDocumentContext } from '../context/DocumentContext'
 import {
   PDFTransViewerEvents,
@@ -121,7 +121,7 @@ const RenderPage: FC<{ box: RenderBox | null }> = ({ box }) => {
         display,
       }}
       transition={transition}
-      className="bg-color-assistive-blue-focus absolute z-[999] rounded-[6px]"
+      className="bg-assistive-blue-focus absolute z-[999] rounded-[6px]"
     />
   )
 }
@@ -134,7 +134,7 @@ const RenderTransPages: FC<{
   onCancel: () => void
   onEnableChange: (hover: boolean) => void
 }> = ({ box, editorItem, enabledTools = true, onEnableChange, onCancel }) => {
-  const { t } = useTranslation('pdfViewer.tools')
+  const { t } = useI18n()
   const { translationService, pdfViewer, eventBus } = useDocumentContext()
   const toolsRef = useRef<HTMLDivElement>(null)
   const [open, setOpen] = useState(false)
@@ -197,7 +197,7 @@ const RenderTransPages: FC<{
     navigator.clipboard.writeText(text)
     message.success({
       key: editorItem.id,
-      content: t('copy-success'),
+      content: t('pdfViewer.tools.copy-success'),
     })
   }
 
@@ -336,13 +336,11 @@ const RenderTransPages: FC<{
       className={cn(
         'rounded-[6px]',
         editing
-          ? 'border-color-brand-primary-normal bg-color-grey-layer2-normal border'
-          : 'bg-color-assistive-blue-focus',
+          ? 'border-brand-primary-normal bg-grey-layer2-normal border'
+          : 'bg-assistive-blue-focus',
       )}
       style={{
-        boxShadow: editing
-          ? '0px 0px 0px 3px var(--color-focus-primary-1)'
-          : 'none',
+        boxShadow: editing ? '0px 0px 0px 3px var(--focus-primary-1)' : 'none',
       }}
       onPointerMove={() => handleToolsHover(true)}
       onPointerLeave={() => handleToolsHover(false)}
@@ -360,7 +358,7 @@ const RenderTransPages: FC<{
             >
               <textarea
                 ref={textareaRef}
-                className="custom-scrollbar bg-color-grey-layer2-normal text-color-text-primary-2 size-full resize-none border-none p-0 outline-none"
+                className="custom-scrollbar bg-grey-layer2-normal text-text-primary-2 size-full resize-none border-none p-0 outline-none"
                 value={editingText}
                 style={editingStyle}
                 onChange={(e) => setEditingText(e.target.value)}
@@ -376,20 +374,20 @@ const RenderTransPages: FC<{
                 <div className="f-i-center mt-[6px] gap-[6px]">
                   <button
                     onClick={() => setEditing(false)}
-                    className="bg-color-glass-fill2-normal text-color-text-secondary-1 hover:bg-color-glass-fill2-hover rounded-[6px] p-[6px] backdrop-blur-[13px] transition-colors"
+                    className="bg-glass-fill2-normal text-text-secondary-1 hover:bg-glass-fill2-hover rounded-[6px] p-[6px] backdrop-blur-[13px] transition-colors"
                   >
                     <CloseOutlineS size={14} />
                   </button>
                   <button
                     onClick={handleSave}
-                    className="hover:bg-color-advanced-fil-hover bg-color-advanced-fill-normal text-color-text-secondary-1 rounded-[6px] p-[6px] transition-colors"
+                    className="hover:bg-advanced-fil-hover bg-advanced-fill-normal text-text-secondary-1 rounded-[6px] p-[6px] transition-colors"
                   >
                     <RightOutlineS size={14} />
                   </button>
                 </div>
               ) : (
                 <div
-                  className="border-color-grey-line1-normal f-i-center -mr-[14px] gap-[4px] rounded-[12px] border bg-white p-[4px]"
+                  className="border-grey-line1-normal f-i-center -mr-[14px] gap-[4px] rounded-[12px] border bg-white p-[4px]"
                   style={{
                     boxShadow:
                       '0px 0px 0px 1px rgba(255, 255, 255, 0.12), 0px 2px 8px -4px rgba(12, 13, 25, 0.12), 0px 4px 16px 0px rgba(12, 13, 25, 0.08), 0px 8px 32px 8px rgba(12, 13, 25, 0.04)',
@@ -401,16 +399,18 @@ const RenderTransPages: FC<{
                     trigger="click"
                     open={open}
                     align={{ offset: [0, 6] }}
-                    overlayInnerStyle={{
-                      width: 200,
-                      padding: 0,
-                      borderRadius: 16,
-                      background: 'var(--color-grey-layer3-normal)',
-                      boxShadow:
-                        '0px 6px 24px 0px rgba(12, 13, 25, 0.04), 0px 12px 48px 0px rgba(12, 13, 25, 0.04), 0px 24px 96px 0px rgba(12, 13, 25, 0.04)',
+                    styles={{
+                      body: {
+                        width: 200,
+                        padding: 0,
+                        borderRadius: 16,
+                        background: 'var(--grey-layer3-normal)',
+                        boxShadow:
+                          '0px 6px 24px 0px rgba(12, 13, 25, 0.04), 0px 12px 48px 0px rgba(12, 13, 25, 0.04), 0px 24px 96px 0px rgba(12, 13, 25, 0.04)',
+                      },
                     }}
                     getPopupContainer={() => toolsRef.current!}
-                    destroyTooltipOnHide
+                    destroyOnHidden
                     content={
                       <div className="size-full p-[8px]">
                         <ModelList
@@ -423,29 +423,29 @@ const RenderTransPages: FC<{
                   >
                     <div
                       onClick={() => setOpen((pre) => !pre)}
-                      className="f-i-center hover:bg-color-grey-fill2-normal cursor-pointer gap-[8px] rounded-[8px] py-[8px] pr-[6px] pl-[8px] transition-colors"
+                      className="f-i-center hover:bg-grey-fill2-normal cursor-pointer gap-[8px] rounded-[8px] py-[8px] pr-[6px] pl-[8px] transition-colors"
                     >
                       <div className="flex-center size-[16px] shrink-0 text-[14px]">
                         {renderIcon ? null : modelOption.icon}
                       </div>
-                      <span className="text-color-text-primary-3">
+                      <span className="text-text-primary-3">
                         <ArrowOutlineLB size={8} />
                       </span>
                     </div>
                   </Popover>
-                  <div className="bg-color-grey-line2-normal mx-[6px] h-[14px] w-[1px] shrink-0 rounded-full"></div>
-                  <Tooltip title={t('copy')}>
+                  <div className="bg-grey-line2-normal mx-[6px] h-[14px] w-[1px] shrink-0 rounded-full"></div>
+                  <Tooltip title={t('pdfViewer.tools.copy')}>
                     <div
                       onClick={handleCopy}
-                      className="text-color-text-primary-1 hover:bg-color-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px]"
+                      className="text-text-primary-1 hover:bg-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px]"
                     >
                       <Copy size={16} />
                     </div>
                   </Tooltip>
-                  <Tooltip title={t('edit')}>
+                  <Tooltip title={t('pdfViewer.tools.edit')}>
                     <div
                       onClickCapture={handleEdit}
-                      className="text-color-text-primary-1 hover:bg-color-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px]"
+                      className="text-text-primary-1 hover:bg-grey-fill1-hover cursor-pointer rounded-[8px] p-[8px]"
                     >
                       <Edit2 size={16} />
                     </div>
@@ -663,7 +663,7 @@ const TranslationSpotlight = () => {
     <div className="pointer-events-none absolute top-0 left-0 size-0">
       {pdfViewer && pdfViewer.isCompareMode && <RenderPage box={pageBox} />}
       <RenderTransPages
-        enabledTools={enabledTools}
+        enabledTools={false}
         box={transBox}
         editorItem={currentEditorItem.current}
         onCancel={() => {
