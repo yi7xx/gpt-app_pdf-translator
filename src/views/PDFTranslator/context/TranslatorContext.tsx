@@ -1,5 +1,12 @@
 import { useWidgetProps, useWidgetState } from '@/hooks/openai'
-import { createContext, FC, useContext, useMemo, useState } from 'react'
+import {
+  createContext,
+  FC,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from 'react'
 
 interface TranslatorContextType {
   fileUrl: string
@@ -23,15 +30,24 @@ interface Props {
 }
 
 export const TranslatorProvider: FC<Props> = ({ children }) => {
-  const [fileUrl, setFileUrl] = useState<string>('')
+  const [fileUrl, _setFileUrl] = useState<string>('')
   const widgetProps = useWidgetProps<{ fileUrl: string }>({ fileUrl: '' })
   const [widgetState, setWidgetState] = useWidgetState({
     fileUrl: '',
   })
 
-  console.log(widgetState, widgetProps, 'widgetState')
+  const setFileUrl = useCallback(
+    (fileUrl: string) => {
+      _setFileUrl(fileUrl)
+      setWidgetState({ fileUrl: Math.random().toString() + '.pdf' })
+    },
+    [setWidgetState],
+  )
 
-  const providerValue = useMemo(() => ({ fileUrl, setFileUrl }), [fileUrl])
+  const providerValue = useMemo(
+    () => ({ fileUrl, setFileUrl }),
+    [fileUrl, setFileUrl],
+  )
 
   return (
     <TranslatorContext.Provider value={providerValue}>

@@ -2,7 +2,7 @@
  * Source: https://github.com/openai/openai-apps-sdk-examples/tree/main/src
  */
 
-import { useSyncExternalStore } from 'react'
+import { useCallback, useSyncExternalStore } from 'react'
 import {
   SET_GLOBALS_EVENT_TYPE,
   SetGlobalsEvent,
@@ -24,8 +24,8 @@ import {
 export function useOpenAIGlobal<K extends keyof OpenAIGlobals>(
   key: K,
 ): OpenAIGlobals[K] | null {
-  return useSyncExternalStore(
-    (onChange) => {
+  const subscribe = useCallback(
+    (onChange: () => void) => {
       if (typeof window === 'undefined') {
         return () => {}
       }
@@ -35,8 +35,7 @@ export function useOpenAIGlobal<K extends keyof OpenAIGlobals>(
         if (value === undefined) {
           return
         }
-
-        onChange()
+        setTimeout(onChange, 0)
       }
 
       window.addEventListener(SET_GLOBALS_EVENT_TYPE, handleSetGlobal, {
@@ -47,6 +46,10 @@ export function useOpenAIGlobal<K extends keyof OpenAIGlobals>(
         window.removeEventListener(SET_GLOBALS_EVENT_TYPE, handleSetGlobal)
       }
     },
+    [key],
+  )
+  return useSyncExternalStore(
+    subscribe,
     () =>
       typeof window !== 'undefined' ? (window.openai?.[key] ?? null) : null,
     () => null,

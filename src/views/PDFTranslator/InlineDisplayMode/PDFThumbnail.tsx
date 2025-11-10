@@ -93,7 +93,7 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({
   return (
     <div ref={containerRef} className={cn('size-full bg-white', className)}>
       {loadingPDF && (
-        <div className="flex-center m-3 size-full overflow-hidden">
+        <div className="flex-center size-full overflow-hidden">
           <span className="text-brand-primary-normal">
             <Loading size={32} className="animate-spin" />
           </span>
