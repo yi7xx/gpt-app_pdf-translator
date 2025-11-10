@@ -55,7 +55,8 @@
     "common": {
       "translating": "Перевод...",
       "source-file": "Исходный файл",
-      "translated-file": "Переведенный файл"
+      "translated-file": "Переведенный файл",
+      "open-sider-and-download": "Откройте Sider и скачайте"
     }
   },
   "pdfUploader": {

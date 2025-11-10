@@ -55,7 +55,8 @@
     "common": {
       "translating": "అనువదిస్తున్నాం...",
       "source-file": "మూల ఫైల్",
-      "translated-file": "అనువాద ఫైల్"
+      "translated-file": "అనువాద ఫైల్",
+      "open-sider-and-download": "Siderని ఓపెన్ చేసి డౌన్‌లోడ్ చేయండి"
     }
   },
   "pdfUploader": {

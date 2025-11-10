@@ -55,7 +55,8 @@
     "common": {
       "translating": "번역 중...",
       "source-file": "원본 파일",
-      "translated-file": "번역된 파일"
+      "translated-file": "번역된 파일",
+      "open-sider-and-download": "Sider를 열고 다운로드하세요"
     }
   },
   "pdfUploader": {

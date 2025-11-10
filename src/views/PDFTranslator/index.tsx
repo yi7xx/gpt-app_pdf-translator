@@ -14,23 +14,12 @@ const PDFTranslator = () => {
     return <GPTSkeleton className="h-85 w-full" />
   }
 
-  if (displayMode === 'fullscreen') {
-    return <FullscreenDisplayMode />
-  }
-
-  if (displayMode === 'inline') {
-    return <InlineDisplayMode />
-  }
-
-  return null
-}
-
-const PDFTranslatorProvider = () => {
   return (
     <TranslatorProvider>
-      <PDFTranslator />
+      {displayMode === 'fullscreen' && <FullscreenDisplayMode />}
+      {displayMode === 'inline' && <InlineDisplayMode />}
     </TranslatorProvider>
   )
 }
 
-export default PDFTranslatorProvider
+export default PDFTranslator

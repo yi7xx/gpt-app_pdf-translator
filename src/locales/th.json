@@ -55,7 +55,8 @@
     "common": {
       "translating": "กำลังแปล...",
       "source-file": "ไฟล์ต้นฉบับ",
-      "translated-file": "ไฟล์ที่แปลแล้ว"
+      "translated-file": "ไฟล์ที่แปลแล้ว",
+      "open-sider-and-download": "เปิด Sider และดาวน์โหลด"
     }
   },
   "pdfUploader": {

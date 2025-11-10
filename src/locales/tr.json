@@ -55,7 +55,8 @@
     "common": {
       "translating": "Çeviri yapılıyor...",
       "source-file": "Kaynak Dosya",
-      "translated-file": "Çevrilmiş Dosya"
+      "translated-file": "Çevrilmiş Dosya",
+      "open-sider-and-download": "Sider'ı Aç ve İndir"
     }
   },
   "pdfUploader": {

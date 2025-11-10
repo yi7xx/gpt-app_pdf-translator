@@ -55,7 +55,8 @@
     "common": {
       "translating": "Tiek tulkots...",
       "source-file": "Avota fails",
-      "translated-file": "Tulkotais fails"
+      "translated-file": "Tulkotais fails",
+      "open-sider-and-download": "Atveriet Sider un lejupielādējiet"
     }
   },
   "pdfUploader": {

@@ -55,7 +55,8 @@
     "common": {
       "translating": "மொழிபெயர்ப்பு நடைபெற்று கொண்டிருக்கிறது...",
       "source-file": "மூல கோப்பு",
-      "translated-file": "மொழிபெயர்க்கப்பட்ட கோப்பு"
+      "translated-file": "மொழிபெயர்க்கப்பட்ட கோப்பு",
+      "open-sider-and-download": "Sider-ஐ திறந்து பதிவிறக்கவும்"
     }
   },
   "pdfUploader": {

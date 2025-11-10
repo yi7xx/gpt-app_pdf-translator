@@ -55,7 +55,8 @@
     "common": {
       "translating": "പരിഭാഷ ചെയ്യുന്നു...",
       "source-file": "മൂല ഫയൽ",
-      "translated-file": "പരിഭാഷിത ഫയൽ"
+      "translated-file": "പരിഭാഷിത ഫയൽ",
+      "open-sider-and-download": "Sider തുറന്ന് ഡൗൺലോഡ് ചെയ്യുക"
     }
   },
   "pdfUploader": {

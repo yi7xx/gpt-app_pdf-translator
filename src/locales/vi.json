@@ -55,7 +55,8 @@
     "common": {
       "translating": "Đang dịch...",
       "source-file": "Tệp nguồn",
-      "translated-file": "Tệp đã dịch"
+      "translated-file": "Tệp đã dịch",
+      "open-sider-and-download": "Mở Sider và Tải xuống"
     }
   },
   "pdfUploader": {

@@ -55,7 +55,8 @@
     "common": {
       "translating": "Μετάφραση...",
       "source-file": "Αρχείο Πηγής",
-      "translated-file": "Μεταφρασμένο Αρχείο"
+      "translated-file": "Μεταφρασμένο Αρχείο",
+      "open-sider-and-download": "Άνοιξε το Sider και Κατέβασε"
     }
   },
   "pdfUploader": {

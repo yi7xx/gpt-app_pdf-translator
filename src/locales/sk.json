@@ -55,7 +55,8 @@
     "common": {
       "translating": "Prekladá sa...",
       "source-file": "Zdrojový súbor",
-      "translated-file": "Preložený súbor"
+      "translated-file": "Preložený súbor",
+      "open-sider-and-download": "Otvorte Sider a stiahnite"
     }
   },
   "pdfUploader": {

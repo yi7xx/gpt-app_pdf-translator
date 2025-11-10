@@ -55,7 +55,8 @@
     "common": {
       "translating": "Isinasalin...",
       "source-file": "Pinagmulan ng File",
-      "translated-file": "Isinaling File"
+      "translated-file": "Isinaling File",
+      "open-sider-and-download": "Buksan ang Sider at I-download"
     }
   },
   "pdfUploader": {

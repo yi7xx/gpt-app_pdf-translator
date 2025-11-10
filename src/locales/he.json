@@ -55,7 +55,8 @@
     "common": {
       "translating": "מתרגם...",
       "source-file": "קובץ מקור",
-      "translated-file": "קובץ מתורגם"
+      "translated-file": "קובץ מתורגם",
+      "open-sider-and-download": "פתח את Sider והורד"
     }
   },
   "pdfUploader": {

@@ -55,7 +55,8 @@
     "common": {
       "translating": "Oversætter...",
       "source-file": "Kilde Fil",
-      "translated-file": "Oversat Fil"
+      "translated-file": "Oversat Fil",
+      "open-sider-and-download": "Åbn Sider og Download"
     }
   },
   "pdfUploader": {

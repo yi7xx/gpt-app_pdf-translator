@@ -55,7 +55,8 @@
     "common": {
       "translating": "Se traduce...",
       "source-file": "Fișier sursă",
-      "translated-file": "Fișier tradus"
+      "translated-file": "Fișier tradus",
+      "open-sider-and-download": "Deschide Sider și descarcă"
     }
   },
   "pdfUploader": {

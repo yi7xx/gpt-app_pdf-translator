@@ -44,7 +44,8 @@
     "common": {
       "translating": "翻译中...",
       "source-file": "源文件",
-      "translated-file": "翻译文件"
+      "translated-file": "翻译文件",
+      "open-sider-and-download": "打开 Sider 并下载"
     },
     "download": {
       "retry": "重试",

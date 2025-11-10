@@ -55,7 +55,8 @@
     "common": {
       "translating": "ಅನುವಾದಿಸುತ್ತಿದೆ...",
       "source-file": "ಮೂಲ ಫೈಲ್",
-      "translated-file": "ಅನುವಾದಿತ ಫೈಲ್"
+      "translated-file": "ಅನುವಾದಿತ ಫೈಲ್",
+      "open-sider-and-download": "Sider ತೆರೆಯಿರಿ ಮತ್ತು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
     }
   },
   "pdfUploader": {

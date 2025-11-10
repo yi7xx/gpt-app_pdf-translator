@@ -55,7 +55,8 @@
     "common": {
       "translating": "ትርጉም በሂደት ላይ...",
       "source-file": "የመነሻ ፋይል",
-      "translated-file": "የተተረጎመ ፋይል"
+      "translated-file": "የተተረጎመ ፋይል",
+      "open-sider-and-download": "Siderን ክፈትና አውርድ"
     }
   },
   "pdfUploader": {

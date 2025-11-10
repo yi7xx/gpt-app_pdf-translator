@@ -55,7 +55,8 @@
     "common": {
       "translating": "Prevođenje...",
       "source-file": "Izvorna datoteka",
-      "translated-file": "Prevedena datoteka"
+      "translated-file": "Prevedena datoteka",
+      "open-sider-and-download": "Otvori Sider i preuzmi"
     }
   },
   "pdfUploader": {

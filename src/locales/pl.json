@@ -55,7 +55,8 @@
     "common": {
       "translating": "Tłumaczenie...",
       "source-file": "Plik źródłowy",
-      "translated-file": "Plik przetłumaczony"
+      "translated-file": "Plik przetłumaczony",
+      "open-sider-and-download": "Otwórz Sider i pobierz"
     }
   },
   "pdfUploader": {

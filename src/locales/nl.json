@@ -55,7 +55,8 @@
     "common": {
       "translating": "Bezig met vertalen...",
       "source-file": "Bronbestand",
-      "translated-file": "Vertaald bestand"
+      "translated-file": "Vertaald bestand",
+      "open-sider-and-download": "Open Sider en Download"
     }
   },
   "pdfUploader": {

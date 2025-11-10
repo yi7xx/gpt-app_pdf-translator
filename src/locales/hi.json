@@ -55,7 +55,8 @@
     "common": {
       "translating": "अनुवाद हो रहा है...",
       "source-file": "स्रोत फ़ाइल",
-      "translated-file": "अनुवादित फ़ाइल"
+      "translated-file": "अनुवादित फ़ाइल",
+      "open-sider-and-download": "Sider खोलें और डाउनलोड करें"
     }
   },
   "pdfUploader": {

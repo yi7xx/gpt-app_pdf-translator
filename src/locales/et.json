@@ -55,7 +55,8 @@
     "common": {
       "translating": "Tõlkimine...",
       "source-file": "Algfail",
-      "translated-file": "Tõlgitud fail"
+      "translated-file": "Tõlgitud fail",
+      "open-sider-and-download": "Ava Sider ja Laadi Alla"
     }
   },
   "pdfUploader": {

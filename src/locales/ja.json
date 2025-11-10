@@ -55,7 +55,8 @@
     "common": {
       "translating": "翻訳中...",
       "source-file": "ソースファイル",
-      "translated-file": "翻訳ファイル"
+      "translated-file": "翻訳ファイル",
+      "open-sider-and-download": "Siderを開いてダウンロード"
     }
   },
   "pdfUploader": {

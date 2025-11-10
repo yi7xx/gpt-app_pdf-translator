@@ -55,7 +55,8 @@
     "common": {
       "translating": "Traduzindo...",
       "source-file": "Arquivo de Origem",
-      "translated-file": "Arquivo Traduzido"
+      "translated-file": "Arquivo Traduzido",
+      "open-sider-and-download": "Abra o Sider e faça o download"
     }
   },
   "pdfUploader": {

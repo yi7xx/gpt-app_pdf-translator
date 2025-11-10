@@ -55,7 +55,8 @@
     "common": {
       "translating": "Verčiama...",
       "source-file": "Šaltinio failas",
-      "translated-file": "Išverstas failas"
+      "translated-file": "Išverstas failas",
+      "open-sider-and-download": "Atidarykite Sider ir atsisiųskite"
     }
   },
   "pdfUploader": {

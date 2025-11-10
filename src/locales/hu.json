@@ -55,7 +55,8 @@
     "common": {
       "translating": "Fordítás...",
       "source-file": "Forrásfájl",
-      "translated-file": "Fordított fájl"
+      "translated-file": "Fordított fájl",
+      "open-sider-and-download": "Nyisd meg a Sider-t és töltsd le"
     }
   },
   "pdfUploader": {

@@ -55,7 +55,8 @@
     "common": {
       "translating": "Traduïnt...",
       "source-file": "Fitxer d'origen",
-      "translated-file": "Fitxer traduït"
+      "translated-file": "Fitxer traduït",
+      "open-sider-and-download": "Obre Sider i descarrega"
     }
   },
   "pdfUploader": {

@@ -55,7 +55,8 @@
     "common": {
       "translating": "অনুবাদ হচ্ছে...",
       "source-file": "উৎস ফাইল",
-      "translated-file": "অনুবাদিত ফাইল"
+      "translated-file": "অনুবাদিত ফাইল",
+      "open-sider-and-download": "Sider খুলুন এবং ডাউনলোড করুন"
     }
   },
   "pdfUploader": {

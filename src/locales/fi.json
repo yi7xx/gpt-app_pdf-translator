@@ -55,7 +55,8 @@
     "common": {
       "translating": "Käännetään...",
       "source-file": "Lähdetiedosto",
-      "translated-file": "Käännetty tiedosto"
+      "translated-file": "Käännetty tiedosto",
+      "open-sider-and-download": "Avaa Sider ja lataa"
     }
   },
   "pdfUploader": {

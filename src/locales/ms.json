@@ -55,7 +55,8 @@
     "common": {
       "translating": "Sedang menterjemah...",
       "source-file": "Fail Sumber",
-      "translated-file": "Fail Diterjemah"
+      "translated-file": "Fail Diterjemah",
+      "open-sider-and-download": "Buka Sider dan Muat Turun"
     }
   },
   "pdfUploader": {

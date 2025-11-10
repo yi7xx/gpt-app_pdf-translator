@@ -55,7 +55,8 @@
     "common": {
       "translating": "Sedang menerjemahkan...",
       "source-file": "Berkas Sumber",
-      "translated-file": "Berkas Terjemahan"
+      "translated-file": "Berkas Terjemahan",
+      "open-sider-and-download": "Buka Sider dan Unduh"
     }
   },
   "pdfUploader": {

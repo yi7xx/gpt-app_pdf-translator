@@ -55,7 +55,8 @@
     "common": {
       "translating": "جارٍ الترجمة...",
       "source-file": "الملف الأصلي",
-      "translated-file": "الملف المترجم"
+      "translated-file": "الملف المترجم",
+      "open-sider-and-download": "افتح Sider وقم بالتنزيل"
     }
   },
   "pdfUploader": {
