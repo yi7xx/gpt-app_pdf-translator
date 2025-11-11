@@ -28,7 +28,7 @@ export interface TranslateOption {
   name: string
   // 翻译名称，用于显示，自定义的优先级高于name
   displayName?: string
-  icon: JSX.Element
+  icon: React.ReactNode
   // 分类
   // 分类的名称，用于显示，自定义的优先级高于type
   category?: string

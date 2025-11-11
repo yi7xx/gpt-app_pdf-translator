@@ -31,11 +31,9 @@ export function useOpenAIGlobal<K extends keyof OpenAIGlobals>(
       }
 
       const handleSetGlobal = (event: SetGlobalsEvent) => {
-        const value = event.detail.globals[key]
-        if (value === undefined) {
-          return
+        if (key in event.detail.globals) {
+          setTimeout(onChange, 0)
         }
-        setTimeout(onChange, 0)
       }
 
       window.addEventListener(SET_GLOBALS_EVENT_TYPE, handleSetGlobal, {
@@ -48,10 +46,14 @@ export function useOpenAIGlobal<K extends keyof OpenAIGlobals>(
     },
     [key],
   )
-  return useSyncExternalStore(
-    subscribe,
-    () =>
-      typeof window !== 'undefined' ? (window.openai?.[key] ?? null) : null,
-    () => null,
-  )
+
+  const getSnapshot = useCallback(() => {
+    return typeof window !== 'undefined' ? (window.openai?.[key] ?? null) : null
+  }, [key])
+
+  const getDerivedSnapshot = useCallback(() => {
+    return null
+  }, [])
+
+  return useSyncExternalStore(subscribe, getSnapshot, getDerivedSnapshot)
 }

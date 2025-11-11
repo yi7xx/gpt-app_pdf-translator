@@ -376,7 +376,7 @@ export const ToolBar: FC<ToolBarProps> = ({
 
   const handleDownload = () => {
     // TODO: save to wisebase
-    openExternal(window.location.href)
+    openExternal('https://sider.ai/wisebase')
   }
 
   const splitLine = (

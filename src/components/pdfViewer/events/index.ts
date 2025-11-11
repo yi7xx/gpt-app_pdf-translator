@@ -1,4 +1,4 @@
-import type { Mitter } from '@sider/utils/mitter'
+import type { Mitter } from '@/utils/mitter'
 import type { FindEventMap } from './find'
 import type { PDFPageEventMap } from './pdfPageViewer'
 import type { PDFThumbnailEventMap } from './pdfThumbnail'
