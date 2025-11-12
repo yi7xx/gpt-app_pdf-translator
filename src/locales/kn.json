@@ -30,7 +30,8 @@
       "copy-success": "ನಕಲಿಸುವಿಕೆ ಯಶಸ್ವಿ",
       "edit": "ಸಂಪಾದಿಸಿ",
       "notAllowTranslate": "ಮೂಲ ವೆಬ್‌ಪೇಜ್ ಪ್ರಸ್ತುತ ಅನುವಾದವನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.",
-      "translate-service": "ಅನುವಾದ ಸೇವೆ"
+      "translate-service": "ಅನುವಾದ ಸೇವೆ",
+      "get-better": "Sider ನಲ್ಲಿ ಉತ್ತಮ ಅನುವಾದ ಗುಣಮಟ್ಟವನ್ನು ಪಡೆಯಿರಿ"
     },
     "error": {
       "load-failed": "ಲೋಡ್ ವಿಫಲವಾಗಿದೆ",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "ಅಪ್ಲೋಡ್ ಮಾಡಲು ಈ ಪುಟಕ್ಕೆ ಫೈಲ್ ಕ್ಲಿಕ್ ಅಥವಾ ಡ್ರ್ಯಾಗ್ ಮಾಡಿ",
-    "supportedFormats": "ಫಾರ್ಮ್ಯಾಟ್ಗಳು: pdf / doc / ppt",
+    "supportedFormats": "ಫಾರ್ಮ್ಯಾಟ್ಗಳು: pdf",
     "dragFileHere": "ಅಪ್ಲೋಡ್ ಮಾಡಲು ಫೈಲ್‌ಗಳನ್ನು ಇಲ್ಲಿ ಡ್ರ್ಯಾಗ್ ಮಾಡಿ",
     "uploading": "ಅಪ್ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
     "fullScreen": "ಪೂರ್ಣ ಪರದೆ ಓದು/ಅನುವಾದ"

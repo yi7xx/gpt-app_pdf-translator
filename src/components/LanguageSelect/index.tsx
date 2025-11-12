@@ -81,7 +81,7 @@ const LanguageSelect: FC<LanguageSelectProps> = ({
                   {/* <span className="font-semibold-13 text-interactive-label-secondary-default">
                     {item.ename}
                   </span> */}
-                  <span className="font-normal-13 text-text-tertiary">
+                  <span className="font-normal-13 text-interactive-label-secondary-default">
                     {item.language}
                   </span>
                   {item.code === languageMerged && (

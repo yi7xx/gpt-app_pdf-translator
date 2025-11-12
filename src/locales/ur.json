@@ -30,7 +30,8 @@
       "copy-success": "کاپی کامیاب",
       "edit": "ترمیم کریں",
       "notAllowTranslate": "اصل ویب صفحہ فی الحال ترجمہ کی حمایت نہیں کرتا۔",
-      "translate-service": "ترجمہ سروس"
+      "translate-service": "ترجمہ سروس",
+      "get-better": "Sider پر بہتر ترجمے کی کوالٹی حاصل کریں"
     },
     "error": {
       "load-failed": "لوڈ ناکام",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "اپ لوڈ کرنے کے لیے فائل کو اس صفحے پر کلک یا ڈریگ کریں",
-    "supportedFormats": "فارمیٹس: pdf / doc / ppt",
+    "supportedFormats": "فارمیٹس: pdf",
     "dragFileHere": "اپ لوڈ کرنے کے لیے فائلز یہاں ڈریگ کریں",
     "uploading": "اپ لوڈ ہو رہا ہے...",
     "fullScreen": "فل اسکرین مطالعہ/ترجمہ"

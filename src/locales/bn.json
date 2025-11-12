@@ -30,7 +30,8 @@
       "copy-success": "কপি সফল",
       "edit": "সম্পাদনা করুন",
       "notAllowTranslate": "মূল ওয়েবপেজ বর্তমানে অনুবাদ সমর্থন করে না।",
-      "translate-service": "অনুবাদ পরিষেবা"
+      "translate-service": "অনুবাদ পরিষেবা",
+      "get-better": "Sider-এ আরও ভালো অনুবাদের গুণমান পান"
     },
     "error": {
       "load-failed": "লোড ব্যর্থ",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "আপলোড করতে এই পৃষ্ঠায় ফাইল ক্লিক বা টেনে আনুন",
-    "supportedFormats": "ফরম্যাট: pdf / doc / ppt",
+    "supportedFormats": "ফরম্যাট: pdf",
     "dragFileHere": "আপলোড করতে ফাইল এখানে টেনে আনুন",
     "uploading": "আপলোড হচ্ছে...",
     "fullScreen": "পূর্ণ পর্দায় পড়া/অনুবাদ"

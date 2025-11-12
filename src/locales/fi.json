@@ -30,7 +30,8 @@
       "copy-success": "Kopiointi onnistui",
       "edit": "Muokkaa",
       "notAllowTranslate": "Alkuperäinen verkkosivu ei tällä hetkellä tue käännöstä.",
-      "translate-service": "Käännöspalvelu"
+      "translate-service": "Käännöspalvelu",
+      "get-better": "Paranna käännösten laatua Siderillä"
     },
     "error": {
       "load-failed": "Lataus epäonnistui",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Napsauta tai vedä tiedosto tälle sivulle ladataksesi",
-    "supportedFormats": "Tiedostomuodot: pdf / doc / ppt",
+    "supportedFormats": "Tiedostomuodot: pdf",
     "dragFileHere": "Vedä tiedostot tähän ladataksesi",
     "uploading": "Ladataan...",
     "fullScreen": "Koko näytön lukeminen/kääntäminen"

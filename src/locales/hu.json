@@ -30,7 +30,8 @@
       "copy-success": "Másolás sikeres",
       "edit": "Szerkesztés",
       "notAllowTranslate": "Az eredeti weboldal jelenleg nem támogatja a fordítást.",
-      "translate-service": "Fordítási szolgáltatás"
+      "translate-service": "Fordítási szolgáltatás",
+      "get-better": "Javítsa a fordítás minőségét a Sideren"
     },
     "error": {
       "load-failed": "Betöltés sikertelen",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Kattintson vagy húzza a fájlt erre az oldalra a feltöltéshez",
-    "supportedFormats": "Formátumok: pdf / doc / ppt",
+    "supportedFormats": "Formátumok: pdf",
     "dragFileHere": "Húzza ide a fájlokat a feltöltéshez",
     "uploading": "Feltöltés...",
     "fullScreen": "Teljes képernyős olvasás/fordítás"

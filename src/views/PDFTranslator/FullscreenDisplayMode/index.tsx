@@ -13,7 +13,7 @@ const FullscreenDisplayMode = () => {
     const container = containerRef.current
     if (!container) return
     const bodyHeight = document.body.clientHeight
-    container.style.maxHeight = maxHeight
+    container.style.height = maxHeight
       ? `${maxHeight}px`
       : `${bodyHeight - CHATGPT_INPUT_HIGHT}px`
   }
@@ -27,9 +27,7 @@ const FullscreenDisplayMode = () => {
 
   return (
     <div ref={containerRef} className="flex w-full flex-col">
-      <div className="grid flex-1 grid-rows-[auto] overflow-hidden">
-        <PDFViewer className="min-h-0" />
-      </div>
+      <PDFViewer className="h-0 flex-1" />
     </div>
   )
 }

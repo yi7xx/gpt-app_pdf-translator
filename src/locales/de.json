@@ -30,7 +30,8 @@
       "copy-success": "Kopieren erfolgreich",
       "edit": "Bearbeiten",
       "notAllowTranslate": "Die ursprüngliche Webseite unterstützt derzeit keine Übersetzung.",
-      "translate-service": "Übersetzungsdienst"
+      "translate-service": "Übersetzungsdienst",
+      "get-better": "Erhalten Sie eine bessere Übersetzungsqualität bei Sider"
     },
     "error": {
       "load-failed": "Laden fehlgeschlagen",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klicken oder Datei auf diese Seite ziehen, um sie hochzuladen",
-    "supportedFormats": "Formate: pdf / doc / ppt",
+    "supportedFormats": "Formate: pdf",
     "dragFileHere": "Dateien hierher ziehen, um sie hochzuladen",
     "uploading": "Wird hochgeladen...",
     "fullScreen": "Vollbild-Lesen/Übersetzung"

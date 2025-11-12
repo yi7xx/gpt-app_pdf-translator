@@ -30,7 +30,8 @@
       "copy-success": "ההעתקה הצליחה",
       "edit": "ערוך",
       "notAllowTranslate": "הדף המקורי אינו תומך כרגע בתרגום.",
-      "translate-service": "שירות תרגום"
+      "translate-service": "שירות תרגום",
+      "get-better": "קבלו איכות תרגום טובה יותר ב-Sider"
     },
     "error": {
       "load-failed": "הטעינה נכשלה",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "לחץ או גרור קובץ לעמוד זה להעלאה",
-    "supportedFormats": "פורמטים: pdf / doc / ppt",
+    "supportedFormats": "פורמטים: pdf",
     "dragFileHere": "גרור קבצים לכאן להעלאה",
     "uploading": "מעלה...",
     "fullScreen": "קריאה/תרגום במסך מלא"

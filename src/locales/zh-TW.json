@@ -30,7 +30,8 @@
       "close-trans": "關閉翻譯",
       "highlight-empty": "尚未突出顯示",
       "notAllowTranslate": "目前原始網頁不支援翻譯。",
-      "translate-service": "翻譯服務"
+      "translate-service": "翻譯服務",
+      "get-better": "在 Sider 上獲得更好的翻譯品質"
     },
     "error": {
       "load-failed": "載入失敗",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "點擊或拖曳檔案到此頁面上傳",
-    "supportedFormats": "格式：pdf / doc / ppt",
+    "supportedFormats": "格式：pdf",
     "dragFileHere": "將檔案拖曳到此處上傳",
     "uploading": "上傳中...",
     "fullScreen": "全螢幕閱讀/翻譯"

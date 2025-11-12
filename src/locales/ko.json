@@ -30,7 +30,8 @@
       "copy-success": "복사 성공",
       "edit": "편집",
       "notAllowTranslate": "원본 웹페이지는 현재 번역을 지원하지 않습니다.",
-      "translate-service": "번역 서비스"
+      "translate-service": "번역 서비스",
+      "get-better": "Sider에서 더 나은 번역 품질을 경험하세요"
     },
     "error": {
       "load-failed": "로드 실패",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "업로드하려면 파일을 클릭하거나 이 페이지로 드래그하세요",
-    "supportedFormats": "형식: pdf / doc / ppt",
+    "supportedFormats": "형식: pdf",
     "dragFileHere": "업로드하려면 파일을 이곳으로 드래그하세요",
     "uploading": "업로드 중...",
     "fullScreen": "전체 화면 읽기/번역"

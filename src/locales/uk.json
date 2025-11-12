@@ -30,7 +30,8 @@
       "copy-success": "Копіювання успішне",
       "edit": "Редагувати",
       "notAllowTranslate": "Оригінальна веб-сторінка наразі не підтримує переклад.",
-      "translate-service": "Сервіс перекладу"
+      "translate-service": "Сервіс перекладу",
+      "get-better": "Отримайте кращу якість перекладу на Sider"
     },
     "error": {
       "load-failed": "Завантаження не вдалося",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Клацніть або перетягніть файл на цю сторінку для завантаження",
-    "supportedFormats": "Формати: pdf / doc / ppt",
+    "supportedFormats": "Формати: pdf",
     "dragFileHere": "Перетягніть файли сюди для завантаження",
     "uploading": "Завантаження...",
     "fullScreen": "Читання/переклад у повноекранному режимі"

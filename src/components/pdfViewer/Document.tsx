@@ -235,7 +235,6 @@ const Document: FC<DocumentProps> = (props) => {
         url: file,
         cMapUrl: window.origin + cMapUrl,
         standardFontDataUrl: window.origin + standardFontDataUrl,
-        withCredentials: true,
       })
       loadingTask.onProgress = (e: any) => {
         if (cancelToken.cancelled) {

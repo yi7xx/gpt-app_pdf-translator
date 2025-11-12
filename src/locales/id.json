@@ -30,7 +30,8 @@
       "copy-success": "Berhasil disalin",
       "edit": "Edit",
       "notAllowTranslate": "Halaman web asli saat ini tidak mendukung terjemahan.",
-      "translate-service": "Layanan Terjemahan"
+      "translate-service": "Layanan Terjemahan",
+      "get-better": "Dapatkan kualitas terjemahan yang lebih baik di Sider"
     },
     "error": {
       "load-failed": "Gagal Memuat",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klik atau seret berkas ke halaman ini untuk mengunggah",
-    "supportedFormats": "Format: pdf / doc / ppt",
+    "supportedFormats": "Format: pdf",
     "dragFileHere": "Seret berkas ke sini untuk mengunggah",
     "uploading": "Mengunggah...",
     "fullScreen": "Membaca/Terjemahan Layar Penuh"

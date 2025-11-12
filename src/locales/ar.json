@@ -30,7 +30,8 @@
       "copy-success": "تم النسخ بنجاح",
       "edit": "تحرير",
       "notAllowTranslate": "الصفحة الأصلية لا تدعم الترجمة حاليًا.",
-      "translate-service": "خدمة الترجمة"
+      "translate-service": "خدمة الترجمة",
+      "get-better": "احصل على جودة ترجمة أفضل على Sider"
     },
     "error": {
       "load-failed": "فشل التحميل",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "انقر أو اسحب الملف إلى هذه الصفحة للتحميل",
-    "supportedFormats": "التنسيقات: pdf / doc / ppt",
+    "supportedFormats": "التنسيقات: pdf",
     "dragFileHere": "اسحب الملفات هنا للتحميل",
     "uploading": "جارٍ التحميل...",
     "fullScreen": "قراءة/ترجمة بملء الشاشة"

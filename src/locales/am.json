@@ -30,7 +30,8 @@
       "copy-success": "ቅዳ ተሳክቷል",
       "edit": "አርትዕ",
       "notAllowTranslate": "ኦሪጂናል ድረ-ገጽ ትርጉም አሁን አይደግፍም።",
-      "translate-service": "የትርጉም አገልግሎት"
+      "translate-service": "የትርጉም አገልግሎት",
+      "get-better": "በSider ላይ የትርጉም ጥራትን ያሻሽሉ"
     },
     "error": {
       "load-failed": "ጭነት አልተሳካም",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "ፋይል ለመስቀል ወይም ለመስቀል ይህን ገጽ ይጫኑ",
-    "supportedFormats": "ቅርጸቶች፡ pdf / doc / ppt",
+    "supportedFormats": "መልክፎች: pdf",
     "dragFileHere": "ፋይሎችን እዚህ ይጫኑ ለማስገባት",
     "uploading": "በመስቀል ላይ...",
     "fullScreen": "ሙሉ ማውጫ ንባብ/ትርጉም"

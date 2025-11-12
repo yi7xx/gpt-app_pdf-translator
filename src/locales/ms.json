@@ -30,7 +30,8 @@
       "copy-success": "Salin berjaya",
       "edit": "Sunting",
       "notAllowTranslate": "Laman web asal tidak menyokong terjemahan buat masa ini.",
-      "translate-service": "Perkhidmatan Terjemahan"
+      "translate-service": "Perkhidmatan Terjemahan",
+      "get-better": "Dapatkan kualiti terjemahan yang lebih baik di Sider"
     },
     "error": {
       "load-failed": "Gagal Memuatkan",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klik atau seret fail ke halaman ini untuk memuat naik",
-    "supportedFormats": "Format: pdf / doc / ppt",
+    "supportedFormats": "Format: pdf",
     "dragFileHere": "Seret fail ke sini untuk memuat naik",
     "uploading": "Sedang memuat naik...",
     "fullScreen": "Pembacaan/Penterjemahan Skrin Penuh"

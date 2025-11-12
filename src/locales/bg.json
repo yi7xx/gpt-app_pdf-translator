@@ -30,7 +30,8 @@
       "copy-success": "Копирането е успешно",
       "edit": "Редактирай",
       "notAllowTranslate": "Оригиналната уеб страница в момента не поддържа превод.",
-      "translate-service": "Услуга за превод"
+      "translate-service": "Услуга за превод",
+      "get-better": "Получете по-добро качество на преводите със Sider"
     },
     "error": {
       "load-failed": "Зареждането не успя",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Кликнете или плъзнете файл на тази страница, за да го качите",
-    "supportedFormats": "Формати: pdf / doc / ppt",
+    "supportedFormats": "Формати: pdf",
     "dragFileHere": "Плъзнете файловете тук, за да ги качите",
     "uploading": "Качване...",
     "fullScreen": "Четене/Превод на цял екран"

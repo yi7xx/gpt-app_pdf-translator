@@ -30,7 +30,8 @@
       "copy-success": "Nakili imefanikiwa",
       "edit": "Hariri",
       "notAllowTranslate": "Ukurasa wa asili kwa sasa hauungi mkono tafsiri.",
-      "translate-service": "Huduma ya Tafsiri"
+      "translate-service": "Huduma ya Tafsiri",
+      "get-better": "Pata ubora bora wa tafsiri kwenye Sider"
     },
     "error": {
       "load-failed": "Imeshindwa Kupakia",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Bofya au buruta faili kwenye ukurasa huu ili kupakia",
-    "supportedFormats": "Formati: pdf / doc / ppt",
+    "supportedFormats": "Formati: pdf",
     "dragFileHere": "Buruta faili hapa ili kupakia",
     "uploading": "Inapakia...",
     "fullScreen": "Usomaji/Tafsiri ya Skrini Kamili"

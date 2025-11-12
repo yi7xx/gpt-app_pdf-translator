@@ -30,7 +30,8 @@
       "copy-success": "Kopiering lykkedes",
       "edit": "Rediger",
       "notAllowTranslate": "Den originale webside understøtter ikke oversættelse i øjeblikket.",
-      "translate-service": "Oversættelsestjeneste"
+      "translate-service": "Oversættelsestjeneste",
+      "get-better": "Få bedre oversættelseskvalitet på Sider"
     },
     "error": {
       "load-failed": "Indlæsning mislykkedes",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klik eller træk fil til denne side for at uploade",
-    "supportedFormats": "Formater: pdf / doc / ppt",
+    "supportedFormats": "Formater: pdf",
     "dragFileHere": "Træk filer her for at uploade",
     "uploading": "Uploader...",
     "fullScreen": "Fuldskærmslæsning/Oversættelse"

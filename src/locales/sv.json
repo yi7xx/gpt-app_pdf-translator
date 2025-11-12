@@ -30,7 +30,8 @@
       "copy-success": "Kopiering lyckades",
       "edit": "Redigera",
       "notAllowTranslate": "Den ursprungliga webbsidan stöder för närvarande inte översättning.",
-      "translate-service": "Översättningstjänst"
+      "translate-service": "Översättningstjänst",
+      "get-better": "Få bättre översättningskvalitet på Sider"
     },
     "error": {
       "load-failed": "Laddning misslyckades",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klicka eller dra fil till denna sida för att ladda upp",
-    "supportedFormats": "Format: pdf / doc / ppt",
+    "supportedFormats": "Format: pdf",
     "dragFileHere": "Dra filer hit för att ladda upp",
     "uploading": "Laddar upp...",
     "fullScreen": "Läs/Översätt i fullskärm"

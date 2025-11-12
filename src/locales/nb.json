@@ -30,7 +30,8 @@
       "copy-success": "Kopiering vellykket",
       "edit": "Rediger",
       "notAllowTranslate": "Den originale nettsiden støtter for øyeblikket ikke oversettelse.",
-      "translate-service": "Oversettelsestjeneste"
+      "translate-service": "Oversettelsestjeneste",
+      "get-better": "Få bedre oversettelseskvalitet på Sider"
     },
     "error": {
       "load-failed": "Lasting mislyktes",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klikk eller dra fil til denne siden for å laste opp",
-    "supportedFormats": "Formater: pdf / doc / ppt",
+    "supportedFormats": "Formater: pdf",
     "dragFileHere": "Dra filer hit for å laste opp",
     "uploading": "Laster opp...",
     "fullScreen": "Fullskjerm Lesing/Oversettelse"

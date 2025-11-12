@@ -30,7 +30,8 @@
       "copy-success": "కాపీ విజయవంతం",
       "edit": "సవరించు",
       "notAllowTranslate": "మూల వెబ్‌పేజీ ప్రస్తుతం అనువాదాన్ని మద్దతు ఇవ్వదు.",
-      "translate-service": "అనువాద సేవ"
+      "translate-service": "అనువాద సేవ",
+      "get-better": "Siderలో మెరుగైన అనువాద నాణ్యత పొందండి"
     },
     "error": {
       "load-failed": "లోడ్ విఫలమైంది",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "అప్‌లోడ్ చేయడానికి ఈ పేజీకి ఫైల్‌ను క్లిక్ చేయండి లేదా లాగండి",
-    "supportedFormats": "ఫార్మాట్లు: pdf / doc / ppt",
+    "supportedFormats": "ఫార్మాట్లు: pdf",
     "dragFileHere": "ఫైళ్లను ఇక్కడికి లాగండి అప్‌లోడ్ చేయడానికి",
     "uploading": "అప్‌లోడ్ అవుతోంది...",
     "fullScreen": "పూర్తి స్క్రీన్ చదవడం/అనువాదం"

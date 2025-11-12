@@ -6,6 +6,7 @@ import { Loading } from '@/packages/icons'
 import { cn } from '@/utils/cn'
 import { PDFDocumentLoadingTask, RenderTask } from 'pdfjs-dist'
 import { FC, useEffect, useRef, useState } from 'react'
+import { useTranslatorContext } from '../context/TranslatorContext'
 
 interface PDFThumbnailProps {
   fileUrl: string
@@ -21,19 +22,25 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({
   height,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null)
-  const canvasRef = useRef<HTMLCanvasElement>(null)
-  const [error, setError] = useState<string | null>(null)
-  const [loadingPDF, setLoadingPDF] = useState(true)
+  const { coverFileUrl, setCoverFileUrl } = useTranslatorContext()
 
   const pdfLoadingTask = useRef<PDFDocumentLoadingTask | null>(null)
   const renderTaskRef = useRef<RenderTask | null>(null)
 
-  const loadPDF = async () => {
-    if (!fileUrl || !canvasRef.current || !containerRef.current) return
+  const [loadingPDF, setLoadingPDF] = useState(!coverFileUrl)
+  const [error, setError] = useState<string | null>(null)
 
+  const loadPDF = async () => {
+    // 如果封面图片已经存在，则不重新加载
+    if (coverFileUrl) return
+
+    // 如果文件URL不存在，或者容器不存在，则不重新加载
+    if (!fileUrl || !containerRef.current) return
+
+    // 如果PDF加载任务已经存在，则不重新加载
     if (pdfLoadingTask.current) return
 
-    const width = containerRef.current.clientWidth
+    const containerWidth = containerRef.current.clientWidth
 
     try {
       setLoadingPDF(true)
@@ -49,7 +56,7 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({
 
       const page = await pdf.getPage(1)
 
-      const canvas = canvasRef.current
+      const canvas = document.createElement('canvas')
       const context = canvas.getContext('2d', {
         alpha: false,
         willReadFrequently: false,
@@ -59,7 +66,7 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({
       }
 
       const viewport = page.getViewport({ scale: 1 })
-      const scale = width / viewport.width
+      const scale = containerWidth / viewport.width
       const scaledViewport = page.getViewport({ scale })
 
       const devicePixelRatio =
@@ -78,6 +85,9 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({
       })
 
       await renderTaskRef.current.promise
+
+      const imageDataUrl = canvas.toDataURL('image/png')
+      setCoverFileUrl(imageDataUrl)
     } catch (err) {
       console.error('Error rendering PDF thumbnail:', err)
       setError(err instanceof Error ? err.message : 'Failed to load PDF')
@@ -90,30 +100,35 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({
     loadPDF()
   }, [fileUrl])
 
+  let children
+
+  if (loadingPDF) {
+    children = (
+      <div className="flex-center size-full overflow-hidden">
+        <span className="text-brand-primary-normal">
+          <Loading size={32} className="animate-spin" />
+        </span>
+      </div>
+    )
+  } else if (error) {
+    children = (
+      <div className="flex-center size-full">
+        <div className="text-red-500">Error: {error}</div>
+      </div>
+    )
+  } else {
+    children = (
+      <img
+        src={coverFileUrl}
+        alt="PDF Thumbnail"
+        className="block h-auto w-full"
+      />
+    )
+  }
+
   return (
     <div ref={containerRef} className={cn('size-full bg-white', className)}>
-      {loadingPDF && (
-        <div className="flex-center size-full overflow-hidden">
-          <span className="text-brand-primary-normal">
-            <Loading size={32} className="animate-spin" />
-          </span>
-        </div>
-      )}
-      {error && (
-        <div
-          className="flex-center size-full bg-red-50"
-          style={{ width, height: height || width * 1.414 }}
-        >
-          <div className="text-red-500">Error: {error}</div>
-        </div>
-      )}
-      <canvas
-        ref={canvasRef}
-        className={cn({
-          'block h-auto w-full': !loadingPDF && !error,
-          hidden: loadingPDF || error,
-        })}
-      />
+      {children}
     </div>
   )
 }

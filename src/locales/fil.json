@@ -30,7 +30,8 @@
       "copy-success": "Matagumpay na nakopya",
       "edit": "I-edit",
       "notAllowTranslate": "Ang orihinal na webpage ay kasalukuyang hindi sumusuporta sa pagsasalin.",
-      "translate-service": "Serbisyo ng Pagsasalin"
+      "translate-service": "Serbisyo ng Pagsasalin",
+      "get-better": "Makamit ang mas mahusay na kalidad ng pagsasalin sa Sider"
     },
     "error": {
       "load-failed": "Nabigo ang Pag-load",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "I-click o i-drag ang file sa pahinang ito para i-upload",
-    "supportedFormats": "Mga Format: pdf / doc / ppt",
+    "supportedFormats": "Mga Format: pdf",
     "dragFileHere": "I-drag ang mga file dito para i-upload",
     "uploading": "Nag-a-upload...",
     "fullScreen": "Buong Screen na Pagbabasa/Pagsasalin"

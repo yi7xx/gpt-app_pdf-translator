@@ -30,7 +30,8 @@
       "copy-success": "Còpia realitzada amb èxit",
       "edit": "Edita",
       "notAllowTranslate": "La pàgina web original no admet actualment la traducció.",
-      "translate-service": "Servei de traducció"
+      "translate-service": "Servei de traducció",
+      "get-better": "Millora la qualitat de les traduccions a Sider"
     },
     "error": {
       "load-failed": "Càrrega fallida",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Fes clic o arrossega el fitxer a aquesta pàgina per pujar-lo",
-    "supportedFormats": "Formats: pdf / doc / ppt",
+    "supportedFormats": "Formats: pdf",
     "dragFileHere": "Arrossega els fitxers aquí per pujar-los",
     "uploading": "Pujant...",
     "fullScreen": "Lectura/Traducció a pantalla completa"

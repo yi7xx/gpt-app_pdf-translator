@@ -30,7 +30,8 @@
       "copy-success": "Kopijavimas sėkmingas",
       "edit": "Redaguoti",
       "notAllowTranslate": "Originali svetainė šiuo metu nepalaiko vertimo.",
-      "translate-service": "Vertimo paslauga"
+      "translate-service": "Vertimo paslauga",
+      "get-better": "Gaukite geresnę vertimo kokybę su Sider"
     },
     "error": {
       "load-failed": "Įkrovimas nepavyko",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Spustelėkite arba vilkite failą į šį puslapį, kad įkeltumėte",
-    "supportedFormats": "Formatai: pdf / doc / ppt",
+    "supportedFormats": "Formatai: pdf",
     "dragFileHere": "Vilkite failus čia, kad įkeltumėte",
     "uploading": "Įkeliama...",
     "fullScreen": "Viso ekrano skaitymas/vertimas"

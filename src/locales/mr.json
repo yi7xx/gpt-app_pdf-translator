@@ -30,7 +30,8 @@
       "copy-success": "कॉपी यशस्वी",
       "edit": "संपादन करा",
       "notAllowTranslate": "मूळ वेबपृष्ठ सध्या भाषांतर समर्थन करत नाही.",
-      "translate-service": "भाषांतर सेवा"
+      "translate-service": "भाषांतर सेवा",
+      "get-better": "Sider वर अधिक चांगल्या अनुवादाच्या गुणवत्तेसाठी"
     },
     "error": {
       "load-failed": "लोड अयशस्वी",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "फाइल अपलोड करण्यासाठी येथे क्लिक करा किंवा ड्रॅग करा",
-    "supportedFormats": "फॉरमॅट्स: pdf / doc / ppt",
+    "supportedFormats": "प्रारूप: pdf",
     "dragFileHere": "फाइल्स अपलोड करण्यासाठी येथे ड्रॅग करा",
     "uploading": "अपलोड करत आहे...",
     "fullScreen": "पूर्ण स्क्रीन वाचन/अनुवाद"

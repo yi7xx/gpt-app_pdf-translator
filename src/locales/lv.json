@@ -30,7 +30,8 @@
       "copy-success": "Kopēšana veiksmīga",
       "edit": "Rediģēt",
       "notAllowTranslate": "Oriģinālā tīmekļa lapa pašlaik neatbalsta tulkošanu.",
-      "translate-service": "Tulkotāja pakalpojums"
+      "translate-service": "Tulkotāja pakalpojums",
+      "get-better": "Iegūstiet labāku tulkošanas kvalitāti ar Sider"
     },
     "error": {
       "load-failed": "Ielāde neizdevās",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Noklikšķiniet vai velciet failu uz šo lapu, lai augšupielādētu",
-    "supportedFormats": "Formāti: pdf / doc / ppt",
+    "supportedFormats": "Formāti: pdf",
     "dragFileHere": "Velciet failus šeit, lai augšupielādētu",
     "uploading": "Augšupielādē...",
     "fullScreen": "Pilnekrāna lasīšana/tulkošana"

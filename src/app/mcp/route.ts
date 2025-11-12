@@ -25,7 +25,6 @@ function widgetMeta(widget: ContentWidget) {
     'openai/toolInvocation/invoked': widget.invoked,
     'openai/widgetAccessible': false,
     'openai/resultCanProduceWidget': true,
-    'openai/sandboxPermissions': ['allow-modals'],
   } as const
 }
 
@@ -33,13 +32,14 @@ const handler = createMcpHandler(async (server) => {
   const html = await getAppsSdkCompatibleHtml(baseURL, '/')
 
   const contentWidget: ContentWidget = {
-    id: 'show_content',
-    title: 'Show Content',
+    id: 'pdf_translator',
+    title: 'pdf Translator',
     templateUri: 'ui://widget/content-template.html',
     invoking: 'Loading content...',
     invoked: 'Content loaded',
     html: html,
-    description: 'Displays the homepage content',
+    description:
+      'When uploading and translating PDFs, I will display the PDF translation app',
     widgetDomain: 'https://nextjs.org/docs',
   }
   server.registerResource(
@@ -74,28 +74,124 @@ const handler = createMcpHandler(async (server) => {
     contentWidget.id,
     {
       title: contentWidget.title,
-      description:
-        'Fetch and display the homepage content with the name of the user',
-      inputSchema: {
-        name: z
-          .string()
-          .describe('The name of the user to display on the homepage'),
-      },
+      description: contentWidget.description,
       _meta: widgetMeta(contentWidget),
     },
-    async ({ name }) => {
+    async () => {
       return {
         content: [
           {
             type: 'text',
-            text: name,
+            text: 'Document translation tool',
           },
         ],
         structuredContent: {
-          name: name,
           timestamp: new Date().toISOString(),
         },
         _meta: widgetMeta(contentWidget),
+      }
+    },
+  )
+
+  server.registerTool(
+    'fetch',
+    {
+      title: 'App Fetch',
+      description: 'Internal APP fetch tool for accessing internal APIs',
+      inputSchema: {
+        id: z
+          .string()
+          .describe('Unique identifier for the authentication token'),
+        method: z
+          .enum(['GET', 'POST', 'PUT', 'DELETE'])
+          .optional()
+          .describe('HTTP method (defaults to configured method for endpoint)'),
+        payload: z
+          .any()
+          .optional()
+          .describe('Request payload (for POST/PUT requests)'),
+        queryParams: z
+          .record(z.string())
+          .optional()
+          .describe('Query parameters for the request'),
+        headers: z
+          .record(z.string())
+          .optional()
+          .describe('Additional request headers'),
+      },
+      _meta: {
+        'openai/readOnlyHint':
+          'This tool is for internal application use only and not available in the ChatGPT interface',
+        'openai/internalOnly': true,
+      },
+    },
+    async ({ id, method, payload, queryParams, headers }) => {
+      try {
+        const baseUrl = 'https://dev.wisebox.ai'
+
+        const searchParams = new URLSearchParams({ ...queryParams })
+        const url = new URL(id, baseUrl)
+        url.search = searchParams.toString()
+
+        const requestHeaders = new Headers({
+          'Content-Type': 'application/json',
+          ...headers,
+        })
+
+        const requestMethod = method || 'GET'
+
+        const body = ['POST', 'PUT'].includes(requestMethod)
+          ? JSON.stringify(payload)
+          : undefined
+
+        console.log(url.toString(), 'url.toString()')
+        console.log(
+          JSON.stringify({
+            method: requestMethod,
+            headers: requestHeaders,
+            body,
+          }),
+        )
+
+        const response = await fetch(url.toString(), {
+          method: requestMethod,
+          headers: requestHeaders,
+          body,
+        })
+
+        let responseData
+        const contentType = response.headers.get('Content-Type') || ''
+
+        if (contentType.includes('application/json')) {
+          responseData = await response.json()
+        } else if (contentType.includes('text/plain')) {
+          responseData = await response.text()
+        } else {
+          responseData = await response.text()
+        }
+
+        return {
+          content: [
+            {
+              type: 'text',
+              text: `Successfully fetched data from the API ${id}`,
+            },
+          ],
+          structuredContent: {
+            response: responseData,
+            timestamp: new Date().toISOString(),
+          },
+        }
+      } catch (error) {
+        return {
+          content: [
+            {
+              type: 'text',
+              text: `Error fetching data from the API ${id}: ${error instanceof Error ? error.message : 'Unknown error'}`,
+            },
+          ],
+          isError: true,
+        }
       }
     },
   )

@@ -30,7 +30,8 @@
       "copy-success": "Başarıyla kopyalandı",
       "edit": "Düzenle",
       "notAllowTranslate": "Orijinal web sayfası şu anda çeviriyi desteklemiyor.",
-      "translate-service": "Çeviri Hizmeti"
+      "translate-service": "Çeviri Hizmeti",
+      "get-better": "Sider'da daha iyi çeviri kalitesi elde edin"
     },
     "error": {
       "load-failed": "Yükleme Başarısız",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Yüklemek için dosyayı buraya tıklayın veya sürükleyin",
-    "supportedFormats": "Formatlar: pdf / doc / ppt",
+    "supportedFormats": "Formatlar: pdf",
     "dragFileHere": "Yüklemek için dosyaları buraya sürükleyin",
     "uploading": "Yükleniyor...",
     "fullScreen": "Tam Ekran Okuma/Çeviri"

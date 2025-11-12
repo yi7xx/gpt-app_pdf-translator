@@ -30,7 +30,8 @@
       "copy-success": "Kopiranje uspešno",
       "edit": "Uredi",
       "notAllowTranslate": "Izvirna spletna stran trenutno ne podpira prevajanja.",
-      "translate-service": "Prevajalska storitev"
+      "translate-service": "Prevajalska storitev",
+      "get-better": "Izboljšajte kakovost prevodov na Sider"
     },
     "error": {
       "load-failed": "Nalaganje ni uspelo",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Kliknite ali povlecite datoteko na to stran za nalaganje",
-    "supportedFormats": "Formati: pdf / doc / ppt",
+    "supportedFormats": "Formati: pdf",
     "dragFileHere": "Povlecite datoteke sem za nalaganje",
     "uploading": "Nalagam...",
     "fullScreen": "Branje/Prevajanje na celotnem zaslonu"

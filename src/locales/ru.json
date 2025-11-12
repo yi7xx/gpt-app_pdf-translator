@@ -30,7 +30,8 @@
       "copy-success": "Копирование успешно",
       "edit": "Редактировать",
       "notAllowTranslate": "Оригинальная веб-страница в настоящее время не поддерживает перевод.",
-      "translate-service": "Сервис перевода"
+      "translate-service": "Сервис перевода",
+      "get-better": "Получите более высокое качество перевода на Sider"
     },
     "error": {
       "load-failed": "Ошибка загрузки",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Нажмите или перетащите файл на эту страницу для загрузки",
-    "supportedFormats": "Форматы: pdf / doc / ppt",
+    "supportedFormats": "Форматы: pdf",
     "dragFileHere": "Перетащите файлы сюда для загрузки",
     "uploading": "Загрузка...",
     "fullScreen": "Чтение/перевод в полноэкранном режиме"

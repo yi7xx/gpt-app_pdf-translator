@@ -30,7 +30,8 @@
       "copy-success": "Sao chép thành công",
       "edit": "Chỉnh Sửa",
       "notAllowTranslate": "Trang web gốc hiện không hỗ trợ dịch.",
-      "translate-service": "Dịch Vụ Dịch Thuật"
+      "translate-service": "Dịch Vụ Dịch Thuật",
+      "get-better": "Nâng cao chất lượng dịch thuật trên Sider"
     },
     "error": {
       "load-failed": "Tải Thất Bại",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Nhấp hoặc kéo tệp vào trang này để tải lên",
-    "supportedFormats": "Định dạng: pdf / doc / ppt",
+    "supportedFormats": "Định dạng: pdf",
     "dragFileHere": "Kéo tệp vào đây để tải lên",
     "uploading": "Đang tải lên...",
     "fullScreen": "Đọc/Dịch toàn màn hình"

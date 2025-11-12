@@ -30,7 +30,8 @@
       "copy-success": "Kopiranje uspješno",
       "edit": "Uredi",
       "notAllowTranslate": "Izvorna web stranica trenutno ne podržava prijevod.",
-      "translate-service": "Usluga prevođenja"
+      "translate-service": "Usluga prevođenja",
+      "get-better": "Poboljšajte kvalitetu prijevoda na Sideru"
     },
     "error": {
       "load-failed": "Učitavanje nije uspjelo",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Kliknite ili povucite datoteku na ovu stranicu za prijenos",
-    "supportedFormats": "Formati: pdf / doc / ppt",
+    "supportedFormats": "Formati: pdf",
     "dragFileHere": "Povucite datoteke ovdje za prijenos",
     "uploading": "Prijenos u tijeku...",
     "fullScreen": "Čitanje/Prevođenje preko cijelog zaslona"

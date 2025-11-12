@@ -30,7 +30,8 @@
       "copy-success": "コピー成功",
       "edit": "編集",
       "notAllowTranslate": "元のウェブページは現在翻訳をサポートしていません。",
-      "translate-service": "翻訳サービス"
+      "translate-service": "翻訳サービス",
+      "get-better": "Siderで翻訳品質を向上させる"
     },
     "error": {
       "load-failed": "読み込み失敗",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "クリックまたはファイルをこのページにドラッグしてアップロード",
-    "supportedFormats": "フォーマット: pdf / doc / ppt",
+    "supportedFormats": "フォーマット: pdf",
     "dragFileHere": "ファイルをここにドラッグしてアップロード",
     "uploading": "アップロード中...",
     "fullScreen": "全画面での読み取り/翻訳"

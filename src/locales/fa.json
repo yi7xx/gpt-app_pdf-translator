@@ -30,7 +30,8 @@
       "copy-success": "کپی موفقیت‌آمیز بود",
       "edit": "ویرایش",
       "notAllowTranslate": "صفحه وب اصلی در حال حاضر از ترجمه پشتیبانی نمی‌کند.",
-      "translate-service": "خدمات ترجمه"
+      "translate-service": "خدمات ترجمه",
+      "get-better": "کیفیت ترجمه بهتری در Sider دریافت کنید"
     },
     "error": {
       "load-failed": "بارگذاری ناموفق بود",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "برای بارگذاری، فایل را به این صفحه بکشید یا کلیک کنید",
-    "supportedFormats": "فرمت‌ها: pdf / doc / ppt",
+    "supportedFormats": "فرمت‌ها: pdf",
     "dragFileHere": "فایل‌ها را اینجا بکشید تا بارگذاری شوند",
     "uploading": "در حال بارگذاری...",
     "fullScreen": "خواندن/ترجمه در حالت تمام‌صفحه"

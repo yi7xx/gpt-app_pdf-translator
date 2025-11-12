@@ -30,7 +30,8 @@
       "copy-success": "Kopírování úspěšné",
       "edit": "Upravit",
       "notAllowTranslate": "Původní webová stránka momentálně nepodporuje překlad.",
-      "translate-service": "Překladová služba"
+      "translate-service": "Překladová služba",
+      "get-better": "Získejte lepší kvalitu překladu na Sideru"
     },
     "error": {
       "load-failed": "Načítání selhalo",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klikněte nebo přetáhněte soubor na tuto stránku pro nahrání",
-    "supportedFormats": "Formáty: pdf / doc / ppt",
+    "supportedFormats": "Formáty: pdf",
     "dragFileHere": "Přetáhněte soubory sem pro nahrání",
     "uploading": "Nahrávání...",
     "fullScreen": "Čtení/Překlad na celou obrazovku"

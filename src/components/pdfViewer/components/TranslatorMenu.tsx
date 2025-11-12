@@ -254,7 +254,7 @@ const TranslatorMenu = ({
             </div>
             <div className="f-i-center bg-brand-primary-bg text-brand-secondary-normal h-11 cursor-pointer gap-1 rounded-b-2xl px-4">
               <div className="font-normal-12 -tracking-[0.1px] whitespace-nowrap">
-                Get better translation quality on Sider
+                {t('pdfViewer.tools.get-better')}
               </div>
               <span className="shrink-0 -rotate-90">
                 <DownMd size={14}></DownMd>

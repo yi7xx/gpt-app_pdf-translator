@@ -30,7 +30,8 @@
       "copy-success": "कॉपी सफल",
       "edit": "संपादित करें",
       "notAllowTranslate": "मूल वेबपेज वर्तमान में अनुवाद का समर्थन नहीं करता है।",
-      "translate-service": "अनुवाद सेवा"
+      "translate-service": "अनुवाद सेवा",
+      "get-better": "Sider पर बेहतर अनुवाद गुणवत्ता प्राप्त करें"
     },
     "error": {
       "load-failed": "लोड विफल",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "अपलोड करने के लिए इस पृष्ठ पर फ़ाइल क्लिक करें या खींचें",
-    "supportedFormats": "प्रारूप: pdf / doc / ppt",
+    "supportedFormats": "प्रारूप: pdf",
     "dragFileHere": "अपलोड करने के लिए फ़ाइलें यहाँ खींचें",
     "uploading": "अपलोड हो रहा है...",
     "fullScreen": "पूर्ण स्क्रीन पढ़ना/अनुवाद"

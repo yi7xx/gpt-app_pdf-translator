@@ -30,7 +30,8 @@
       "copy-success": "Copiere reușită",
       "edit": "Editează",
       "notAllowTranslate": "Pagina web originală nu suportă momentan traducerea.",
-      "translate-service": "Serviciu de traducere"
+      "translate-service": "Serviciu de traducere",
+      "get-better": "Obțineți o calitate mai bună a traducerii pe Sider"
     },
     "error": {
       "load-failed": "Încărcare eșuată",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Faceți clic sau trageți fișierul pe această pagină pentru a încărca",
-    "supportedFormats": "Formate: pdf / doc / ppt",
+    "supportedFormats": "Formate: pdf",
     "dragFileHere": "Trageți fișierele aici pentru a le încărca",
     "uploading": "Se încarcă...",
     "fullScreen": "Citire/Traducere pe ecran complet"

@@ -30,7 +30,8 @@
       "copy-success": "કૉપિ સફળ",
       "edit": "સંપાદિત કરો",
       "notAllowTranslate": "મૂળ વેબપેજ હાલમાં અનુવાદને સપોર્ટ કરતું નથી.",
-      "translate-service": "અનુવાદ સેવા"
+      "translate-service": "અનુવાદ સેવા",
+      "get-better": "Sider પર વધુ સારી અનુવાદ ગુણવત્તા મેળવો"
     },
     "error": {
       "load-failed": "લોડ નિષ્ફળ",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "અપલોડ કરવા માટે આ પૃષ્ઠ પર ક્લિક કરો અથવા ફાઇલ ખેંચો",
-    "supportedFormats": "ફોર્મેટ્સ: pdf / doc / ppt",
+    "supportedFormats": "ફોર્મેટ્સ: pdf",
     "dragFileHere": "અપલોડ કરવા માટે ફાઇલો અહીં ખેંચો",
     "uploading": "અપલોડ થઈ રહ્યું છે...",
     "fullScreen": "પૂર્ણ સ્ક્રીન વાંચન/અનુવાદ"

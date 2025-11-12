@@ -30,7 +30,8 @@
       "copy-success": "Kopírovanie úspešné",
       "edit": "Upraviť",
       "notAllowTranslate": "Pôvodná webová stránka momentálne nepodporuje preklad.",
-      "translate-service": "Prekladová služba"
+      "translate-service": "Prekladová služba",
+      "get-better": "Získajte lepšiu kvalitu prekladu na Sider"
     },
     "error": {
       "load-failed": "Načítanie zlyhalo",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Kliknite alebo presuňte súbor na túto stránku na nahranie",
-    "supportedFormats": "Formáty: pdf / doc / ppt",
+    "supportedFormats": "Formáty: pdf",
     "dragFileHere": "Presuňte súbory sem na nahranie",
     "uploading": "Nahrávanie...",
     "fullScreen": "Čítanie/preklad na celú obrazovku"

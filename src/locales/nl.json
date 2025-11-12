@@ -30,7 +30,8 @@
       "copy-success": "Kopiëren geslaagd",
       "edit": "Bewerken",
       "notAllowTranslate": "De originele webpagina ondersteunt momenteel geen vertaling.",
-      "translate-service": "Vertaalservice"
+      "translate-service": "Vertaalservice",
+      "get-better": "Verbeter de vertaalkwaliteit op Sider"
     },
     "error": {
       "load-failed": "Laden mislukt",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klik of sleep een bestand naar deze pagina om te uploaden",
-    "supportedFormats": "Formaten: pdf / doc / ppt",
+    "supportedFormats": "Formaten: pdf",
     "dragFileHere": "Sleep bestanden hierheen om te uploaden",
     "uploading": "Uploaden...",
     "fullScreen": "Volledig scherm lezen/vertalen"

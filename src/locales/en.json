@@ -30,7 +30,8 @@
       "copy-success": "Copy successful",
       "edit": "Edit",
       "notAllowTranslate": "The original webpage does not currently support translation.",
-      "translate-service": "Translate Service"
+      "translate-service": "Translate Service",
+      "get-better": "Get better translation quality on Sider"
     },
     "error": {
       "load-failed": "Load Failed",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Click or drag file to this page to upload",
-    "supportedFormats": "Formats: pdf / doc /ppt",
+    "supportedFormats": "Formats: pdf",
     "dragFileHere": "Drag files here to upload",
     "uploading": "Uploading...",
     "fullScreen": "Full Screen Reading/Translation"

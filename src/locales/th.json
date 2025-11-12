@@ -30,7 +30,8 @@
       "copy-success": "คัดลอกสำเร็จ",
       "edit": "แก้ไข",
       "notAllowTranslate": "หน้าเว็บต้นฉบับไม่รองรับการแปลในขณะนี้",
-      "translate-service": "บริการแปล"
+      "translate-service": "บริการแปล",
+      "get-better": "รับการแปลที่มีคุณภาพดียิ่งขึ้นบน Sider"
     },
     "error": {
       "load-failed": "โหลดล้มเหลว",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "คลิกหรือวางไฟล์ในหน้านี้เพื่ออัปโหลด",
-    "supportedFormats": "รูปแบบ: pdf / doc / ppt",
+    "supportedFormats": "รูปแบบ: pdf",
     "dragFileHere": "ลากไฟล์มาที่นี่เพื่ออัปโหลด",
     "uploading": "กำลังอัปโหลด...",
     "fullScreen": "อ่าน/แปลแบบเต็มหน้าจอ"

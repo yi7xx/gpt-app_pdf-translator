@@ -30,7 +30,8 @@
       "copy-success": "Kopeerimine õnnestus",
       "edit": "Muuda",
       "notAllowTranslate": "Originaal veebileht ei toeta praegu tõlkimist.",
-      "translate-service": "Tõlketeenus"
+      "translate-service": "Tõlketeenus",
+      "get-better": "Saavuta parem tõlkekvaliteet Sideris"
     },
     "error": {
       "load-failed": "Laadimine ebaõnnestus",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Klõpsake või lohistage fail sellele lehele üleslaadimiseks",
-    "supportedFormats": "Formaadid: pdf / doc / ppt",
+    "supportedFormats": "Formaadid: pdf",
     "dragFileHere": "Lohistage failid siia üleslaadimiseks",
     "uploading": "Üleslaadimine...",
     "fullScreen": "Täisekraanil lugemine/tõlkimine"

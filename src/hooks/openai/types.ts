@@ -71,8 +71,17 @@ export type RequestDisplayMode = (args: { mode: DisplayMode }) => Promise<{
   mode: DisplayMode
 }>
 
-export type CallToolResponse = {
+export type CallToolResponse<T = any> = {
   result: string
+  structuredContent: {
+    response: T
+    timestamp: string
+  }
+  isError: boolean
+  content: {
+    type: 'text'
+    text: string
+  }[]
 }
 
 /** Calling APIs */

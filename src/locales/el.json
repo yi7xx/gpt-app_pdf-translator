@@ -30,7 +30,8 @@
       "copy-success": "Η αντιγραφή ήταν επιτυχής",
       "edit": "Επεξεργασία",
       "notAllowTranslate": "Η αρχική ιστοσελίδα δεν υποστηρίζει προς το παρόν μετάφραση.",
-      "translate-service": "Υπηρεσία Μετάφρασης"
+      "translate-service": "Υπηρεσία Μετάφρασης",
+      "get-better": "Αποκτήστε καλύτερη ποιότητα μετάφρασης στο Sider"
     },
     "error": {
       "load-failed": "Η φόρτωση απέτυχε",
@@ -61,7 +62,7 @@
   },
   "pdfUploader": {
     "clickOrDrag": "Κάντε κλικ ή σύρετε το αρχείο σε αυτή τη σελίδα για μεταφόρτωση",
-    "supportedFormats": "Μορφές: pdf / doc / ppt",
+    "supportedFormats": "Μορφές: pdf",
     "dragFileHere": "Σύρετε αρχεία εδώ για μεταφόρτωση",
     "uploading": "Μεταφόρτωση...",
     "fullScreen": "Ανάγνωση/Μετάφραση σε Πλήρη Οθόνη"
