@@ -31,6 +31,7 @@ export default function RootLayout({
   )
 }
 
+/* eslint-disable */
 function NextChatSDKBootstrap({ baseUrl }: { baseUrl: string }) {
   return (
     <>
@@ -154,3 +155,4 @@ function NextChatSDKBootstrap({ baseUrl }: { baseUrl: string }) {
     </>
   )
 }
+/* eslint-enable */

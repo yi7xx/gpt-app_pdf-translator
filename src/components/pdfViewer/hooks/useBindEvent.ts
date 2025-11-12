@@ -150,6 +150,7 @@ export const useBindEvent = ({
       ScaleMode.PAGE_FIT === currentScaleValue ||
       ScaleMode.PAGE_WIDTH === currentScaleValue
     ) {
+      // eslint-disable-next-line react-hooks/immutability
       pdfViewer.currentScaleValue = currentScaleValue
     }
     pdfViewer.update()

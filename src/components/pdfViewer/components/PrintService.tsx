@@ -19,28 +19,6 @@ export const PrintService = () => {
   const printServiceRef = useRef<PDFPrintService | null>(null)
   const showMessageRef = useRef(false)
 
-  const printTransPDF = () => {
-    if (
-      !pdfViewer ||
-      !pdfDocument ||
-      !(pdfViewer.isTranslateMode || pdfViewer.isCompareMode)
-    ) {
-      message.warning(t('pdfViewer.download.not-support'), 1)
-      return
-    }
-    if (printServiceRef.current) {
-      updateTranslating(printServiceRef.current)
-      return
-    }
-    if (pdfViewer.transUIManager?.checkTransPagesDone()) {
-      printPDF('direct')
-      return
-    }
-    setOpen(true)
-  }
-
-  usePDFEvent(UIEvents.Print, printTransPDF)
-
   const [api, contextHolder] = notification.useNotification()
 
   const updateTranslating = (
@@ -178,6 +156,28 @@ export const PrintService = () => {
       printServiceRef.current = null
     }
   })
+
+  const printTransPDF = () => {
+    if (
+      !pdfViewer ||
+      !pdfDocument ||
+      !(pdfViewer.isTranslateMode || pdfViewer.isCompareMode)
+    ) {
+      message.warning(t('pdfViewer.download.not-support'), 1)
+      return
+    }
+    if (printServiceRef.current) {
+      updateTranslating(printServiceRef.current)
+      return
+    }
+    if (pdfViewer.transUIManager?.checkTransPagesDone()) {
+      printPDF('direct')
+      return
+    }
+    setOpen(true)
+  }
+
+  usePDFEvent(UIEvents.Print, printTransPDF)
 
   return (
     <>

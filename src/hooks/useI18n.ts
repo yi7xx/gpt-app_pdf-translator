@@ -6,7 +6,7 @@ import {
   createElement,
   Fragment,
   isValidElement,
-  useCallback,
+  useMemo,
 } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -144,10 +144,8 @@ export default function useI18n(...args: Parameters<typeof useTranslation>) {
       | ReactNode
   }
 
-  // eslint-disable-next-line better-hooks/exhaustive-deps
-  const t = useCallback(CustomT, [_t])
-  // eslint-disable-next-line better-hooks/exhaustive-deps
-  const staticT = useCallback(CustomT, [])
+  const t = useMemo(() => CustomT, [_t])
+  const staticT = useMemo(() => CustomT, [])
 
   // FIXME: 在 srcdoc iframe 中一些情况（翻译页面后）下，i18n 未被传入是空对象?
   // useTranslation: You will need to pass in an i18next instance by using initReactI18next

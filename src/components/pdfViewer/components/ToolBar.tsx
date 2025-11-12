@@ -277,6 +277,7 @@ export const ToolBar: FC<ToolBarProps> = ({
 
   const handleScaleChange = (scale: ScaleMode) => {
     if (!pdfViewer) return
+    // eslint-disable-next-line react-hooks/immutability
     pdfViewer.currentScaleValue = scale
     setScaleMode(scale)
   }

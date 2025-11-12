@@ -85,7 +85,7 @@ const useRenderBox = (box: RenderBox | null) => {
       return { box: lastBox, opacity: 0, display: 'none' }
     }
     return { box, opacity: 1 }
-  }, [box])
+  }, [box, lastBox])
 
   const shouldAnimate = lastBox === null || box === null
 

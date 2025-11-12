@@ -122,6 +122,10 @@ export function useFileDrop(
   const onDropRejectedRef = useLatest(onDropRejected)
   const noClickRef = useLatest(noClick)
 
+  function open() {
+    inputRef.current?.click()
+  }
+
   // 处理文件
   const dropFiles = useLatest((files: File[]) => {
     const fileRejections: FileRejection[] = []
@@ -268,10 +272,6 @@ export function useFileDrop(
     },
     { target: window },
   )
-
-  function open() {
-    inputRef.current?.click()
-  }
 
   // create input element, let user click to select file
   useEffect(() => {
