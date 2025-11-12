@@ -77,18 +77,25 @@ const handler = createMcpHandler(async (server) => {
       description: contentWidget.description,
       inputSchema: {
         fileName: z.string().describe('The name of the file to translate'),
+        language: z
+          .string()
+          .describe(
+            'BCP 47 language tag for user language preference (e.g., en, zh-CN, zh-TW, es, fr, ja, de). Follows RFC 5646 standard.',
+          ),
       },
       _meta: widgetMeta(contentWidget),
     },
-    async () => {
+    async ({ fileName, language }) => {
       return {
         content: [
           {
             type: 'text',
-            text: 'Document translation tool',
+            text: `Document translation tool - Language: ${language}`,
           },
         ],
         structuredContent: {
+          fileName,
+          language,
           timestamp: new Date().toISOString(),
         },
         _meta: widgetMeta(contentWidget),
