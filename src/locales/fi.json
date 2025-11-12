@@ -65,6 +65,9 @@
     "supportedFormats": "Tiedostomuodot: pdf",
     "dragFileHere": "Vedä tiedostot tähän ladataksesi",
     "uploading": "Ladataan...",
-    "fullScreen": "Koko näytön lukeminen/kääntäminen"
+    "fullScreen": "Koko näytön lukeminen/kääntäminen",
+    "upload-failed": "Lataus epäonnistui",
+    "cancel": "Peruuta",
+    "retry": "Yritä uudelleen"
   }
 }

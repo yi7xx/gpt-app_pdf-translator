@@ -65,6 +65,9 @@
     "supportedFormats": "Formate: pdf",
     "dragFileHere": "Trageți fișierele aici pentru a le încărca",
     "uploading": "Se încarcă...",
-    "fullScreen": "Citire/Traducere pe ecran complet"
+    "fullScreen": "Citire/Traducere pe ecran complet",
+    "upload-failed": "Încărcare eșuată",
+    "cancel": "Anulează",
+    "retry": "Reîncearcă"
   }
 }

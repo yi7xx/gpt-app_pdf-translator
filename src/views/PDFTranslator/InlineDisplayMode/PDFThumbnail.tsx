@@ -9,20 +9,20 @@ import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslatorContext } from '../context/TranslatorContext'
 
 interface PDFThumbnailProps {
-  fileUrl: string
   className?: string
   width?: number
   height?: number
 }
 
-const PDFThumbnail: FC<PDFThumbnailProps> = ({
-  fileUrl,
-  className = '',
-  width = 300,
-  height,
-}) => {
+const PDFThumbnail: FC<PDFThumbnailProps> = ({ className = '' }) => {
   const containerRef = useRef<HTMLDivElement>(null)
-  const { coverFileUrl, setCoverFileUrl } = useTranslatorContext()
+  const {
+    fileUrl,
+    coverFileUrl,
+    isFileExpired,
+    setCoverFileUrl,
+    refreshFileUrl,
+  } = useTranslatorContext()
 
   const pdfLoadingTask = useRef<PDFDocumentLoadingTask | null>(null)
   const renderTaskRef = useRef<RenderTask | null>(null)
@@ -97,12 +97,16 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({
   }
 
   useEffect(() => {
+    if (isFileExpired) {
+      refreshFileUrl()
+      return
+    }
     loadPDF()
-  }, [fileUrl])
+  }, [fileUrl, isFileExpired])
 
   let children
 
-  if (loadingPDF) {
+  if (loadingPDF || isFileExpired) {
     children = (
       <div className="flex-center size-full overflow-hidden">
         <span className="text-brand-primary-normal">

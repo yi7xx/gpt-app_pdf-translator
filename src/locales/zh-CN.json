@@ -65,6 +65,9 @@
     "supportedFormats": "格式：pdf",
     "dragFileHere": "将文件拖到此处上传",
     "uploading": "上传中...",
-    "fullScreen": "全屏阅读/翻译"
+    "fullScreen": "全屏阅读/翻译",
+    "upload-failed": "上传失败",
+    "cancel": "取消",
+    "retry": "重试"
   }
 }

@@ -9,21 +9,43 @@ import {
   ToolBar,
 } from '@/components/pdfViewer'
 import { useService } from '@/hooks/pdfService/useService'
+import { Loading } from '@/packages/icons'
 import { cn } from '@/utils/cn'
 import { PDFDocumentProxy } from 'pdfjs-dist'
-import { FC, useRef } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslatorContext } from '../context/TranslatorContext'
 
 interface Props {
   className?: string
 }
 const PDFViewer: FC<Props> = ({ className }) => {
-  const { fileUrl } = useTranslatorContext()
+  const { fileUrl, isFileExpired, refreshFileUrl } = useTranslatorContext()
   const { translateServices, translatorStorage, ocrService } = useService()
   const pdfRef = useRef<PDFForwardRef>(null)
 
-  const onDocumentLoaded = (pdf: PDFDocumentProxy) => {
-    console.log('onDocumentLoaded', pdf)
+  const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+    // 需要实时检查文件是否过期
+    if (!isFileExpired) {
+      return
+    }
+    setIsLoading(true)
+    refreshFileUrl().then(() => {
+      setIsLoading(false)
+    })
+  }, [fileUrl, isFileExpired, refreshFileUrl])
+
+  const onDocumentLoaded = (pdf: PDFDocumentProxy) => {}
+
+  if (isLoading || isFileExpired) {
+    return (
+      <div className="bg-grey-layer2-normal flex-center m-3 h-full overflow-hidden rounded-[8px]">
+        <span className="text-brand-primary-normal">
+          <Loading size={32} className="animate-spin" />
+        </span>
+      </div>
+    )
   }
 
   return (
@@ -47,7 +69,11 @@ const PDFViewer: FC<Props> = ({ className }) => {
         onDocumentLoaded={onDocumentLoaded}
         translateServices={translateServices}
         onSpreadModeChanged={(spreadMode) => {}}
-        defaultTranslateServerInfo={{}}
+        defaultTranslateServerInfo={
+          {
+            // toLang:
+          }
+        }
       />
     </div>
   )

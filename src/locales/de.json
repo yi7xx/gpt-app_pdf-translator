@@ -65,6 +65,9 @@
     "supportedFormats": "Formate: pdf",
     "dragFileHere": "Dateien hierher ziehen, um sie hochzuladen",
     "uploading": "Wird hochgeladen...",
-    "fullScreen": "Vollbild-Lesen/Übersetzung"
+    "fullScreen": "Vollbild-Lesen/Übersetzung",
+    "upload-failed": "Hochladen fehlgeschlagen",
+    "cancel": "Abbrechen",
+    "retry": "Erneut versuchen"
   }
 }

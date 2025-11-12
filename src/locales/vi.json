@@ -65,6 +65,9 @@
     "supportedFormats": "Định dạng: pdf",
     "dragFileHere": "Kéo tệp vào đây để tải lên",
     "uploading": "Đang tải lên...",
-    "fullScreen": "Đọc/Dịch toàn màn hình"
+    "fullScreen": "Đọc/Dịch toàn màn hình",
+    "upload-failed": "Tải lên thất bại",
+    "cancel": "Hủy",
+    "retry": "Thử lại"
   }
 }

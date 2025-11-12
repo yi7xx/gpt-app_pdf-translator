@@ -65,6 +65,9 @@
     "supportedFormats": "መልክፎች: pdf",
     "dragFileHere": "ፋይሎችን እዚህ ይጫኑ ለማስገባት",
     "uploading": "በመስቀል ላይ...",
-    "fullScreen": "ሙሉ ማውጫ ንባብ/ትርጉም"
+    "fullScreen": "ሙሉ ማውጫ ንባብ/ትርጉም",
+    "upload-failed": "መስቀል አልተሳካም",
+    "cancel": "ሰርዝ",
+    "retry": "እንደገና ይሞክሩ"
   }
 }

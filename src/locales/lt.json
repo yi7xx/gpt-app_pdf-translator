@@ -65,6 +65,9 @@
     "supportedFormats": "Formatai: pdf",
     "dragFileHere": "Vilkite failus čia, kad įkeltumėte",
     "uploading": "Įkeliama...",
-    "fullScreen": "Viso ekrano skaitymas/vertimas"
+    "fullScreen": "Viso ekrano skaitymas/vertimas",
+    "upload-failed": "Įkėlimas nepavyko",
+    "cancel": "Atšaukti",
+    "retry": "Bandyti dar kartą"
   }
 }

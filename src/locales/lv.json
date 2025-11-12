@@ -65,6 +65,9 @@
     "supportedFormats": "Formāti: pdf",
     "dragFileHere": "Velciet failus šeit, lai augšupielādētu",
     "uploading": "Augšupielādē...",
-    "fullScreen": "Pilnekrāna lasīšana/tulkošana"
+    "fullScreen": "Pilnekrāna lasīšana/tulkošana",
+    "upload-failed": "Augšupielāde neizdevās",
+    "cancel": "Atcelt",
+    "retry": "Mēģināt vēlreiz"
   }
 }

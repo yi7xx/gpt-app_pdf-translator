@@ -65,6 +65,9 @@
     "supportedFormats": "Formater: pdf",
     "dragFileHere": "Dra filer hit for å laste opp",
     "uploading": "Laster opp...",
-    "fullScreen": "Fullskjerm Lesing/Oversettelse"
+    "fullScreen": "Fullskjerm Lesing/Oversettelse",
+    "upload-failed": "Opplasting mislyktes",
+    "cancel": "Avbryt",
+    "retry": "Prøv igjen"
   }
 }

@@ -65,6 +65,9 @@
     "supportedFormats": "Format: pdf",
     "dragFileHere": "Seret fail ke sini untuk memuat naik",
     "uploading": "Sedang memuat naik...",
-    "fullScreen": "Pembacaan/Penterjemahan Skrin Penuh"
+    "fullScreen": "Pembacaan/Penterjemahan Skrin Penuh",
+    "upload-failed": "Muat Naik Gagal",
+    "cancel": "Batal",
+    "retry": "Cuba Lagi"
   }
 }

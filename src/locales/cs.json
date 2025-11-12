@@ -65,6 +65,9 @@
     "supportedFormats": "Formáty: pdf",
     "dragFileHere": "Přetáhněte soubory sem pro nahrání",
     "uploading": "Nahrávání...",
-    "fullScreen": "Čtení/Překlad na celou obrazovku"
+    "fullScreen": "Čtení/Překlad na celou obrazovku",
+    "upload-failed": "Nahrání se nezdařilo",
+    "cancel": "Zrušit",
+    "retry": "Zkusit znovu"
   }
 }

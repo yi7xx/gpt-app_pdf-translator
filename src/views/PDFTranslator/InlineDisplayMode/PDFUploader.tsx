@@ -1,6 +1,12 @@
+import GPTButton from '@/components/GPTButton'
 import { useCallTool } from '@/hooks/openai'
 import useI18n from '@/hooks/useI18n'
-import { UploadDocuments } from '@/packages/icons'
+import {
+  ArrowRotateCw,
+  CloseOutlineS,
+  ExclamationMarkCircleFilledError,
+  UploadDocuments,
+} from '@/packages/icons'
 import { FileItem } from '@/types/file'
 import { cn } from '@/utils/cn'
 import { useFileDrop } from '@sider/hooks'
@@ -26,7 +32,7 @@ const PDFUploader = () => {
     fetchFileUrlLoading,
     setFileUrl,
     getFileUrl,
-    setWidgetFileId,
+    setWidgetFileState,
   } = useTranslatorContext()
   const [status, setStatus] = useState<UploaderStatus>(() =>
     fileUrl ? UploaderStatus.COMPLETED : UploaderStatus.IDLE,
@@ -91,7 +97,9 @@ const PDFUploader = () => {
     return uploadPromise
   }
 
+  const fileRef = useRef<File | null>(null)
   const processUpload = async (file: File) => {
+    fileRef.current = file
     setStatus(UploaderStatus.UPLOADING)
     setUploadProgress(0)
 
@@ -113,13 +121,19 @@ const PDFUploader = () => {
         setStatus(UploaderStatus.ERROR)
         return
       }
-      setWidgetFileId(fileItem.id)
+      fileRef.current = null
       setFileUrl(fileUrl)
+      setWidgetFileState(fileItem.id, fileUrl)
       setStatus(UploaderStatus.COMPLETED)
     } catch (error: any) {
       console.error(error.message, 'error')
       setStatus(UploaderStatus.ERROR)
     }
+  }
+
+  const handleRetry = () => {
+    if (!fileRef.current) return
+    processUpload(fileRef.current)
   }
 
   const { isDragActive } = useFileDrop(uploaderRef, {
@@ -185,10 +199,37 @@ const PDFUploader = () => {
   }
 
   if (status === UploaderStatus.COMPLETED) {
-    return <PDFPreview fileUrl={fileUrl} className="h-105" />
+    return <PDFPreview className="h-105" />
   }
 
-  return <div className="error"></div>
+  return (
+    <div className="bg-bg-primary h-85 w-full p-4">
+      <div className="flex-center border-border-light bg-interactive-bg-secondary-default size-full flex-col gap-4 rounded-xl border">
+        <ExclamationMarkCircleFilledError size={24} />
+        <span className="font-normal-14 text-text-secondary">
+          {t('pdfUploader.upload-failed')}
+        </span>
+        <div className="inline-flex gap-2">
+          <GPTButton
+            className="gap-1"
+            variant="secondary"
+            icon={<CloseOutlineS size={20} />}
+            onClick={() => setStatus(UploaderStatus.IDLE)}
+          >
+            {t('pdfUploader.cancel')}
+          </GPTButton>
+          <GPTButton
+            className="gap-1"
+            variant="secondary"
+            icon={<ArrowRotateCw size={20} />}
+            onClick={handleRetry}
+          >
+            {t('pdfUploader.retry')}
+          </GPTButton>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default PDFUploader

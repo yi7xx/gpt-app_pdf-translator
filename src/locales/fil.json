@@ -65,6 +65,9 @@
     "supportedFormats": "Mga Format: pdf",
     "dragFileHere": "I-drag ang mga file dito para i-upload",
     "uploading": "Nag-a-upload...",
-    "fullScreen": "Buong Screen na Pagbabasa/Pagsasalin"
+    "fullScreen": "Buong Screen na Pagbabasa/Pagsasalin",
+    "upload-failed": "Nabigo ang Pag-upload",
+    "cancel": "Kanselahin",
+    "retry": "Subukang Muli"
   }
 }

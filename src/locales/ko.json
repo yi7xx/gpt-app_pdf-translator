@@ -65,6 +65,9 @@
     "supportedFormats": "형식: pdf",
     "dragFileHere": "업로드하려면 파일을 이곳으로 드래그하세요",
     "uploading": "업로드 중...",
-    "fullScreen": "전체 화면 읽기/번역"
+    "fullScreen": "전체 화면 읽기/번역",
+    "upload-failed": "업로드 실패",
+    "cancel": "취소",
+    "retry": "다시 시도"
   }
 }

@@ -26,7 +26,7 @@ const FullscreenDisplayMode = () => {
   }, [])
 
   return (
-    <div ref={containerRef} className="flex w-full flex-col">
+    <div ref={containerRef} className="relative flex w-full flex-col">
       <PDFViewer className="h-0 flex-1" />
     </div>
   )

@@ -65,6 +65,9 @@
     "supportedFormats": "Formats: pdf",
     "dragFileHere": "Drag files here to upload",
     "uploading": "Uploading...",
-    "fullScreen": "Full Screen Reading/Translation"
+    "fullScreen": "Full Screen Reading/Translation",
+    "upload-failed": "Upload Failed",
+    "cancel": "Cancel",
+    "retry": "Retry"
   }
 }

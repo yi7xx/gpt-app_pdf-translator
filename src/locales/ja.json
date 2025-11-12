@@ -65,6 +65,9 @@
     "supportedFormats": "フォーマット: pdf",
     "dragFileHere": "ファイルをここにドラッグしてアップロード",
     "uploading": "アップロード中...",
-    "fullScreen": "全画面での読み取り/翻訳"
+    "fullScreen": "全画面での読み取り/翻訳",
+    "upload-failed": "アップロードに失敗しました",
+    "cancel": "キャンセル",
+    "retry": "再試行"
   }
 }

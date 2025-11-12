@@ -7,11 +7,10 @@ import { FC } from 'react'
 import PDFThumbnail from './PDFThumbnail'
 
 interface Props {
-  fileUrl: string
   className?: string
 }
 
-const PDFPreview: FC<Props> = ({ fileUrl, className }) => {
+const PDFPreview: FC<Props> = ({ className }) => {
   const { t } = useI18n()
   const requestDisplayMode = useRequestDisplayMode()
   const handleExpand = async () => {
@@ -22,7 +21,7 @@ const PDFPreview: FC<Props> = ({ fileUrl, className }) => {
   }
   return (
     <div className={cn('relative size-full overflow-hidden', className)}>
-      <PDFThumbnail fileUrl={fileUrl} />
+      <PDFThumbnail />
       <div className="absolute end-3 top-3 z-10">
         <button
           className="size-10 rounded-full bg-[var(--gray-0)] p-2 transition-colors hover:bg-[var(--gray-1000-a2)] active:bg-[var(--gray-1000-a5)]"

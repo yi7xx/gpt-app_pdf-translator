@@ -65,6 +65,9 @@
     "supportedFormats": "Formátumok: pdf",
     "dragFileHere": "Húzza ide a fájlokat a feltöltéshez",
     "uploading": "Feltöltés...",
-    "fullScreen": "Teljes képernyős olvasás/fordítás"
+    "fullScreen": "Teljes képernyős olvasás/fordítás",
+    "upload-failed": "Feltöltés sikertelen",
+    "cancel": "Mégse",
+    "retry": "Újrapróbálkozás"
   }
 }

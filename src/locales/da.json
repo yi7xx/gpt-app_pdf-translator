@@ -65,6 +65,9 @@
     "supportedFormats": "Formater: pdf",
     "dragFileHere": "Træk filer her for at uploade",
     "uploading": "Uploader...",
-    "fullScreen": "Fuldskærmslæsning/Oversættelse"
+    "fullScreen": "Fuldskærmslæsning/Oversættelse",
+    "upload-failed": "Upload mislykkedes",
+    "cancel": "Annuller",
+    "retry": "Prøv igen"
   }
 }

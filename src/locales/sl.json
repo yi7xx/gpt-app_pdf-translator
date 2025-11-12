@@ -65,6 +65,9 @@
     "supportedFormats": "Formati: pdf",
     "dragFileHere": "Povlecite datoteke sem za nalaganje",
     "uploading": "Nalagam...",
-    "fullScreen": "Branje/Prevajanje na celotnem zaslonu"
+    "fullScreen": "Branje/Prevajanje na celotnem zaslonu",
+    "upload-failed": "Nalaganje ni uspelo",
+    "cancel": "Prekliči",
+    "retry": "Poskusi znova"
   }
 }

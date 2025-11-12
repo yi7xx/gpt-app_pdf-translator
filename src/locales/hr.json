@@ -65,6 +65,9 @@
     "supportedFormats": "Formati: pdf",
     "dragFileHere": "Povucite datoteke ovdje za prijenos",
     "uploading": "Prijenos u tijeku...",
-    "fullScreen": "Čitanje/Prevođenje preko cijelog zaslona"
+    "fullScreen": "Čitanje/Prevođenje preko cijelog zaslona",
+    "upload-failed": "Prijenos nije uspio",
+    "cancel": "Otkaži",
+    "retry": "Pokušaj ponovo"
   }
 }

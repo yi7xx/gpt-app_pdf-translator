@@ -65,6 +65,9 @@
     "supportedFormats": "Formaten: pdf",
     "dragFileHere": "Sleep bestanden hierheen om te uploaden",
     "uploading": "Uploaden...",
-    "fullScreen": "Volledig scherm lezen/vertalen"
+    "fullScreen": "Volledig scherm lezen/vertalen",
+    "upload-failed": "Uploaden mislukt",
+    "cancel": "Annuleren",
+    "retry": "Opnieuw proberen"
   }
 }

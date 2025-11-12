@@ -34,7 +34,7 @@ const handler = createMcpHandler(async (server) => {
   const contentWidget: ContentWidget = {
     id: 'pdf_translator',
     title: 'pdf Translator',
-    templateUri: 'ui://widget/content-template.html',
+    templateUri: 'ui://widget/pdf-translator-widget.html',
     invoking: 'Loading content...',
     invoked: 'Content loaded',
     html: html,
@@ -75,6 +75,9 @@ const handler = createMcpHandler(async (server) => {
     {
       title: contentWidget.title,
       description: contentWidget.description,
+      inputSchema: {
+        fileName: z.string().describe('The name of the file to translate'),
+      },
       _meta: widgetMeta(contentWidget),
     },
     async () => {
@@ -101,7 +104,9 @@ const handler = createMcpHandler(async (server) => {
       inputSchema: {
         id: z
           .string()
-          .describe('Unique identifier for the authentication token'),
+          .describe(
+            'Unique identifier for the authentication token, Generally starts with sk-',
+          ),
         method: z
           .enum(['GET', 'POST', 'PUT', 'DELETE'])
           .optional()

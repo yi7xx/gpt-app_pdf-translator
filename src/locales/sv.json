@@ -65,6 +65,9 @@
     "supportedFormats": "Format: pdf",
     "dragFileHere": "Dra filer hit för att ladda upp",
     "uploading": "Laddar upp...",
-    "fullScreen": "Läs/Översätt i fullskärm"
+    "fullScreen": "Läs/Översätt i fullskärm",
+    "upload-failed": "Uppladdning misslyckades",
+    "cancel": "Avbryt",
+    "retry": "Försök igen"
   }
 }

@@ -65,6 +65,9 @@
     "supportedFormats": "Formatos: pdf",
     "dragFileHere": "Arraste os arquivos aqui para fazer o upload",
     "uploading": "Carregando...",
-    "fullScreen": "Leitura/Tradução em Tela Cheia"
+    "fullScreen": "Leitura/Tradução em Tela Cheia",
+    "upload-failed": "Falha no Upload",
+    "cancel": "Cancelar",
+    "retry": "Tentar Novamente"
   }
 }

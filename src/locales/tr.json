@@ -65,6 +65,9 @@
     "supportedFormats": "Formatlar: pdf",
     "dragFileHere": "Yüklemek için dosyaları buraya sürükleyin",
     "uploading": "Yükleniyor...",
-    "fullScreen": "Tam Ekran Okuma/Çeviri"
+    "fullScreen": "Tam Ekran Okuma/Çeviri",
+    "upload-failed": "Yükleme Başarısız",
+    "cancel": "İptal",
+    "retry": "Tekrar Dene"
   }
 }

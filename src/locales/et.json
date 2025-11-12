@@ -65,6 +65,9 @@
     "supportedFormats": "Formaadid: pdf",
     "dragFileHere": "Lohistage failid siia üleslaadimiseks",
     "uploading": "Üleslaadimine...",
-    "fullScreen": "Täisekraanil lugemine/tõlkimine"
+    "fullScreen": "Täisekraanil lugemine/tõlkimine",
+    "upload-failed": "Üleslaadimine ebaõnnestus",
+    "cancel": "Tühista",
+    "retry": "Proovi uuesti"
   }
 }

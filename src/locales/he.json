@@ -65,6 +65,9 @@
     "supportedFormats": "פורמטים: pdf",
     "dragFileHere": "גרור קבצים לכאן להעלאה",
     "uploading": "מעלה...",
-    "fullScreen": "קריאה/תרגום במסך מלא"
+    "fullScreen": "קריאה/תרגום במסך מלא",
+    "upload-failed": "העלאה נכשלה",
+    "cancel": "ביטול",
+    "retry": "נסה שוב"
   }
 }

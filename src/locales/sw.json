@@ -65,6 +65,9 @@
     "supportedFormats": "Formati: pdf",
     "dragFileHere": "Buruta faili hapa ili kupakia",
     "uploading": "Inapakia...",
-    "fullScreen": "Usomaji/Tafsiri ya Skrini Kamili"
+    "fullScreen": "Usomaji/Tafsiri ya Skrini Kamili",
+    "upload-failed": "Kupakia Imeshindikana",
+    "cancel": "Ghairi",
+    "retry": "Jaribu Tena"
   }
 }

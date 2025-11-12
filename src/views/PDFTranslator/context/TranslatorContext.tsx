@@ -6,6 +6,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from 'react'
 
@@ -15,8 +16,10 @@ interface TranslatorContextType {
   getFileUrl: (fileId: string) => Promise<string | null>
   coverFileUrl: string
   fetchFileUrlLoading: boolean
+  isFileExpired: boolean
+  refreshFileUrl: () => Promise<void>
   setCoverFileUrl: (coverFileUrl: string) => void
-  setWidgetFileId: (fileId: string) => void
+  setWidgetFileState: (fileId: string, fileUrl: string) => void
 }
 
 const TranslatorContext = createContext<TranslatorContextType | null>(null)
@@ -36,21 +39,44 @@ interface Props {
 }
 
 export const TranslatorProvider: FC<Props> = ({ children }) => {
-  const [fileUrl, setFileUrl] = useState<string>('')
+  const [widgetState, setWidgetState] = useWidgetState({
+    fileId: '',
+    fileUrl: '',
+  })
   const [coverFileUrl, setCoverFileUrl] = useState<string>('')
-  const [widgetState, setWidgetState] = useWidgetState({ fileId: '' })
-  const [fetchFileUrlLoading, setFetchFileUrlLoading] = useState(false)
+  const [fileUrl, setFileUrl] = useState<string>(widgetState?.fileUrl || '')
+  const fetchFileUrlLoadingRef = useRef(false)
+  const [_, update] = useState({})
   const callTool = useCallTool()
 
-  console.log(widgetState, 'widgetState')
+  const setFetchFileUrlLoading = useCallback((loading: boolean) => {
+    if (fetchFileUrlLoadingRef.current === loading) return
+    fetchFileUrlLoadingRef.current = loading
+    update({})
+  }, [])
 
-  const setWidgetFileId = useCallback(
-    (fileId: string) => {
-      setWidgetState((prev) => ({ ...prev, fileId }))
+  const setWidgetFileState = useCallback(
+    (fileId: string, fileUrl: string) => {
+      setWidgetState((prev) => ({ ...prev, fileId, fileUrl }))
     },
     [setWidgetState],
   )
 
+  // 检查文件是否已经过期
+  const checkFileExpired = useCallback((fileUrl: string) => {
+    if (!fileUrl) return true
+    const urlObj = new URL(fileUrl)
+    const expiresAt = urlObj.searchParams.get('Expires') ?? ''
+    const now = Date.now()
+    if (!expiresAt) return true
+    const expiresAtTimestamp = new Date(+expiresAt * 1000).getTime()
+    return now >= expiresAtTimestamp
+  }, [])
+
+  // 文件是否过期
+  const isFileExpired = checkFileExpired(fileUrl)
+
+  // 获取文件URL
   const getFileUrl = useCallback(
     async (fileId: string) => {
       try {
@@ -69,20 +95,36 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
     [callTool],
   )
 
+  // 防止在一个事件循环中多次调用
+  const refreshFileUrl = useCallback(async () => {
+    if (!widgetState.fileId || fetchFileUrlLoadingRef.current) return
+
+    const { fileId, fileUrl: widgetFileUrl } = widgetState
+
+    if (!checkFileExpired(widgetFileUrl)) {
+      setFileUrl(widgetFileUrl)
+      return
+    }
+    setFetchFileUrlLoading(true)
+    const url = await getFileUrl(fileId)
+    if (url) {
+      setFileUrl(url)
+      setWidgetFileState(fileId, url)
+    }
+    setFetchFileUrlLoading(false)
+  }, [
+    widgetState,
+    checkFileExpired,
+    getFileUrl,
+    setFetchFileUrlLoading,
+    setWidgetFileState,
+  ])
+
   useEffect(() => {
-    ;(async () => {
-      if (!widgetState.fileId || fetchFileUrlLoading) return
+    refreshFileUrl()
+  }, [])
 
-      if (fileUrl) return
-
-      setFetchFileUrlLoading(true)
-      const url = await getFileUrl(widgetState.fileId)
-      if (url) {
-        setFileUrl(url)
-      }
-      setFetchFileUrlLoading(false)
-    })()
-  }, [widgetState.fileId])
+  const fetchFileUrlLoading = fetchFileUrlLoadingRef.current
 
   const providerValue = useMemo(
     () => ({
@@ -92,9 +134,21 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
       setFileUrl,
       getFileUrl,
       setCoverFileUrl,
-      setWidgetFileId,
+      isFileExpired,
+      setWidgetFileState,
+      refreshFileUrl,
     }),
-    [fileUrl, coverFileUrl, setWidgetFileId],
+    [
+      fileUrl,
+      coverFileUrl,
+      fetchFileUrlLoading,
+      setWidgetFileState,
+      getFileUrl,
+      setFileUrl,
+      setCoverFileUrl,
+      refreshFileUrl,
+      isFileExpired,
+    ],
   )
 
   return (

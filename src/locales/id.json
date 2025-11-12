@@ -65,6 +65,9 @@
     "supportedFormats": "Format: pdf",
     "dragFileHere": "Seret berkas ke sini untuk mengunggah",
     "uploading": "Mengunggah...",
-    "fullScreen": "Membaca/Terjemahan Layar Penuh"
+    "fullScreen": "Membaca/Terjemahan Layar Penuh",
+    "upload-failed": "Unggahan Gagal",
+    "cancel": "Batal",
+    "retry": "Coba Lagi"
   }
 }

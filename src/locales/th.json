@@ -65,6 +65,9 @@
     "supportedFormats": "รูปแบบ: pdf",
     "dragFileHere": "ลากไฟล์มาที่นี่เพื่ออัปโหลด",
     "uploading": "กำลังอัปโหลด...",
-    "fullScreen": "อ่าน/แปลแบบเต็มหน้าจอ"
+    "fullScreen": "อ่าน/แปลแบบเต็มหน้าจอ",
+    "upload-failed": "อัปโหลดล้มเหลว",
+    "cancel": "ยกเลิก",
+    "retry": "ลองใหม่"
   }
 }

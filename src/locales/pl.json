@@ -65,6 +65,9 @@
     "supportedFormats": "Formaty: pdf",
     "dragFileHere": "Przeciągnij pliki tutaj, aby przesłać",
     "uploading": "Przesyłanie...",
-    "fullScreen": "Pełnoekranowe czytanie/tłumaczenie"
+    "fullScreen": "Pełnoekranowe czytanie/tłumaczenie",
+    "upload-failed": "Przesyłanie nie powiodło się",
+    "cancel": "Anuluj",
+    "retry": "Ponów próbę"
   }
 }

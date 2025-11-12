@@ -65,6 +65,9 @@
     "supportedFormats": "Formats: pdf",
     "dragFileHere": "Arrossega els fitxers aquí per pujar-los",
     "uploading": "Pujant...",
-    "fullScreen": "Lectura/Traducció a pantalla completa"
+    "fullScreen": "Lectura/Traducció a pantalla completa",
+    "upload-failed": "Càrrega fallida",
+    "cancel": "Cancel·la",
+    "retry": "Torna-ho a intentar"
   }
 }

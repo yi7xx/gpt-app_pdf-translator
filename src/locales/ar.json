@@ -65,6 +65,9 @@
     "supportedFormats": "التنسيقات: pdf",
     "dragFileHere": "اسحب الملفات هنا للتحميل",
     "uploading": "جارٍ التحميل...",
-    "fullScreen": "قراءة/ترجمة بملء الشاشة"
+    "fullScreen": "قراءة/ترجمة بملء الشاشة",
+    "upload-failed": "فشل التحميل",
+    "cancel": "إلغاء",
+    "retry": "إعادة المحاولة"
   }
 }
