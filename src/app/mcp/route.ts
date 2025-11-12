@@ -139,10 +139,8 @@ const handler = createMcpHandler(async (server) => {
     },
     async ({ id, method, payload, queryParams, headers }) => {
       try {
-        const baseUrl = 'https://dev.wisebox.ai'
-
         const searchParams = new URLSearchParams({ ...queryParams })
-        const url = new URL(id, baseUrl)
+        const url = new URL(id, origin)
         url.search = searchParams.toString()
 
         const requestHeaders = new Headers({
