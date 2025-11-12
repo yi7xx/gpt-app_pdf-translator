@@ -1,4 +1,4 @@
-import { baseURL } from '@/baseUrl'
+import { apiURL, baseURL } from '@/baseUrl'
 import { createMcpHandler } from 'mcp-handler'
 import { z } from 'zod'
 
@@ -140,7 +140,7 @@ const handler = createMcpHandler(async (server) => {
     async ({ id, method, payload, queryParams, headers }) => {
       try {
         const searchParams = new URLSearchParams({ ...queryParams })
-        const url = new URL(id, origin)
+        const url = new URL(id, apiURL)
         url.search = searchParams.toString()
 
         const requestHeaders = new Headers({
@@ -153,15 +153,6 @@ const handler = createMcpHandler(async (server) => {
         const body = ['POST', 'PUT'].includes(requestMethod)
           ? JSON.stringify(payload)
           : undefined
-
-        console.log(url.toString(), 'url.toString()')
-        console.log(
-          JSON.stringify({
-            method: requestMethod,
-            headers: requestHeaders,
-            body,
-          }),
-        )
 
         const response = await fetch(url.toString(), {
           method: requestMethod,

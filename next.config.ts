@@ -1,5 +1,5 @@
 import type { NextConfig } from 'next'
-import { baseURL } from './src/baseUrl'
+import { apiURL, baseURL } from './src/baseUrl'
 
 const createSvgTemplate = (variables: any, { tpl }: any) => {
   return tpl`
@@ -87,6 +87,10 @@ const webpackSvgr: NextConfig['webpack'] = (config, context) => {
 const nextConfig: NextConfig = {
   reactStrictMode: false,
   assetPrefix: baseURL,
+  env: {
+    origin: baseURL,
+    apiURL,
+  },
   sassOptions: {},
   webpack: (config, context) => {
     webpackSvgr(config, context)
