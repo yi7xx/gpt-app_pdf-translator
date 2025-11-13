@@ -193,6 +193,12 @@ const TranslatorMenu = ({
     }
   }
 
+  const handleGetBetterClick = () => {
+    // TODO: open sider
+    setPopoverOpen(false)
+    window.open('https://sider.ai/wisebase', '_blank')
+  }
+
   const update = useUpdate()
   // 点击模型列表时，更新组件来确保ref生效
   useEffect(() => {
@@ -252,7 +258,10 @@ const TranslatorMenu = ({
                 />
               </div>
             </div>
-            <div className="f-i-center bg-brand-primary-bg text-brand-secondary-normal h-11 cursor-pointer gap-1 rounded-b-2xl px-4">
+            <div
+              className="f-i-center bg-brand-primary-bg text-brand-secondary-normal h-11 cursor-pointer gap-1 rounded-b-2xl px-4"
+              onClick={handleGetBetterClick}
+            >
               <div className="font-normal-12 -tracking-[0.1px] whitespace-nowrap">
                 {t('pdfViewer.tools.get-better')}
               </div>
