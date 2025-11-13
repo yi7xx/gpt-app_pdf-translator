@@ -2,8 +2,8 @@ import { baseURL } from '@/baseUrl'
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import AntdCompatible from './AntdCompatible19'
-import AntdThemeConfig from './AntdThemeConfig'
 import I18nInitial from './I18nInitial'
+import ThemeConfig from './ThemeConfig'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,13 +20,11 @@ export default function RootLayout({
       <head>
         <NextChatSDKBootstrap baseUrl={baseURL} />
       </head>
-      <body>
-        <AntdCompatible>
-          <AntdThemeConfig>
-            <I18nInitial>{children}</I18nInitial>
-          </AntdThemeConfig>
-        </AntdCompatible>
-      </body>
+      <AntdCompatible>
+        <ThemeConfig>
+          <I18nInitial>{children}</I18nInitial>
+        </ThemeConfig>
+      </AntdCompatible>
     </html>
   )
 }
