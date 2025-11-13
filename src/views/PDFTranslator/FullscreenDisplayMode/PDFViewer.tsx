@@ -9,6 +9,7 @@ import {
   ToolBar,
 } from '@/components/pdfViewer'
 import { useService } from '@/hooks/pdfService/useService'
+import useI18n from '@/hooks/useI18n'
 import { Loading } from '@/packages/icons'
 import { cn } from '@/utils/cn'
 import { PDFDocumentProxy } from 'pdfjs-dist'
@@ -22,6 +23,7 @@ const PDFViewer: FC<Props> = ({ className }) => {
   const { fileUrl, isFileExpired, refreshFileUrl } = useTranslatorContext()
   const { translateServices, translatorStorage, ocrService } = useService()
   const pdfRef = useRef<PDFForwardRef>(null)
+  const { i18n } = useI18n()
 
   const [isLoading, setIsLoading] = useState(false)
 
@@ -69,11 +71,9 @@ const PDFViewer: FC<Props> = ({ className }) => {
         onDocumentLoaded={onDocumentLoaded}
         translateServices={translateServices}
         onSpreadModeChanged={(spreadMode) => {}}
-        defaultTranslateServerInfo={
-          {
-            // toLang:
-          }
-        }
+        defaultTranslateServerInfo={{
+          toLang: i18n.language,
+        }}
       />
     </div>
   )
