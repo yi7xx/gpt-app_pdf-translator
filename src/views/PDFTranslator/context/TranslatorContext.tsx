@@ -1,10 +1,12 @@
 import { useCallTool, useWidgetState } from '@/hooks/openai'
+import { buildMatrixURL } from '@/utils/maxtrixURL'
 import {
   createContext,
   FC,
   useCallback,
   useContext,
   useEffect,
+  useLayoutEffect,
   useMemo,
   useRef,
   useState,
@@ -123,6 +125,19 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
   useEffect(() => {
     refreshFileUrl()
   }, [])
+
+  const replaceStatePath = useMemo(() => {
+    if (!widgetState?.fileId) return null
+    return buildMatrixURL([
+      { path: 'pdf-translator', params: { id: widgetState.fileId } },
+    ])
+  }, [widgetState?.fileId])
+
+  useLayoutEffect(() => {
+    if (replaceStatePath) {
+      history.replaceState(null, '', replaceStatePath)
+    }
+  }, [replaceStatePath])
 
   const fetchFileUrlLoading = fetchFileUrlLoadingRef.current
 
