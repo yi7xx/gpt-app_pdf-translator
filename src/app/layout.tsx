@@ -60,17 +60,18 @@ function NextChatSDKBootstrap({ baseUrl }: { baseUrl: string }) {
             })
 
             const originalReplaceState = history.replaceState
-            history.replaceState = (state, unused, url) => {
+
+            history.replaceState = (s, unused, url) => {
               const u = new URL(url ?? '', window.location.href)
-              const href = u.pathname + u.search + u.hash
-              originalReplaceState.call(history, state, unused, href)
+              const href = u.toString()
+              originalReplaceState.call(history, s, unused, href)
             }
 
             const originalPushState = history.pushState
-            history.pushState = (state, unused, url) => {
+            history.pushState = (s, unused, url) => {
               const u = new URL(url ?? '', window.location.href)
-              const href = u.pathname + u.search + u.hash
-              originalPushState.call(history, state, unused, href)
+              const href = u.toString()
+              originalPushState.call(history, s, unused, href)
             }
 
             const appOrigin = new URL(baseUrl).origin
