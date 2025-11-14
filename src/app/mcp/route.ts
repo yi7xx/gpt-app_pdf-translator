@@ -40,7 +40,7 @@ const handler = createMcpHandler(async (server) => {
     html: html,
     description:
       'When uploading and translating PDFs, I will display the PDF translation app',
-    widgetDomain: 'https://sider.ai/wisebase',
+    widgetDomain: baseURL,
   }
   server.registerResource(
     'content-widget',
