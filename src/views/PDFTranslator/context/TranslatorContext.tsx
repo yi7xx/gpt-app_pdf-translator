@@ -128,8 +128,11 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
 
   const replaceStatePath = useMemo(() => {
     if (!widgetState?.fileId) return null
-    return buildMatrixURL([
-      { path: 'pdf-translator', params: { id: widgetState.fileId } },
+    return buildMatrixURL('/wisebase/ai-inbox', [
+      {
+        group: 'files',
+        params: { 'upload-fid': widgetState.fileId, from: 'gpts-app' },
+      },
     ])
   }, [widgetState?.fileId])
 

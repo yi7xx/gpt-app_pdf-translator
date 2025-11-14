@@ -1,7 +1,7 @@
 const MATRIX_BASE_URL = '/gpt-proxy'
 
-interface PathSegment {
-  path: string
+interface GroupSegment {
+  group: string
   params: Record<string, string | number | boolean>
 }
 
@@ -16,16 +16,16 @@ interface PathSegment {
  * ])
  * // => '/user;id=1/posts;limit=10'
  */
-export const buildMatrixURL = (segments: PathSegment[]) => {
+export const buildMatrixURL = (pathname: string, segments: GroupSegment[]) => {
   if (!Array.isArray(segments) || segments.length === 0) {
-    return '/'
+    return MATRIX_BASE_URL + pathname
   }
 
-  const buildSegment = (segment: PathSegment): string => {
-    const { path, params } = segment
+  const buildSegment = (segment: GroupSegment): string => {
+    const { group, params } = segment
 
     if (!params || Object.keys(params).length === 0) {
-      return path
+      return group
     }
 
     const paramString = Object.entries(params)
@@ -46,8 +46,8 @@ export const buildMatrixURL = (segments: PathSegment[]) => {
       .filter(Boolean)
       .join('')
 
-    return path + paramString
+    return group + paramString
   }
 
-  return MATRIX_BASE_URL + '/' + segments.map(buildSegment).join('/')
+  return MATRIX_BASE_URL + pathname + '/' + segments.map(buildSegment).join('/')
 }
