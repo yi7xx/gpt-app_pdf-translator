@@ -1,3 +1,4 @@
+import { baseURL } from '@/baseUrl'
 import useI18n from '@/hooks/useI18n'
 import { ExclamationMarkCircleFilledError, Loading } from '@sider/icons'
 import { useAsyncEffect, useMemoizedFn } from 'ahooks'
@@ -233,8 +234,8 @@ const Document: FC<DocumentProps> = (props) => {
     try {
       loadingTask = pdfjsLib.getDocument({
         url: file,
-        cMapUrl: window.origin + cMapUrl,
-        standardFontDataUrl: window.origin + standardFontDataUrl,
+        cMapUrl: baseURL + cMapUrl,
+        standardFontDataUrl: baseURL + standardFontDataUrl,
       })
       loadingTask.onProgress = (e: any) => {
         if (cancelToken.cancelled) {

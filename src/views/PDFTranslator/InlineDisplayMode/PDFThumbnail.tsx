@@ -1,5 +1,6 @@
 'use client'
 
+import { baseURL } from '@/baseUrl'
 import pdfjsLib from '@/components/pdfViewer/libs/pdf'
 import { PixelsPerInch } from '@/components/pdfViewer/utils/display'
 import { Loading } from '@/packages/icons'
@@ -48,8 +49,8 @@ const PDFThumbnail: FC<PDFThumbnailProps> = ({ className = '' }) => {
 
       const loadingTask = (pdfLoadingTask.current = pdfjsLib.getDocument({
         url: fileUrl,
-        cMapUrl: window.origin + '/pdfjs/cmaps/',
-        standardFontDataUrl: window.origin + '/pdfjs/standard_fonts/',
+        cMapUrl: baseURL + '/pdfjs/cmaps/',
+        standardFontDataUrl: baseURL + '/pdfjs/standard_fonts/',
       }))
 
       const pdf = await loadingTask.promise
