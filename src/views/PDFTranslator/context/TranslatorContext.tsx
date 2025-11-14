@@ -104,7 +104,7 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
     if (!widgetState?.fileId) return
     const url = new URL('/wisebase/ai-inbox', widgetDomain)
     url.searchParams.set('from', 'gpts-app')
-    url.searchParams.set('file-id', widgetState.fileId)
+    url.searchParams.set('upload-fid', widgetState.fileId)
     openExternal(url.toString())
   }, [widgetState?.fileId, openExternal])
 
