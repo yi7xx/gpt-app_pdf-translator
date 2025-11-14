@@ -1,3 +1,4 @@
+import { widgetDomain } from '@/baseUrl'
 import { useCallTool, useOpenExternal, useWidgetState } from '@/hooks/openai'
 import { buildMatrixURL } from '@/utils/maxtrixURL'
 import {
@@ -101,7 +102,7 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
 
   const openFileToWisebase = useCallback(() => {
     if (!widgetState?.fileId) return
-    const url = new URL('/wisebase/ai-inbox', origin)
+    const url = new URL('/wisebase/ai-inbox', widgetDomain)
     url.searchParams.set('from', 'gpts-app')
     url.searchParams.set('file-id', widgetState.fileId)
     openExternal(url.toString())
