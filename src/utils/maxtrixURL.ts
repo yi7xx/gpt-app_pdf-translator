@@ -1,4 +1,4 @@
-const MATRIX_BASE_URL = '/gpt-proxy'
+const MATRIX_BASE_URL = '/gpt-matrix'
 
 interface GroupSegment {
   group: string
