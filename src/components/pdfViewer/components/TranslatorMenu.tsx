@@ -2,6 +2,7 @@ import GPTButton from '@/components/GPTButton'
 import LanguageSelect from '@/components/LanguageSelect'
 import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
+import { useTranslatorContext } from '@/views/PDFTranslator/context/TranslatorContext'
 import { DownMd, TranslateLite } from '@sider/icons'
 import { useUpdate } from 'ahooks'
 import { Popover, Switch } from 'antd'
@@ -193,10 +194,11 @@ const TranslatorMenu = ({
     }
   }
 
+  // TODO: 暂时这么写，后续需要优化
+  const { openFileToWisebase } = useTranslatorContext()
   const handleGetBetterClick = () => {
-    // TODO: open sider
     setPopoverOpen(false)
-    window.open('https://sider.ai/wisebase', '_blank')
+    openFileToWisebase()
   }
 
   const update = useUpdate()

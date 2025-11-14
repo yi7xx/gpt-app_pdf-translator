@@ -1,4 +1,4 @@
-import { useCallTool, useWidgetState } from '@/hooks/openai'
+import { useCallTool, useOpenExternal, useWidgetState } from '@/hooks/openai'
 import { buildMatrixURL } from '@/utils/maxtrixURL'
 import {
   createContext,
@@ -22,6 +22,7 @@ interface TranslatorContextType {
   refreshFileUrl: () => Promise<void>
   setCoverFileUrl: (coverFileUrl: string) => void
   setWidgetFileState: (fileId: string, fileUrl: string) => void
+  openFileToWisebase: () => void
 }
 
 const TranslatorContext = createContext<TranslatorContextType | null>(null)
@@ -45,6 +46,7 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
     fileId: '',
     fileUrl: '',
   })
+  const openExternal = useOpenExternal()
   const [coverFileUrl, setCoverFileUrl] = useState<string>('')
   const [fileUrl, setFileUrl] = useState<string>(widgetState?.fileUrl || '')
   const fetchFileUrlLoadingRef = useRef(false)
@@ -96,6 +98,14 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
     },
     [callTool],
   )
+
+  const openFileToWisebase = useCallback(() => {
+    if (!widgetState?.fileId) return
+    const url = new URL('/wisebase/ai-inbox', window.location.href)
+    url.searchParams.set('from', 'gpts-app')
+    url.searchParams.set('file-id', widgetState.fileId)
+    openExternal(url.toString())
+  }, [widgetState?.fileId, openExternal])
 
   // 防止在一个事件循环中多次调用
   const refreshFileUrl = useCallback(async () => {
@@ -155,6 +165,7 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
       isFileExpired,
       setWidgetFileState,
       refreshFileUrl,
+      openFileToWisebase,
     }),
     [
       fileUrl,
@@ -166,6 +177,7 @@ export const TranslatorProvider: FC<Props> = ({ children }) => {
       setCoverFileUrl,
       refreshFileUrl,
       isFileExpired,
+      openFileToWisebase,
     ],
   )
 

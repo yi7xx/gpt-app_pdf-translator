@@ -1,5 +1,4 @@
 import GPTButton from '@/components/GPTButton'
-import { useOpenExternal } from '@/hooks/openai'
 import useI18n from '@/hooks/useI18n'
 import { cn } from '@/utils/cn'
 import { useLocalStorageState } from '@sider/hooks'
@@ -373,13 +372,6 @@ export const ToolBar: FC<ToolBarProps> = ({
   const debouncedCheckSpace = useMemo(() => debounce(checkSpace, 50), [])
   useEventListener('resize', debouncedCheckSpace)
 
-  const openExternal = useOpenExternal()
-
-  const handleDownload = () => {
-    // TODO: save to wisebase
-    openExternal('https://sider.ai/wisebase')
-  }
-
   const splitLine = (
     <div className="border-border-default h-4 w-0 shrink-0 border-l" />
   )
@@ -499,18 +491,7 @@ export const ToolBar: FC<ToolBarProps> = ({
             </div>
           )}
         </div>
-        <div className="ms-auto">
-          <Tooltip
-            title={t('pdfViewer.common.open-sider-and-download')}
-            arrow={false}
-          >
-            <GPTButton
-              variant="text"
-              icon={<Download size={20} />}
-              onClick={handleDownload}
-            />
-          </Tooltip>
-        </div>
+        <div className="ms-auto">{extraNode}</div>
       </div>
     </div>
   )

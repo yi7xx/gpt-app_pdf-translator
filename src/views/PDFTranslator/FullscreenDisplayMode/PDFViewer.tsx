@@ -1,6 +1,7 @@
 'use client'
 
 import { baseURL } from '@/baseUrl'
+import GPTButton from '@/components/GPTButton'
 import {
   PDFDocument,
   PDFForwardRef,
@@ -10,8 +11,9 @@ import {
 } from '@/components/pdfViewer'
 import { useService } from '@/hooks/pdfService/useService'
 import useI18n from '@/hooks/useI18n'
-import { Loading } from '@/packages/icons'
+import { Download, Loading } from '@/packages/icons'
 import { cn } from '@/utils/cn'
+import { Tooltip } from 'antd'
 import { PDFDocumentProxy } from 'pdfjs-dist'
 import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslatorContext } from '../context/TranslatorContext'
@@ -20,10 +22,11 @@ interface Props {
   className?: string
 }
 const PDFViewer: FC<Props> = ({ className }) => {
-  const { fileUrl, isFileExpired, refreshFileUrl } = useTranslatorContext()
+  const { fileUrl, isFileExpired, refreshFileUrl, openFileToWisebase } =
+    useTranslatorContext()
   const { translateServices, translatorStorage, ocrService } = useService()
   const pdfRef = useRef<PDFForwardRef>(null)
-  const { i18n } = useI18n()
+  const { t, i18n } = useI18n()
 
   const [isLoading, setIsLoading] = useState(false)
 
@@ -39,6 +42,10 @@ const PDFViewer: FC<Props> = ({ className }) => {
   }, [fileUrl, isFileExpired, refreshFileUrl])
 
   const onDocumentLoaded = (pdf: PDFDocumentProxy) => {}
+
+  const handleDownload = () => {
+    openFileToWisebase()
+  }
 
   if (isLoading || isFileExpired) {
     return (
@@ -56,7 +63,23 @@ const PDFViewer: FC<Props> = ({ className }) => {
         ref={pdfRef}
         fileName={'test.pdf'}
         defaultScale={ScaleMode.PAGE_WIDTH}
-        toolBar={<ToolBar backNode={null} extraNode={null} />}
+        toolBar={
+          <ToolBar
+            backNode={null}
+            extraNode={
+              <Tooltip
+                title={t('pdfViewer.common.open-sider-and-download')}
+                arrow={false}
+              >
+                <GPTButton
+                  variant="text"
+                  icon={<Download size={20} />}
+                  onClick={handleDownload}
+                />
+              </Tooltip>
+            }
+          />
+        }
         siderBar={<SiderBar />}
         file={fileUrl}
         translationStorageService={translatorStorage}
