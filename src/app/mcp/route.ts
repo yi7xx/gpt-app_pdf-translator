@@ -1,4 +1,4 @@
-import { apiURL, baseURL } from '@/baseUrl'
+import { apiURL, baseURL, widgetDomain } from '@/baseUrl'
 import { createMcpHandler } from 'mcp-handler'
 import { z } from 'zod'
 
@@ -40,7 +40,7 @@ const handler = createMcpHandler(async (server) => {
     html: html,
     description:
       'When uploading and translating PDFs, I will display the PDF translation app',
-    widgetDomain: 'https://sider.ai/wisebase',
+    widgetDomain,
   }
   server.registerResource(
     'content-widget',

@@ -1,5 +1,5 @@
 import type { NextConfig } from 'next'
-import { apiURL, baseURL } from './src/baseUrl'
+import { apiURL, baseURL, widgetDomain } from './src/baseUrl'
 
 const createSvgTemplate = (variables: any, { tpl }: any) => {
   return tpl`
@@ -90,6 +90,7 @@ const nextConfig: NextConfig = {
   env: {
     origin: baseURL,
     apiURL,
+    widgetDomain,
   },
   sassOptions: {},
   webpack: (config, context) => {
