@@ -87,6 +87,7 @@ const webpackSvgr: NextConfig['webpack'] = (config, context) => {
 const nextConfig: NextConfig = {
   reactStrictMode: false,
   assetPrefix: baseURL,
+  output: 'standalone',
   env: {
     origin: baseURL,
     apiURL,
